@@ -11,6 +11,7 @@ from modules.classroom_interaction import render_classroom_interaction
 from modules.auth import render_login_page, check_login, get_current_user, logout
 from modules.analytics import render_analytics_dashboard, render_module_analytics
 from modules.report_generator import render_report_generator
+from modules.teaching_design import render_teaching_design
 
 # 页面配置
 st.set_page_config(
@@ -589,17 +590,20 @@ def main():
         
         # 第二行：管理功能
         st.markdown("##### ⚙️ 管理功能")
-        nav_cols_2 = st.columns([1, 1, 1, 1])
+        nav_cols_2 = st.columns([1, 1, 1, 1, 1])
         with nav_cols_2[0]:
             if st.button("📄 学习报告", key="nav_report_t", use_container_width=True):
                 st.session_state.current_page = 'report_generator'
         with nav_cols_2[1]:
+            if st.button("📐 教学设计", key="nav_teaching_t", use_container_width=True):
+                st.session_state.current_page = 'teaching_design'
+        with nav_cols_2[2]:
             if st.button("📊 数据管理", key="nav_data_t", use_container_width=True):
                 st.session_state.current_page = 'data_management'
-        with nav_cols_2[2]:
+        with nav_cols_2[3]:
             if st.button("⚙️ 系统设置", key="nav_settings_t", use_container_width=True):
                 st.session_state.current_page = 'system_settings'
-        with nav_cols_2[3]:
+        with nav_cols_2[4]:
             if st.button("🚪 退出登录", key="nav_logout_t", use_container_width=True):
                 logout()
                 st.rerun()
@@ -647,6 +651,8 @@ def main():
                 render_module_analytics("课中互动")
             elif current == 'report_generator':
                 render_report_generator()
+            elif current == 'teaching_design':
+                render_teaching_design()
             elif current == 'data_management':
                 render_data_management()
             elif current == 'system_settings':
