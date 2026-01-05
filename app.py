@@ -1146,8 +1146,14 @@ def render_module_analytics(module_name):
                 for a in activities:
                     if 'timestamp' in a and a['timestamp']:
                         try:
-                            # timestamp格式: "2025-01-01 10:30:00"
-                            date_str = str(a['timestamp']).split(' ')[0]
+                            # timestamp格式可能是: 
+                            # "2025-01-01 10:30:00" 或 "2026-01-05T16:40:02.977000000+00:00"
+                            ts = str(a['timestamp'])
+                            # 先尝试用T分割（ISO格式），再尝试用空格分割
+                            if 'T' in ts:
+                                date_str = ts.split('T')[0]
+                            else:
+                                date_str = ts.split(' ')[0]
                             unique_dates.add(date_str)
                         except:
                             pass
