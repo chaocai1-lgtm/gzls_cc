@@ -608,42 +608,14 @@ def render_module_overview(module_name):
     module_activities = activities  # 已经是该模块的数据
     
     if not module_activities:
-        # 使用该模块特定的示例数据
-        st.info(f"📊 {module_name}暂无实际学习数据，以下为示例展示")
-        
-        # 根据模块名称生成不同的示例数据
-        example_data = {
-            "案例库": [
-                {"student_name": "张三", "activity_type": "查看病例", "timestamp": "2026-01-03 10:30", "content_name": "慢性管理炎病例"},
-                {"student_name": "李四", "activity_type": "查看病例", "timestamp": "2026-01-03 11:15", "content_name": "侵袭性管理炎病例"},
-                {"student_name": "王五", "activity_type": "保存笔记", "timestamp": "2026-01-03 14:20", "content_name": "管理-牙髓联合病变"},
-                {"student_name": "张三", "activity_type": "查看病例", "timestamp": "2026-01-03 15:45", "content_name": "药物性牙龈增生"},
-                {"student_name": "赵六", "activity_type": "进入模块", "timestamp": "2026-01-03 16:00", "content_name": None},
-            ],
-            "知识图谱": [
-                {"student_name": "张三", "activity_type": "查看模块", "timestamp": "2026-01-03 09:20", "content_name": "M1-生物学基础"},
-                {"student_name": "李四", "activity_type": "查看模块", "timestamp": "2026-01-03 10:00", "content_name": "M2-病因与发病机制"},
-                {"student_name": "王五", "activity_type": "点击节点", "timestamp": "2026-01-03 11:30", "content_name": "管理组织解剖"},
-                {"student_name": "赵六", "activity_type": "查看模块", "timestamp": "2026-01-03 14:00", "content_name": "M3-诊断与分类"},
-                {"student_name": "张三", "activity_type": "进入模块", "timestamp": "2026-01-03 16:30", "content_name": None},
-            ],
-            "能力推荐": [
-                {"student_name": "张三", "activity_type": "能力自评", "timestamp": "2026-01-03 10:00", "content_name": "管理探诊技术"},
-                {"student_name": "李四", "activity_type": "能力自评", "timestamp": "2026-01-03 11:00", "content_name": "管理病诊断"},
-                {"student_name": "王五", "activity_type": "生成AI推荐", "timestamp": "2026-01-03 13:00", "content_name": "学习路径"},
-                {"student_name": "赵六", "activity_type": "能力自评", "timestamp": "2026-01-03 15:00", "content_name": "洁治术操作"},
-                {"student_name": "张三", "activity_type": "进入模块", "timestamp": "2026-01-03 16:00", "content_name": None},
-            ],
-            "课中互动": [
-                {"student_name": "张三", "activity_type": "回答问题", "timestamp": "2026-01-03 08:30", "content_name": "管理探诊深度正常值"},
-                {"student_name": "李四", "activity_type": "回答问题", "timestamp": "2026-01-03 08:35", "content_name": "管理探诊深度正常值"},
-                {"student_name": "王五", "activity_type": "提交练习", "timestamp": "2026-01-03 09:00", "content_name": "探诊练习"},
-                {"student_name": "赵六", "activity_type": "回答问题", "timestamp": "2026-01-03 14:00", "content_name": "管理病分类"},
-                {"student_name": "张三", "activity_type": "进入模块", "timestamp": "2026-01-03 08:00", "content_name": None},
-            ],
-        }
-        
-        module_activities = example_data.get(module_name, example_data["案例库"])
+        st.info(f"📊 {module_name}暂无学习数据记录")
+        st.markdown("""
+        **提示：** 当学生在此模块进行学习活动后，系统会自动记录并在此展示：
+        - 学习行为分布
+        - 热门学习内容
+        - 最近学习记录
+        """)
+        return
     
     col1, col2 = st.columns(2)
     
@@ -682,14 +654,13 @@ def render_module_overview(module_name):
     
     # 最近活动记录
     st.markdown(f"#### 📝 {module_name} - 最近学习记录")
-    if module_activities:
-        df = pd.DataFrame(module_activities[:20])
-        display_cols = ['student_name', 'activity_type', 'content_name', 'timestamp']
-        display_cols = [c for c in display_cols if c in df.columns]
-        if display_cols:
-            df_display = df[display_cols].copy()
-            df_display.columns = ['学生', '行为', '内容', '时间'][:len(display_cols)]
-            st.dataframe(df_display, use_container_width=True, hide_index=True)
+    df = pd.DataFrame(module_activities[:20])
+    display_cols = ['student_name', 'activity_type', 'content_name', 'timestamp']
+    display_cols = [c for c in display_cols if c in df.columns]
+    if display_cols:
+        df_display = df[display_cols].copy()
+        df_display.columns = ['学生', '行为', '内容', '时间'][:len(display_cols)]
+        st.dataframe(df_display, use_container_width=True, hide_index=True)
 
 def render_module_student_detail(module_name):
     """渲染模块个人数据"""
@@ -699,12 +670,8 @@ def render_module_student_detail(module_name):
     students = get_all_students()
     
     if not students:
-        # 使用示例学生
-        students = [
-            {"student_id": "2024001", "name": "张三", "login_count": 5},
-            {"student_id": "2024002", "name": "李四", "login_count": 3},
-            {"student_id": "2024003", "name": "王五", "login_count": 8},
-        ]
+        st.info("暂无学生数据，学生登录系统后将自动记录")
+        return
     
     # 学生选择
     student_options = {f"{s.get('student_id', '')} - {s.get('name', '')}": s for s in students}
@@ -717,32 +684,6 @@ def render_module_student_detail(module_name):
         # 获取该学生在此模块的活动 - 使用module参数
         student_module_activities = get_student_activities(student_id=student_id, module=module_name, limit=100)
         
-        if not student_module_activities:
-            # 根据模块名称生成不同的示例数据
-            example_data = {
-                "案例库": [
-                    {"activity_type": "进入模块", "timestamp": "2026-01-03 09:00", "content_name": None, "details": "访问案例库"},
-                    {"activity_type": "查看病例", "timestamp": "2026-01-03 09:05", "content_name": "慢性管理炎病例", "details": None},
-                    {"activity_type": "保存笔记", "timestamp": "2026-01-03 09:15", "content_name": "慢性管理炎病例", "details": "笔记内容..."},
-                ],
-                "知识图谱": [
-                    {"activity_type": "进入模块", "timestamp": "2026-01-03 10:00", "content_name": None, "details": "访问知识图谱"},
-                    {"activity_type": "查看模块", "timestamp": "2026-01-03 10:05", "content_name": "M1-生物学基础", "details": None},
-                    {"activity_type": "点击节点", "timestamp": "2026-01-03 10:10", "content_name": "管理组织解剖", "details": "查看详情"},
-                ],
-                "能力推荐": [
-                    {"activity_type": "进入模块", "timestamp": "2026-01-03 11:00", "content_name": None, "details": "访问能力推荐"},
-                    {"activity_type": "能力自评", "timestamp": "2026-01-03 11:05", "content_name": "管理探诊技术", "details": "掌握度50%"},
-                    {"activity_type": "生成AI推荐", "timestamp": "2026-01-03 11:10", "content_name": "学习路径", "details": "成功生成"},
-                ],
-                "课中互动": [
-                    {"activity_type": "进入模块", "timestamp": "2026-01-03 08:00", "content_name": None, "details": "访问课中互动"},
-                    {"activity_type": "回答问题", "timestamp": "2026-01-03 08:30", "content_name": "管理探诊深度", "details": "回答正确"},
-                    {"activity_type": "提交练习", "timestamp": "2026-01-03 08:45", "content_name": "探诊练习", "details": "完成练习"},
-                ],
-            }
-            student_module_activities = example_data.get(module_name, example_data["案例库"])
-        
         # 学生数据卡片
         col1, col2, col3 = st.columns(3)
         with col1:
@@ -751,25 +692,31 @@ def render_module_student_detail(module_name):
             content_viewed = len(set(a.get('content_name') for a in student_module_activities if a.get('content_name')))
             st.metric("📚 学习内容数", content_viewed)
         with col3:
-            st.metric("🔑 总登录次数", student.get('login_count', 0))
+            st.metric("🔑 总登录次数", student.get('login_count', 0) or student.get('activity_count', 0) or 0)
+        
+        if not student_module_activities:
+            st.info(f"该学生在 {module_name} 模块暂无学习记录")
+            return
         
         # 活动时间线
         st.markdown(f"#### 📅 {module_name} - 学习时间线")
         
-        # 根据模块设置不同的图标
-        icon_map = {
-            "案例库": {"查看病例": "📋", "保存笔记": "✍️", "进入模块": "👁️"},
-            "知识图谱": {"查看模块": "🗺️", "点击节点": "📍", "进入模块": "👁️"},
-            "能力推荐": {"能力自评": "📊", "生成AI推荐": "🤖", "进入模块": "👁️"},
-            "课中互动": {"回答问题": "💬", "提交练习": "📝", "进入模块": "👁️"},
-        }
-        module_icons = icon_map.get(module_name, {"default": "📖"})
-        
         for activity in student_module_activities[:10]:
             action = activity.get('activity_type', '')
-            icon = module_icons.get(action, "👁️")
+            icon = "📖"
+            if "查看" in action:
+                icon = "👁️"
+            elif "保存" in action or "提交" in action:
+                icon = "✍️"
+            elif "回答" in action:
+                icon = "💬"
+            elif "推荐" in action or "AI" in action:
+                icon = "🤖"
+            
             content = activity.get('content_name', '')
             time = activity.get('timestamp', '')
+            if hasattr(time, 'strftime'):
+                time = time.strftime('%Y-%m-%d %H:%M')
             
             st.markdown(f"""
             <div style="padding: 10px; margin: 5px 0; background: #f8f9fa; border-left: 3px solid #4ECDC4; border-radius: 5px;">
@@ -779,12 +726,11 @@ def render_module_student_detail(module_name):
             """, unsafe_allow_html=True)
         
         # 导出该学生数据
-        if student_module_activities:
-            df = pd.DataFrame(student_module_activities)
-            csv = df.to_csv(index=False, encoding='utf-8-sig')
-            st.download_button(
-                label=f"📥 导出{student.get('name', '')}的{module_name}学习记录",
-                data=csv,
-                file_name=f"{student.get('name', 'student')}_{module_name}_{datetime.now().strftime('%Y%m%d')}.csv",
-                mime="text/csv"
-            )
+        df = pd.DataFrame(student_module_activities)
+        csv = df.to_csv(index=False, encoding='utf-8-sig')
+        st.download_button(
+            label=f"📥 导出{student.get('name', '')}的{module_name}学习记录",
+            data=csv,
+            file_name=f"{student.get('name', 'student')}_{module_name}_{datetime.now().strftime('%Y%m%d')}.csv",
+            mime="text/csv"
+        )
