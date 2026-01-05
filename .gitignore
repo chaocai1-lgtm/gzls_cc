@@ -1,21 +1,33 @@
-# 临时文件
-*.env
-.env
-
-# 文档文件
-*.md
-
 # Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
+env/
+venv/
+ENV/
+*.egg-info/
+
+# 测试和调试文件
+test_*.py
+*_test.py
+check_*.py
+debug_*.py
+fix_*.py
 
 # 临时文件
+*.env
+.env
 *.tmp
 temp_*
 *.log
+*.bak
+*_backup.*
+
+# 数据备份和测试
+*_backup.json
+*_test.json
 
 # IDE
 .vscode/
@@ -27,4 +39,5 @@ temp_*
 .DS_Store
 Thumbs.db
 
+# Streamlit
 .streamlit/secrets.toml
