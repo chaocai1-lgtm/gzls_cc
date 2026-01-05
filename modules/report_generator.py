@@ -28,9 +28,9 @@ def get_all_students():
         driver = get_neo4j_driver()
         with driver.session() as session:
             result = session.run("""
-                MATCH (s:Student)
-                RETURN s.id as student_id, s.name as name
-                ORDER BY s.id
+                MATCH (s:mfx_Student)
+                RETURN s.student_id as student_id, s.name as name
+                ORDER BY s.student_id
             """)
             students = [dict(record) for record in result]
         return students
@@ -47,7 +47,7 @@ def get_all_modules():
         driver = get_neo4j_driver()
         with driver.session() as session:
             result = session.run("""
-                MATCH (m:Module)
+                MATCH (m:mfx_Module)
                 RETURN m.id as module_id, m.name as name
                 ORDER BY m.id
             """)
@@ -67,8 +67,8 @@ def get_student_learning_data(student_id):
         with driver.session() as session:
             # 获取学生基本信息
             student_info = session.run("""
-                MATCH (s:Student {id: $student_id})
-                RETURN s.id as student_id, s.name as name
+                MATCH (s:mfx_Student {student_id: $student_id})
+                RETURN s.student_id as student_id, s.name as name
             """, student_id=student_id).single()
             
             if not student_info:
@@ -76,49 +76,34 @@ def get_student_learning_data(student_id):
             
             # 获取学习活动记录
             activities = session.run("""
-                MATCH (s:Student {id: $student_id})-[r:LEARNED]->(k)
+                MATCH (s:mfx_Student {student_id: $student_id})-[:PERFORMED]->(a:mfx_Activity)
                 RETURN 
-                    labels(k) as node_type,
-                    k.name as content_name,
-                    r.activity_type as activity_type,
-                    r.timestamp as timestamp,
-                    r.duration as duration,
-                    r.score as score
-                ORDER BY r.timestamp DESC
+                    a.activity_type as activity_type,
+                    a.module_name as module_name,
+                    a.content_name as content_name,
+                    a.timestamp as timestamp,
+                    a.details as details
+                ORDER BY a.timestamp DESC
                 LIMIT 100
             """, student_id=student_id)
             
             activity_list = [dict(record) for record in activities]
             
-            # 获取知识点掌握情况
-            knowledge_mastery = session.run("""
-                MATCH (s:Student {id: $student_id})-[r:MASTERED]->(k:KnowledgePoint)
+            # 获取学生统计信息
+            stats = session.run("""
+                MATCH (s:mfx_Student {student_id: $student_id})-[:PERFORMED]->(a:mfx_Activity)
                 RETURN 
-                    k.name as knowledge_point,
-                    r.level as mastery_level,
-                    r.last_updated as last_updated
-                ORDER BY r.last_updated DESC
-            """, student_id=student_id)
+                    count(a) as total_activities,
+                    count(DISTINCT a.module_name) as modules_accessed,
+                    max(a.timestamp) as last_activity
+            """, student_id=student_id).single()
             
-            mastery_list = [dict(record) for record in knowledge_mastery]
-            
-            # 获取能力评估
-            abilities = session.run("""
-                MATCH (s:Student {id: $student_id})-[r:HAS_ABILITY]->(a)
-                WHERE labels(a)[0] CONTAINS 'Ability'
-                RETURN 
-                    a.name as ability_name,
-                    r.score as ability_score,
-                    r.last_updated as last_updated
-            """, student_id=student_id)
-            
-            ability_list = [dict(record) for record in abilities]
+            stats_dict = dict(stats) if stats else {}
             
         return {
             'student_info': dict(student_info),
             'activities': activity_list,
-            'knowledge_mastery': mastery_list,
-            'abilities': ability_list
+            'stats': stats_dict
         }
     except Exception as e:
         st.error(f"获取学生数据失败: {e}")
@@ -134,46 +119,46 @@ def get_module_learning_data(module_id):
         with driver.session() as session:
             # 获取板块信息
             module_info = session.run("""
-                MATCH (m:Module {id: $module_id})
+                MATCH (m:mfx_Module {id: $module_id})
                 RETURN m.id as module_id, m.name as name
             """, module_id=module_id).single()
             
             if not module_info:
                 return None
             
-            # 获取该板块下的知识点
+            # 获取该板块下的章节和知识点
             knowledge_points = session.run("""
-                MATCH (m:Module {id: $module_id})-[:CONTAINS*]->(k:KnowledgePoint)
-                RETURN DISTINCT k.name as knowledge_point
+                MATCH (m:mfx_Module {id: $module_id})-[:CONTAINS]->(c:mfx_Chapter)-[:CONTAINS]->(k:mfx_Knowledge)
+                RETURN DISTINCT k.name as knowledge_point, c.name as chapter_name
             """, module_id=module_id)
             
-            kp_list = [record['knowledge_point'] for record in knowledge_points]
+            kp_list = [dict(record) for record in knowledge_points]
             
-            # 获取学生学习情况统计
+            # 获取该板块的学习活动统计
             student_stats = session.run("""
-                MATCH (m:Module {id: $module_id})-[:CONTAINS*]->(k:KnowledgePoint)
-                MATCH (s:Student)-[r:LEARNED]->(k)
+                MATCH (s:mfx_Student)-[:PERFORMED]->(a:mfx_Activity)
+                WHERE a.module_name CONTAINS $module_name
                 RETURN 
+                    s.student_id as student_id,
                     s.name as student_name,
-                    count(DISTINCT k) as learned_count,
-                    avg(r.score) as avg_score,
-                    sum(r.duration) as total_duration
-                ORDER BY learned_count DESC
-            """, module_id=module_id)
+                    count(a) as activity_count,
+                    max(a.timestamp) as last_activity
+                ORDER BY activity_count DESC
+            """, module_name=module_info['name'])
             
             stats_list = [dict(record) for record in student_stats]
             
             # 获取板块总体统计
             overall_stats = session.run("""
-                MATCH (m:Module {id: $module_id})-[:CONTAINS*]->(k:KnowledgePoint)
-                WITH count(DISTINCT k) as total_kp
-                MATCH (m:Module {id: $module_id})-[:CONTAINS*]->(k:KnowledgePoint)
-                OPTIONAL MATCH (s:Student)-[r:LEARNED]->(k)
+                MATCH (m:mfx_Module {id: $module_id})-[:CONTAINS]->(c:mfx_Chapter)-[:CONTAINS]->(k:mfx_Knowledge)
+                WITH count(DISTINCT k) as total_kp, count(DISTINCT c) as total_chapters
+                OPTIONAL MATCH (s:mfx_Student)-[:PERFORMED]->(a:mfx_Activity)
+                WHERE a.module_name IS NOT NULL
                 RETURN 
                     total_kp,
+                    total_chapters,
                     count(DISTINCT s) as student_count,
-                    count(r) as total_activities,
-                    avg(r.score) as avg_score
+                    count(a) as total_activities
             """, module_id=module_id).single()
             
         return {
@@ -196,29 +181,30 @@ def get_overall_learning_data():
         with driver.session() as session:
             # 获取总体统计
             overall_stats = session.run("""
-                MATCH (s:Student)
+                MATCH (s:mfx_Student)
                 WITH count(s) as total_students
-                MATCH (k:KnowledgePoint)
+                MATCH (k:mfx_Knowledge)
                 WITH total_students, count(k) as total_kp
-                MATCH (s:Student)-[r:LEARNED]->(k:KnowledgePoint)
+                OPTIONAL MATCH (s:mfx_Student)-[:PERFORMED]->(a:mfx_Activity)
                 RETURN 
                     total_students,
                     total_kp,
-                    count(r) as total_activities,
-                    avg(r.score) as avg_score,
-                    sum(r.duration) as total_duration
+                    count(a) as total_activities
             """).single()
             
             # 获取各板块学习情况
             module_stats = session.run("""
-                MATCH (m:Module)
-                OPTIONAL MATCH (m)-[:CONTAINS*]->(k:KnowledgePoint)
-                OPTIONAL MATCH (s:Student)-[r:LEARNED]->(k)
+                MATCH (m:mfx_Module)
+                OPTIONAL MATCH (m)-[:CONTAINS]->(c:mfx_Chapter)-[:CONTAINS]->(k:mfx_Knowledge)
+                WITH m, count(DISTINCT k) as kp_count, count(DISTINCT c) as chapter_count
+                OPTIONAL MATCH (s:mfx_Student)-[:PERFORMED]->(a:mfx_Activity)
+                WHERE a.module_name = m.name
                 RETURN 
                     m.name as module_name,
-                    count(DISTINCT k) as kp_count,
+                    kp_count,
+                    chapter_count,
                     count(DISTINCT s) as student_count,
-                    avg(r.score) as avg_score
+                    count(a) as activity_count
                 ORDER BY m.id
             """)
             
@@ -226,51 +212,37 @@ def get_overall_learning_data():
             
             # 获取活跃学生Top10
             active_students = session.run("""
-                MATCH (s:Student)-[r:LEARNED]->()
+                MATCH (s:mfx_Student)-[:PERFORMED]->(a:mfx_Activity)
                 RETURN 
+                    s.student_id as student_id,
                     s.name as student_name,
-                    count(r) as activity_count,
-                    avg(r.score) as avg_score
+                    count(a) as activity_count
                 ORDER BY activity_count DESC
                 LIMIT 10
             """)
             
             active_list = [dict(record) for record in active_students]
             
-            # 获取掌握较好的知识点Top10
-            mastered_kp = session.run("""
-                MATCH (s:Student)-[r:MASTERED]->(k:KnowledgePoint)
-                WHERE r.level >= 3
+            # 获取热门学习内容
+            popular_content = session.run("""
+                MATCH (s:mfx_Student)-[:PERFORMED]->(a:mfx_Activity)
+                WHERE a.content_name IS NOT NULL
                 RETURN 
-                    k.name as knowledge_point,
-                    count(s) as student_count,
-                    avg(r.level) as avg_level
-                ORDER BY student_count DESC, avg_level DESC
+                    a.content_name as content_name,
+                    a.module_name as module_name,
+                    count(DISTINCT s) as student_count,
+                    count(a) as access_count
+                ORDER BY access_count DESC
                 LIMIT 10
             """)
             
-            mastered_list = [dict(record) for record in mastered_kp]
-            
-            # 获取需要加强的知识点
-            weak_kp = session.run("""
-                MATCH (s:Student)-[r:MASTERED]->(k:KnowledgePoint)
-                WHERE r.level < 3
-                RETURN 
-                    k.name as knowledge_point,
-                    count(s) as student_count,
-                    avg(r.level) as avg_level
-                ORDER BY student_count DESC, avg_level ASC
-                LIMIT 10
-            """)
-            
-            weak_list = [dict(record) for record in weak_kp]
+            popular_list = [dict(record) for record in popular_content]
             
         return {
             'overall_stats': dict(overall_stats) if overall_stats else {},
             'module_stats': module_list,
             'active_students': active_list,
-            'mastered_knowledge': mastered_list,
-            'weak_knowledge': weak_list
+            'popular_content': popular_list
         }
     except Exception as e:
         st.error(f"获取整体数据失败: {e}")
@@ -290,14 +262,18 @@ def generate_personal_report_with_ai(student_data):
         # 构建提示词
         student_info = student_data['student_info']
         activities = student_data['activities']
-        knowledge_mastery = student_data['knowledge_mastery']
-        abilities = student_data['abilities']
+        stats = student_data.get('stats', {})
         
         # 统计数据
         activity_count = len(activities)
-        avg_score = sum([a.get('score', 0) or 0 for a in activities]) / max(activity_count, 1)
-        mastery_count = len(knowledge_mastery)
-        high_mastery = len([m for m in knowledge_mastery if m.get('mastery_level', 0) >= 3])
+        total_activities = stats.get('total_activities', activity_count)
+        modules_accessed = stats.get('modules_accessed', 0)
+        
+        # 按模块统计活动
+        module_counts = {}
+        for a in activities:
+            module = a.get('module_name', '未知模块')
+            module_counts[module] = module_counts.get(module, 0) + 1
         
         prompt = f"""
 请作为一名资深的管理学教师，为以下学生生成一份详细的学习分析报告。
@@ -307,31 +283,25 @@ def generate_personal_report_with_ai(student_data):
 - 姓名：{student_info.get('name', 'N/A')}
 
 # 学习数据概览
-- 总学习活动次数：{activity_count}次
-- 平均学习成绩：{avg_score:.2f}分
-- 已掌握知识点：{mastery_count}个
-- 高水平掌握（3级及以上）：{high_mastery}个
+- 总学习活动次数：{total_activities}次
+- 访问模块数：{modules_accessed}个
+
+# 各模块学习情况
+{chr(10).join([f"- {m}: {c}次活动" for m, c in module_counts.items()])}
 
 # 最近学习活动（前10条）
-{chr(10).join([f"- {a.get('activity_type', 'N/A')}: {a.get('content_name', 'N/A')} (得分: {a.get('score', 'N/A')})" for a in activities[:10]])}
-
-# 知识点掌握情况（前10个）
-{chr(10).join([f"- {m.get('knowledge_point', 'N/A')}: 掌握等级 {m.get('mastery_level', 0)}/5" for m in knowledge_mastery[:10]])}
-
-# 能力评估
-{chr(10).join([f"- {ab.get('ability_name', 'N/A')}: {ab.get('ability_score', 0):.1f}分" for ab in abilities])}
+{chr(10).join([f"- [{a.get('activity_type', 'N/A')}] {a.get('module_name', '')}: {a.get('content_name', 'N/A')}" for a in activities[:10]])}
 
 请从以下几个方面生成报告：
-1. **学习表现总结**：总体评价该学生的学习态度、学习频率和学习质量
-2. **优势分析**：指出学生掌握较好的知识点和能力
-3. **不足与建议**：指出需要加强的方面，并给出具体的学习建议
-4. **后续学习建议**：推荐接下来应该重点学习的内容和学习方法
+1. **学习表现总结**：总体评价该学生的学习态度、学习频率和学习覆盖面
+2. **学习特点分析**：分析学生的学习模式和偏好
+3. **后续学习建议**：推荐接下来应该重点学习的内容和学习方法
 
 报告要求：
 - 语言专业、客观、具有建设性
-- 数据和分析结合，既要有定量分析也要有定性评价
-- 给出切实可行的改进建议
-- 报告字数800-1200字
+- 结合数据给出分析
+- 给出切实可行的学习建议
+- 报告字数500-800字
 - 使用 Markdown 格式输出
 """
         
@@ -367,37 +337,39 @@ def generate_module_report_with_ai(module_data):
         student_stats = module_data['student_stats']
         overall_stats = module_data['overall_stats']
         
+        # 提取知识点名称列表
+        kp_names = [kp.get('knowledge_point', 'N/A') for kp in knowledge_points] if knowledge_points else []
+        
         prompt = f"""
 请作为一名资深的管理学教师，为以下学习板块生成一份整体学习分析报告。
 
 # 板块信息
 - 板块名称：{module_info.get('name', 'N/A')}
-- 包含知识点：{len(knowledge_points)}个
+- 包含知识点：{overall_stats.get('total_kp', len(kp_names))}个
+- 包含章节：{overall_stats.get('total_chapters', 0)}个
 
 # 整体统计
 - 参与学习学生数：{overall_stats.get('student_count', 0)}人
 - 总学习活动次数：{overall_stats.get('total_activities', 0)}次
-- 平均成绩：{overall_stats.get('avg_score', 0) or 0:.2f}分
 
 # 知识点列表
-{chr(10).join([f"- {kp}" for kp in knowledge_points[:20]])}
-{f"... 等共{len(knowledge_points)}个知识点" if len(knowledge_points) > 20 else ""}
+{chr(10).join([f"- {kp}" for kp in kp_names[:20]])}
+{f"... 等共{len(kp_names)}个知识点" if len(kp_names) > 20 else ""}
 
 # 学生学习情况Top10
-{chr(10).join([f"- {s.get('student_name', 'N/A')}: 学习了{s.get('learned_count', 0)}个知识点, 平均分{s.get('avg_score', 0) or 0:.1f}" for s in student_stats[:10]])}
+{chr(10).join([f"- {s.get('student_name', 'N/A')}: {s.get('activity_count', 0)}次活动" for s in student_stats[:10]])}
 
 请从以下几个方面生成报告：
 1. **板块学习概况**：该板块的整体学习情况和参与度
-2. **学习效果分析**：学生对该板块内容的掌握程度和学习质量
-3. **突出表现**：学习效果好的学生和掌握较好的知识点
-4. **存在问题**：学习中遇到的共性问题和薄弱环节
-5. **教学建议**：针对该板块的教学改进建议和重点关注内容
+2. **学习效果分析**：学生对该板块内容的掌握程度
+3. **存在问题**：学习中可能遇到的问题和薄弱环节
+4. **教学建议**：针对该板块的教学改进建议
 
 报告要求：
 - 语言专业、客观、具有指导意义
 - 结合数据进行分析
 - 给出切实可行的教学改进建议
-- 报告字数800-1200字
+- 报告字数600-800字
 - 使用 Markdown 格式输出
 """
         
@@ -431,8 +403,7 @@ def generate_overall_report_with_ai(overall_data):
         overall_stats = overall_data['overall_stats']
         module_stats = overall_data['module_stats']
         active_students = overall_data['active_students']
-        mastered_knowledge = overall_data['mastered_knowledge']
-        weak_knowledge = overall_data['weak_knowledge']
+        popular_content = overall_data.get('popular_content', [])
         
         prompt = f"""
 请作为一名资深的管理学教师和教学管理者，为整个管理学课程生成一份全面的教学分析报告。
@@ -441,34 +412,28 @@ def generate_overall_report_with_ai(overall_data):
 - 学生总数：{overall_stats.get('total_students', 0)}人
 - 知识点总数：{overall_stats.get('total_kp', 0)}个
 - 总学习活动：{overall_stats.get('total_activities', 0)}次
-- 平均成绩：{overall_stats.get('avg_score', 0) or 0:.2f}分
-- 总学习时长：{overall_stats.get('total_duration', 0) or 0:.0f}分钟
 
 # 各板块学习情况
-{chr(10).join([f"- {m.get('module_name', 'N/A')}: {m.get('kp_count', 0)}个知识点, {m.get('student_count', 0)}人参与, 平均分{m.get('avg_score', 0) or 0:.1f}" for m in module_stats])}
+{chr(10).join([f"- {m.get('module_name', 'N/A')}: {m.get('kp_count', 0)}个知识点, {m.get('chapter_count', 0)}章节, {m.get('activity_count', 0)}次活动" for m in module_stats])}
 
 # 最活跃学生Top10
-{chr(10).join([f"- {s.get('student_name', 'N/A')}: {s.get('activity_count', 0)}次活动, 平均分{s.get('avg_score', 0) or 0:.1f}" for s in active_students])}
+{chr(10).join([f"- {s.get('student_name', 'N/A') or s.get('student_id', 'N/A')}: {s.get('activity_count', 0)}次活动" for s in active_students])}
 
-# 掌握较好的知识点Top10
-{chr(10).join([f"- {k.get('knowledge_point', 'N/A')}: {k.get('student_count', 0)}人掌握, 平均等级{k.get('avg_level', 0):.1f}" for k in mastered_knowledge])}
-
-# 需要加强的知识点Top10
-{chr(10).join([f"- {k.get('knowledge_point', 'N/A')}: {k.get('student_count', 0)}人掌握不足, 平均等级{k.get('avg_level', 0):.1f}" for k in weak_knowledge])}
+# 热门学习内容Top10
+{chr(10).join([f"- {c.get('content_name', 'N/A')}: {c.get('access_count', 0)}次访问, {c.get('student_count', 0)}人学习" for c in popular_content])}
 
 请从以下几个方面生成报告：
 1. **整体学习状况**：课程的总体学习情况和参与度分析
-2. **各板块对比分析**：不同板块的学习效果对比，找出优势板块和薄弱板块
-3. **学生学习特征**：分析学生群体的学习特点、学习习惯和学习效果分布
-4. **知识点掌握分析**：哪些知识点掌握较好，哪些需要重点关注
-5. **存在的问题**：课程教学中存在的主要问题和挑战
-6. **改进建议**：针对课程整体的教学改进建议和优化方案
+2. **各板块对比分析**：不同板块的学习效果对比
+3. **学生学习特征**：分析学生群体的学习特点和学习习惯
+4. **热门内容分析**：哪些内容最受欢迎
+5. **改进建议**：针对课程整体的教学改进建议
 
 报告要求：
-- 语言专业、系统、具有战略指导意义
+- 语言专业、系统、具有指导意义
 - 数据驱动，深入分析
 - 给出可落地的改进方案
-- 报告字数1200-1500字
+- 报告字数800-1200字
 - 使用 Markdown 格式输出
 """
         
@@ -526,8 +491,13 @@ def render_personal_report_generator():
             st.warning("暂无学生数据")
             return
         
-        # 创建学生选择选项
-        student_options = [f"{s['name']} ({s['student_id']})" for s in students]
+        # 创建学生选择选项 - 处理 name 可能为 None 的情况
+        student_options = []
+        for s in students:
+            name = s.get('name') or '未命名'
+            student_id = s.get('student_id', 'N/A')
+            student_options.append(f"{name} ({student_id})")
+        
         selected_student = st.selectbox("选择学生", student_options)
         
         # 提取学号
@@ -581,12 +551,18 @@ def render_module_report_generator():
             st.warning("暂无板块数据")
             return
         
-        # 创建板块选择选项
-        module_options = [f"{m['name']}" for m in modules]
+        # 创建板块选择选项 - 处理 name 可能为 None 的情况
+        module_options = []
+        module_id_map = {}
+        for m in modules:
+            name = m.get('name') or f"板块{m.get('module_id', 'N/A')}"
+            module_options.append(name)
+            module_id_map[name] = m.get('module_id')
+        
         selected_module = st.selectbox("选择学习板块", module_options)
         
         # 获取板块ID
-        module_id = next((m['module_id'] for m in modules if m['name'] == selected_module), None)
+        module_id = module_id_map.get(selected_module)
     
     with col2:
         st.markdown("##### 报告说明")
