@@ -39,23 +39,14 @@ def get_all_students():
         return []
 
 def get_all_modules():
-    """从Neo4j获取所有学习板块（管理学 glx_前缀）"""
-    if not check_neo4j_available():
-        return []
-    
-    try:
-        driver = get_neo4j_driver()
-        with driver.session() as session:
-            result = session.run("""
-                MATCH (m:glx_Module)
-                RETURN m.id as module_id, m.name as name
-                ORDER BY m.id
-            """)
-            modules = [dict(record) for record in result]
-        return modules
-    except Exception as e:
-        st.error(f"获取板块列表失败: {e}")
-        return []
+    """获取所有系统功能板块（案例库、知识图谱等）"""
+    # 系统功能板块是固定的，不是从数据库查询
+    return [
+        {"module_id": "案例库", "name": "案例库"},
+        {"module_id": "知识图谱", "name": "知识图谱"},
+        {"module_id": "知识点掌握评估", "name": "知识点掌握评估"},
+        {"module_id": "课中互动", "name": "课中互动"}
+    ]
 
 def get_student_learning_data(student_id):
     """获取学生的学习数据"""
@@ -110,63 +101,62 @@ def get_student_learning_data(student_id):
         return None
 
 def get_module_learning_data(module_id):
-    """获取某个板块的整体学习数据"""
+    """获取某个系统板块的学习数据（案例库、知识图谱等）"""
     if not check_neo4j_available():
         return None
     
     try:
         driver = get_neo4j_driver()
         with driver.session() as session:
-            # 获取板块信息
-            module_info = session.run("""
-                MATCH (m:glx_Module {id: $module_id})
-                RETURN m.id as module_id, m.name as name
-            """, module_id=module_id).single()
-            
-            if not module_info:
-                return None
-            
-            # 获取该板块下的章节和知识点
-            knowledge_points = session.run("""
-                MATCH (m:glx_Module {id: $module_id})-[:CONTAINS]->(c:glx_Chapter)-[:CONTAINS]->(k:glx_Knowledge)
-                RETURN DISTINCT k.name as knowledge_point, c.name as chapter_name
-            """, module_id=module_id)
-            
-            kp_list = [dict(record) for record in knowledge_points]
+            # module_id 就是板块名称（案例库、知识图谱等）
+            module_name = module_id
             
             # 获取该板块的学习活动统计
             student_stats = session.run("""
                 MATCH (s:mfx_Student)-[:PERFORMED]->(a:mfx_Activity)
-                WHERE a.module_name CONTAINS $module_name
+                WHERE a.module_name = $module_name
                 RETURN 
                     s.student_id as student_id,
                     s.name as student_name,
                     count(a) as activity_count,
                     max(a.timestamp) as last_activity
                 ORDER BY activity_count DESC
-            """, module_name=module_info['name'])
+            """, module_name=module_name)
             
             stats_list = [dict(record) for record in student_stats]
             
             # 获取板块总体统计
             overall_stats = session.run("""
-                MATCH (m:glx_Module {id: $module_id})-[:CONTAINS]->(c:glx_Chapter)-[:CONTAINS]->(k:glx_Knowledge)
-                WITH count(DISTINCT k) as total_kp, count(DISTINCT c) as total_chapters
-                OPTIONAL MATCH (s:mfx_Student)-[:PERFORMED]->(a:mfx_Activity)
-                WHERE a.module_name IS NOT NULL
+                MATCH (s:mfx_Student)-[:PERFORMED]->(a:mfx_Activity)
+                WHERE a.module_name = $module_name
                 RETURN 
-                    total_kp,
-                    total_chapters,
                     count(DISTINCT s) as student_count,
                     count(a) as total_activities
-            """, module_id=module_id).single()
+            """, module_name=module_name).single()
+            
+            # 获取该板块的热门内容
+            popular_content = session.run("""
+                MATCH (s:mfx_Student)-[:PERFORMED]->(a:mfx_Activity)
+                WHERE a.module_name = $module_name AND a.content_name IS NOT NULL
+                RETURN 
+                    a.content_name as content_name,
+                    count(a) as access_count,
+                    count(DISTINCT s) as student_count
+                ORDER BY access_count DESC
+                LIMIT 10
+            """, module_name=module_name)
+            
+            content_list = [dict(record) for record in popular_content]
             
         return {
-            'module_info': dict(module_info),
-            'knowledge_points': kp_list,
+            'module_info': {'module_id': module_id, 'name': module_name},
             'student_stats': stats_list,
-            'overall_stats': dict(overall_stats) if overall_stats else {}
+            'overall_stats': dict(overall_stats) if overall_stats else {'student_count': 0, 'total_activities': 0},
+            'popular_content': content_list
         }
+    except Exception as e:
+        st.error(f"获取板块数据失败: {e}")
+        return None
     except Exception as e:
         st.error(f"获取板块数据失败: {e}")
         return None
@@ -322,7 +312,7 @@ def generate_personal_report_with_ai(student_data):
         return f"生成报告失败：{str(e)}"
 
 def generate_module_report_with_ai(module_data):
-    """使用AI生成板块学习报告"""
+    """使用AI生成系统板块学习报告（案例库、知识图谱等）"""
     if not module_data:
         return "无法生成报告：板块数据为空"
     
@@ -333,50 +323,56 @@ def generate_module_report_with_ai(module_data):
         )
         
         module_info = module_data['module_info']
-        knowledge_points = module_data['knowledge_points']
         student_stats = module_data['student_stats']
         overall_stats = module_data['overall_stats']
+        popular_content = module_data.get('popular_content', [])
         
-        # 提取知识点名称列表
-        kp_names = [kp.get('knowledge_point', 'N/A') for kp in knowledge_points] if knowledge_points else []
+        # 板块功能说明
+        module_descriptions = {
+            "案例库": "提供管理学真实案例学习，包含案例阅读、AI辅助分析、案例讨论等功能",
+            "知识图谱": "展示管理学知识体系结构，帮助学生理解知识点之间的关联关系",
+            "知识点掌握评估": "基于能力自评进行AI智能推荐学习路径，帮助学生精准提升",
+            "课中互动": "支持课堂实时互动，包括提问、抢答、投票等互动形式"
+        }
+        
+        module_name = module_info.get('name', 'N/A')
+        module_desc = module_descriptions.get(module_name, "系统功能模块")
         
         prompt = f"""
-请作为一名资深的管理学教师，为以下学习板块生成一份整体学习分析报告。
+请作为一名资深的管理学教师，为以下系统功能板块生成一份学习分析报告。
 
 # 板块信息
-- 板块名称：{module_info.get('name', 'N/A')}
-- 包含知识点：{overall_stats.get('total_kp', len(kp_names))}个
-- 包含章节：{overall_stats.get('total_chapters', 0)}个
+- 板块名称：{module_name}
+- 板块功能：{module_desc}
 
 # 整体统计
 - 参与学习学生数：{overall_stats.get('student_count', 0)}人
 - 总学习活动次数：{overall_stats.get('total_activities', 0)}次
 
-# 知识点列表
-{chr(10).join([f"- {kp}" for kp in kp_names[:20]])}
-{f"... 等共{len(kp_names)}个知识点" if len(kp_names) > 20 else ""}
-
 # 学生学习情况Top10
-{chr(10).join([f"- {s.get('student_name', 'N/A')}: {s.get('activity_count', 0)}次活动" for s in student_stats[:10]])}
+{chr(10).join([f"- {s.get('student_name', 'N/A') or s.get('student_id', 'N/A')}: {s.get('activity_count', 0)}次活动" for s in student_stats[:10]]) if student_stats else "暂无学生学习数据"}
+
+# 热门学习内容Top10
+{chr(10).join([f"- {c.get('content_name', 'N/A')}: {c.get('access_count', 0)}次访问" for c in popular_content[:10]]) if popular_content else "暂无内容访问数据"}
 
 请从以下几个方面生成报告：
-1. **板块学习概况**：该板块的整体学习情况和参与度
-2. **学习效果分析**：学生对该板块内容的掌握程度
-3. **存在问题**：学习中可能遇到的问题和薄弱环节
-4. **教学建议**：针对该板块的教学改进建议
+1. **板块使用概况**：该功能板块的整体使用情况和学生参与度
+2. **学习行为分析**：学生在该板块的学习行为特点
+3. **存在问题**：使用中可能遇到的问题和改进空间
+4. **使用建议**：如何更好地利用该板块提升学习效果
 
 报告要求：
 - 语言专业、客观、具有指导意义
 - 结合数据进行分析
-- 给出切实可行的教学改进建议
-- 报告字数600-800字
+- 如果没有学习数据，给出功能介绍和使用建议
+- 报告字数500-700字
 - 使用 Markdown 格式输出
 """
         
         response = client.chat.completions.create(
             model="deepseek-chat",
             messages=[
-                {"role": "system", "content": "你是一位经验丰富的管理学教师，擅长分析课程板块的教学效果并给出专业的教学改进建议。"},
+                {"role": "system", "content": "你是一位经验丰富的管理学教师，擅长分析学习系统各功能板块的使用效果并给出改进建议。"},
                 {"role": "user", "content": prompt}
             ],
             temperature=0.7,
@@ -541,7 +537,7 @@ def render_personal_report_generator():
 
 def render_module_report_generator():
     """渲染板块报告生成界面"""
-    st.markdown("### 📚 板块学习报告")
+    st.markdown("### 📚 系统板块学习报告")
     
     col1, col2 = st.columns([2, 1])
     
@@ -551,15 +547,11 @@ def render_module_report_generator():
             st.warning("暂无板块数据")
             return
         
-        # 创建板块选择选项 - 处理 name 可能为 None 的情况
-        module_options = []
-        module_id_map = {}
-        for m in modules:
-            name = m.get('name') or f"板块{m.get('module_id', 'N/A')}"
-            module_options.append(name)
-            module_id_map[name] = m.get('module_id')
+        # 创建板块选择选项
+        module_options = [m.get('name') for m in modules]
+        module_id_map = {m.get('name'): m.get('module_id') for m in modules}
         
-        selected_module = st.selectbox("选择学习板块", module_options)
+        selected_module = st.selectbox("选择系统板块", module_options)
         
         # 获取板块ID
         module_id = module_id_map.get(selected_module)
@@ -567,12 +559,13 @@ def render_module_report_generator():
     with col2:
         st.markdown("##### 报告说明")
         st.info("""
-        板块报告包括：
-        - 板块学习概况
-        - 学习效果分析
-        - 突出表现
-        - 存在问题
-        - 教学建议
+        系统板块包括：
+        - 📚 案例库
+        - 🗺️ 知识图谱
+        - 🎯 知识点掌握评估
+        - 💬 课中互动
+        
+        报告将分析该板块的使用情况。
         """)
     
     # 生成报告按钮
