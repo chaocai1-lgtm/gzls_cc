@@ -157,9 +157,6 @@ def get_module_learning_data(module_id):
     except Exception as e:
         st.error(f"获取板块数据失败: {e}")
         return None
-    except Exception as e:
-        st.error(f"获取板块数据失败: {e}")
-        return None
 
 def get_overall_learning_data():
     """获取整体学习数据"""
