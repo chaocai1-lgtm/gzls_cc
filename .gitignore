@@ -42,5 +42,7 @@ temp_*
 .DS_Store
 Thumbs.db
 
-# Streamlit
+# Streamlit - 敏感配置文件（本地使用）
 .streamlit/secrets.toml
+.deployment/
+streamlit_deploy_guide.md
