@@ -6,7 +6,7 @@ import streamlit as st
 import random
 from modules.case_library import render_case_library
 from modules.knowledge_graph import render_knowledge_graph
-from modules.knowledge_graph_new import render_knowledge_graph_interactive
+from modules.knowledge_graph_interactive import render_knowledge_graph_interactive
 from modules.ability_recommender import render_ability_recommender
 from modules.classroom_interaction import render_classroom_interaction
 from modules.auth import render_login_page, check_login, get_current_user, logout

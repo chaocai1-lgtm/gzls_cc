@@ -7,6 +7,8 @@ import streamlit as st
 from pyvis.network import Network
 import streamlit.components.v1 as components
 import json
+import tempfile
+import os
 from data.knowledge_graph_graph_format import (
     get_graph_data, 
     get_node_by_id, 
@@ -18,18 +20,25 @@ def create_knowledge_graph_viz(selected_node_id=None):
     创建交互式知识图谱（参考 xjygraph 设计）
     支持点击节点查看详情和高亮关联内容
     """
-    graph_data = get_graph_data()
-    nodes = graph_data.get("nodes", [])
-    relationships = graph_data.get("relationships", [])
-    
-    # 创建网络对象
-    net = Network(
-        height="900px",
-        width="100%",
-        bgcolor="#ffffff",
-        font_color="#333333",
-        directed=True
-    )
+    try:
+        graph_data = get_graph_data()
+        nodes = graph_data.get("nodes", [])
+        relationships = graph_data.get("relationships", [])
+        
+        if not nodes:
+            return None, [], []
+        
+        # 创建网络对象
+        net = Network(
+            height="900px",
+            width="100%",
+            bgcolor="#ffffff",
+            font_color="#333333",
+            directed=True
+        )
+    except Exception as e:
+        print(f"创建知识图谱网络对象失败: {e}")
+        return None, [], []
     
     # 添加所有节点
     for node in nodes:
@@ -123,6 +132,16 @@ def render_knowledge_graph_interactive():
     st.title("🧬 高分子物理知识图谱")
     st.markdown("*基于《高分子物理（第五版）》教材构建 - 点击节点查看详情*")
     
+    # 尝试加载数据
+    try:
+        graph_data = get_graph_data()
+        if not graph_data or not graph_data.get("nodes"):
+            st.error("❌ 知识图谱数据为空，请检查数据源")
+            return
+    except Exception as e:
+        st.error(f"❌ 加载知识图谱数据失败: {str(e)}")
+        return
+    
     # 左侧侧边栏
     with st.sidebar:
         st.markdown("### 📋 知识节点导航")
@@ -183,22 +202,42 @@ def render_knowledge_graph_interactive():
     
     net, nodes, relationships = create_knowledge_graph_viz(selected_node_id)
     
-    # 保存为HTML并嵌入
-    html_content = net.show("temp_graph.html")
+    if net is None:
+        st.error("❌ 无法加载知识图谱数据，请刷新页面重试")
+        return
     
-    # 读取HTML文件
-    with open("temp_graph.html", "r", encoding="utf-8") as f:
-        html_str = f.read()
-    
-    # 准备数据供JavaScript使用
-    nodes_data = {node["id"]: node for node in nodes}
-    relationships_data = relationships
-    nodes_json = json.dumps(nodes_data, ensure_ascii=False)
-    rels_json = json.dumps(relationships_data, ensure_ascii=False)
-    
-    # 注入交互脚本
-    interaction_script = f"""
-    <style>
+    # 使用临时文件保存和读取 HTML
+    try:
+        with tempfile.NamedTemporaryFile(mode="w+", suffix=".html", delete=False, encoding="utf-8") as tmp_file:
+            graph_file = tmp_file.name
+        
+        # 保存网络图谱
+        net.show(graph_file)
+        
+        # 读取 HTML 内容
+        with open(graph_file, "r", encoding="utf-8") as f:
+            html_str = f.read()
+        
+        # 在 Streamlit 中显示
+        st.components.v1.html(html_str, height=950)
+        
+        # 清理临时文件
+        try:
+            os.unlink(graph_file)
+        except:
+            pass
+            
+    except FileNotFoundError as e:
+        st.error(f"❌ 无法生成知识图谱文件: {e}")
+        return
+    except AttributeError as e:
+        st.error(f"❌ 知识图谱渲染出错: {e}")
+        return
+    except Exception as e:
+        st.error(f"❌ 出错: {str(e)}")
+
+
+def render_node_detail_panel(node):
     #node-info-panel {{
         position: fixed;
         top: 20px;
