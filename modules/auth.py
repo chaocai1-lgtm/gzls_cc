@@ -188,7 +188,7 @@ def register_student(student_id, student_name):
         
         with driver.session() as session:
             session.run("""
-                MERGE (s:mfx_Student {student_id: $student_id})
+                MERGE (s:gfz_Student {student_id: $student_id})
                 SET s.name = $name,
                     s.last_login = datetime(),
                     s.login_count = COALESCE(s.login_count, 0) + 1
@@ -210,8 +210,8 @@ def log_activity(student_id, activity_type, module_name, content_id=None, conten
         
         with driver.session() as session:
             session.run("""
-                MERGE (s:mfx_Student {student_id: $student_id})
-                CREATE (a:mfx_Activity {
+                MERGE (s:gfz_Student {student_id: $student_id})
+                CREATE (a:gfz_Activity {
                     id: randomUUID(),
                     activity_type: $activity_type,
                     module_name: $module_name,
@@ -237,8 +237,8 @@ def get_all_students():
         
         with driver.session() as session:
             result = session.run("""
-                MATCH (s:mfx_Student)
-                OPTIONAL MATCH (s)-[:PERFORMED]->(a:mfx_Activity)
+                MATCH (s:gfz_Student)
+                OPTIONAL MATCH (s)-[:PERFORMED]->(a:gfz_Activity)
                 WITH s, count(a) as activity_count
                 RETURN s.student_id as student_id, 
                        s.name as name,
@@ -262,7 +262,7 @@ def get_student_activities(student_id=None, module=None, limit=100):
         
         with driver.session() as session:
             query = """
-                MATCH (s:mfx_Student)-[:PERFORMED]->(a:mfx_Activity)
+                MATCH (s:gfz_Student)-[:PERFORMED]->(a:gfz_Activity)
                 WHERE 1=1
             """
             params = {"limit": limit}
@@ -313,7 +313,7 @@ def get_module_statistics():
         with driver.session() as session:
             # 获取每个模块的详细统计
             result = session.run("""
-                MATCH (s:mfx_Student)-[:PERFORMED]->(a:mfx_Activity)
+                MATCH (s:gfz_Student)-[:PERFORMED]->(a:gfz_Activity)
                 WITH COALESCE(a.module_name, a.module) as module, 
                      count(a) as total_activities,
                      count(DISTINCT s) as unique_students,
@@ -338,7 +338,7 @@ def get_all_modules_statistics():
         
         with driver.session() as session:
             result = session.run("""
-                MATCH (s:mfx_Student)-[:PERFORMED]->(a:mfx_Activity)
+                MATCH (s:gfz_Student)-[:PERFORMED]->(a:gfz_Activity)
                 WITH COALESCE(a.module_name, a.module) as module, count(a) as total_visits, count(DISTINCT s) as unique_students
                 RETURN module, total_visits, unique_students
             """)
@@ -378,7 +378,7 @@ def get_single_module_statistics(module_name):
         with driver.session() as session:
             # 总访问次数和学生数
             result = session.run("""
-                MATCH (s:mfx_Student)-[:PERFORMED]->(a:mfx_Activity)
+                MATCH (s:gfz_Student)-[:PERFORMED]->(a:gfz_Activity)
                 WHERE COALESCE(a.module_name, a.module) = $module
                 RETURN count(a) as total_activities,
                        count(DISTINCT s) as unique_students
@@ -393,7 +393,7 @@ def get_single_module_statistics(module_name):
             
             # 近7天访问
             result = session.run("""
-                MATCH (a:mfx_Activity)
+                MATCH (a:gfz_Activity)
                 WHERE COALESCE(a.module_name, a.module) = $module
                   AND a.timestamp > datetime() - duration('P7D')
                 RETURN count(a) as recent_count
@@ -430,13 +430,13 @@ def delete_student_data(student_id):
         with driver.session() as session:
             # 删除活动记录
             session.run("""
-                MATCH (s:mfx_Student {student_id: $student_id})-[:PERFORMED]->(a:mfx_Activity)
+                MATCH (s:gfz_Student {student_id: $student_id})-[:PERFORMED]->(a:gfz_Activity)
                 DETACH DELETE a
             """, student_id=student_id)
             
             # 删除学生节点
             session.run("""
-                MATCH (s:mfx_Student {student_id: $student_id})
+                MATCH (s:gfz_Student {student_id: $student_id})
                 DETACH DELETE s
             """, student_id=student_id)
     except:
@@ -451,7 +451,7 @@ def delete_all_activities():
         driver = get_neo4j_driver()
         
         with driver.session() as session:
-            session.run("MATCH (a:mfx_Activity) DETACH DELETE a")
+            session.run("MATCH (a:gfz_Activity) DETACH DELETE a")
     except:
         pass
 
@@ -459,7 +459,7 @@ def render_login_page():
     """渲染登录页面"""
     st.markdown("""
     <div style="text-align: center; padding: 50px 0;">
-        <h1>📊 管理学自适应学习系统</h1>
+        <h1>🧪 高分子物理自适应学习系统</h1>
         <p style="font-size: 1.2em; color: #666;">请选择您的身份登录</p>
     </div>
     """, unsafe_allow_html=True)

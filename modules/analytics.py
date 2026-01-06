@@ -30,16 +30,16 @@ def get_activity_summary():
         
         with driver.session() as session:
             # 总学生数
-            result = session.run("MATCH (s:mfx_Student) RETURN count(s) as count")
+            result = session.run("MATCH (s:gfz_Student) RETURN count(s) as count")
             total_students = result.single()['count']
             
             # 总活动数
-            result = session.run("MATCH (a:mfx_Activity) RETURN count(a) as count")
+            result = session.run("MATCH (a:gfz_Activity) RETURN count(a) as count")
             total_activities = result.single()['count']
             
             # 今日活动数
             result = session.run("""
-                MATCH (a:mfx_Activity)
+                MATCH (a:gfz_Activity)
                 WHERE date(a.timestamp) = date()
                 RETURN count(a) as count
             """)
@@ -47,7 +47,7 @@ def get_activity_summary():
             
             # 活跃学生数（7天内）
             result = session.run("""
-                MATCH (s:mfx_Student)-[:PERFORMED]->(a:mfx_Activity)
+                MATCH (s:gfz_Student)-[:PERFORMED]->(a:gfz_Activity)
                 WHERE a.timestamp > datetime() - duration('P7D')
                 RETURN count(DISTINCT s) as count
             """)
@@ -77,7 +77,7 @@ def get_daily_activity_trend(days=7):
         
         with driver.session() as session:
             result = session.run("""
-                MATCH (a:mfx_Activity)
+                MATCH (a:gfz_Activity)
                 WHERE a.timestamp > datetime() - duration('P' + $days + 'D')
                 RETURN date(a.timestamp) as date, count(*) as count
                 ORDER BY date
@@ -106,7 +106,7 @@ def get_module_usage():
         
         with driver.session() as session:
             result = session.run("""
-                MATCH (a:mfx_Activity)
+                MATCH (a:gfz_Activity)
                 RETURN a.module as module, count(*) as count
                 ORDER BY count DESC
             """)
@@ -127,7 +127,7 @@ def get_popular_content(module=None, limit=10):
         
         with driver.session() as session:
             query = """
-                MATCH (a:mfx_Activity)
+                MATCH (a:gfz_Activity)
                 WHERE a.content_name IS NOT NULL
             """
             params = {"limit": limit}
@@ -163,7 +163,7 @@ def get_student_learning_profile(student_id):
         with driver.session() as session:
             # 基本信息
             result = session.run("""
-                MATCH (s:mfx_Student {student_id: $student_id})
+                MATCH (s:gfz_Student {student_id: $student_id})
                 RETURN s.name as name, s.last_login as last_login, s.login_count as login_count
             """, student_id=student_id)
             
@@ -174,7 +174,7 @@ def get_student_learning_profile(student_id):
             
             # 各模块活动统计
             result = session.run("""
-                MATCH (s:mfx_Student {student_id: $student_id})-[:PERFORMED]->(a:mfx_Activity)
+                MATCH (s:gfz_Student {student_id: $student_id})-[:PERFORMED]->(a:gfz_Activity)
                 RETURN a.module as module, count(*) as count
                 ORDER BY count DESC
             """, student_id=student_id)
@@ -183,7 +183,7 @@ def get_student_learning_profile(student_id):
             
             # 学习时间分布
             result = session.run("""
-                MATCH (s:mfx_Student {student_id: $student_id})-[:PERFORMED]->(a:mfx_Activity)
+                MATCH (s:gfz_Student {student_id: $student_id})-[:PERFORMED]->(a:gfz_Activity)
                 RETURN a.timestamp.hour as hour, count(*) as count
                 ORDER BY hour
             """, student_id=student_id)
@@ -192,7 +192,7 @@ def get_student_learning_profile(student_id):
             
             # 查看的内容
             result = session.run("""
-                MATCH (s:mfx_Student {student_id: $student_id})-[:PERFORMED]->(a:mfx_Activity)
+                MATCH (s:gfz_Student {student_id: $student_id})-[:PERFORMED]->(a:gfz_Activity)
                 WHERE a.content_name IS NOT NULL
                 RETURN a.module as module, a.content_name as content, a.timestamp as time
                 ORDER BY a.timestamp DESC
@@ -228,8 +228,8 @@ def get_classroom_interaction_stats():
         with driver.session() as session:
             # 问题统计
             result = session.run("""
-                MATCH (q:mfx_Question)
-                OPTIONAL MATCH (s:mfx_Student)-[r:REPLIED]->(q)
+                MATCH (q:gfz_Question)
+                OPTIONAL MATCH (s:gfz_Student)-[r:REPLIED]->(q)
                 RETURN q.id as question_id,
                        q.text as question_text,
                        q.created_at as created_at,
@@ -243,7 +243,7 @@ def get_classroom_interaction_stats():
             
             # 学生参与度
             result = session.run("""
-                MATCH (s:mfx_Student)-[r:REPLIED]->(q:mfx_Question)
+                MATCH (s:gfz_Student)-[r:REPLIED]->(q:gfz_Question)
                 RETURN s.name as student_name,
                        s.student_id as student_id,
                        count(r) as reply_count

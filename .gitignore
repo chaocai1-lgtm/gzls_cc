@@ -9,6 +9,13 @@ venv/
 ENV/
 *.egg-info/
 
+# 敏感配置文件（包含密钥，绝对不能提交！）
+.streamlit/secrets.toml
+config/local_secrets.py
+.env
+*.env
+.env.local
+
 # 测试和调试文件
 test_*.py
 *_test.py
@@ -19,17 +26,25 @@ fix_*.py
 # 部署测试（保留在仓库中供用户测试）
 # test_deployment.py
 
-# 文档文件（仅本地使用）
-README.md
-*.md
+# 文档文件（按需保留）
+# README.md 需要保留给 GitHub
+# *.md
+
+# 本地笔记和记录（不公开）
+修改记录*.md
+系统完成报告.md
+内容修复说明.md
+快速启动指南*.md
+*物理知识图谱说明.md
+*raw.txt
 
 # 本地部署/初始化脚本（不发布）
 scripts/init_*.py
-.streamlit/secrets.toml.example
+
+# 配置文件示例（可以提交模板）
+# .streamlit/secrets.toml.example 允许提交
 
 # 临时文件
-*.env
-.env
 *.tmp
 temp_*
 *.log

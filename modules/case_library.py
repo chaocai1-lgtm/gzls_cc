@@ -115,7 +115,7 @@ def get_case_detail(case_id):
         with driver.session() as session:
             # 获取病例基本信息
             result = session.run("""
-                MATCH (c:mfx_Case {id: $case_id})
+                MATCH (c:gfz_Case {id: $case_id})
                 RETURN c
             """, case_id=case_id)
             
@@ -127,7 +127,7 @@ def get_case_detail(case_id):
             
             # 获取关联的知识点
             result = session.run("""
-                MATCH (c:mfx_Case {id: $case_id})-[:RELATES_TO]->(k:mfx_Knowledge)
+                MATCH (c:gfz_Case {id: $case_id})-[:RELATES_TO]->(k:gfz_KnowledgePoint)
                 RETURN k.id as id, k.name as name
             """, case_id=case_id)
             
@@ -139,69 +139,139 @@ def get_case_detail(case_id):
 
 
 def adapt_case_for_display(case):
-    """??????????????????"""
-    # ????????????????
-    if "diagnosis" in case and "chief_complaint" in case:
+    """适配高分子物理案例数据格式以便展示"""
+    # 如果已经是展示格式，直接返回
+    if "diagnosis" in case and "chief_complaint" in case and "present_illness" in case:
         return case
     
-    # ???/???????
+    # 解析案例内容（Markdown格式）
+    content = case.get("content", "")
+    
+    # 提取案例背景
+    case_background = ""
+    if "案例背景" in content:
+        parts = content.split("**案例背景**")
+        if len(parts) > 1:
+            bg_section = parts[1].split("**")[0].strip()
+            case_background = bg_section
+    
+    # 提取问题描述
+    problem_desc = ""
+    if "问题描述" in content:
+        parts = content.split("**问题描述**")
+        if len(parts) > 1:
+            prob_section = parts[1].split("**")[0].strip()
+            problem_desc = prob_section
+    
+    # 提取相关理论
+    theory_text = ""
+    if "相关理论" in content:
+        parts = content.split("**相关理论**")
+        if len(parts) > 1:
+            theory_section = parts[1].split("**")[0].strip()
+            theory_text = theory_section
+    
+    # 提取分析要点
+    analysis_points = ""
+    if "分析要点" in content:
+        parts = content.split("**分析要点**")
+        if len(parts) > 1:
+            anal_section = parts[1].split("**")[0].strip()
+            analysis_points = anal_section
+    
+    # 提取解决方案
+    solution_text = ""
+    if "解决方案" in content:
+        parts = content.split("**解决方案**")
+        if len(parts) > 1:
+            solution_text = parts[1].strip()
+    
+    # 提取实验数据（如果有）
+    experiment_data = ""
+    if "实验数据" in content:
+        parts = content.split("**实验数据**")
+        if len(parts) > 1:
+            exp_section = parts[1].split("**")[0].strip()
+            experiment_data = exp_section
+    
+    # 构建适配后的案例
     adapted = case.copy()
+    adapted["title"] = case.get("title", "高分子物理案例")
+    adapted["difficulty"] = "⭐" * int(case.get("difficulty", 3))
+    adapted["chief_complaint"] = case_background if case_background else "本案例基于高分子物理理论，分析材料性能与结构的关系。"
+    adapted["diagnosis"] = case.get("category", "高分子材料案例")
     
-    # ?????
-    adapted["title"] = case.get("title", "?????")
-    adapted["difficulty"] = case.get("difficulty", "??")
+    # 提取关键问题列表
+    problems = []
+    if problem_desc:
+        for line in problem_desc.split('\n'):
+            line = line.strip()
+            if line and (line[0].isdigit() or line.startswith('-') or line.startswith('•')):
+                clean_line = line.lstrip('0123456789.-• ')
+                if clean_line:
+                    problems.append(clean_line)
+    adapted["symptoms"] = problems if problems else ["材料性能问题", "结构-性能关系分析"]
     
-    # ??????
-    adapted["chief_complaint"] = case.get("case_info", "")  # 基本情况
-    adapted["diagnosis"] = f"{case.get('category', '')} - {case.get('subcategory', '')}"  # 分类
-    adapted["symptoms"] = case.get("keywords", [])  # 关键词
+    # 案例详情/背景
+    adapted["present_illness"] = case_background
     
-    # 诊断分析
+    # 材料基本信息
+    chapters_str = ', '.join(case.get('related_chapters', []))
+    adapted["medical_history"] = f"""案例类别：{case.get('category', '高分子材料')}
+难度等级：{case.get('difficulty', 3)}星
+相关章节：{chapters_str}
+核心知识点：{len(case.get('knowledge_points', []))}个"""
+    
+    # 材料性能现状
+    adapted["clinical_manifestation"] = problem_desc if problem_desc else "待分析材料的性能问题与改进方向。"
+    
+    # 数据分析
+    adapted["auxiliary_examination"] = experiment_data if experiment_data else "通过DSC、DMA、TGA等测试手段表征材料性能。"
+    
+    # 诊断分析 - 问题分析板块
+    theory_items = [line.strip().lstrip('-• ') for line in theory_text.split('\n') if line.strip() and line.strip().startswith('-')]
+    if not theory_items:
+        theory_items = case.get("knowledge_points", ["高分子结构理论", "性能调控原理"])
+    
+    analysis_items = [line.strip().lstrip('0123456789. ') for line in analysis_points.split('\n') if line.strip() and len(line.strip()) > 0 and (line.strip()[0].isdigit() or '.' in line.strip()[:3])]
+    if not analysis_items:
+        analysis_items = ["结构表征分析", "性能测试结果", "机理探讨"]
+    
     adapted["diagnosis_analysis"] = {
         "clinical_exam": {
-            "title": "现状调查",
-            "items": [case.get("case_info", "")]
+            "title": "实验数据",
+            "items": [experiment_data] if experiment_data else ["DSC测试结果", "力学性能数据", "流变性能曲线"]
         },
         "radiographic": {
-            "title": "数据分析",
-            "items": [case.get("court_opinion", "")]
+            "title": "测试分析",
+            "items": analysis_items
         },
         "differential": {
             "title": "相关理论",
-            "items": case.get("related_knowledge", [])
+            "items": theory_items
+        },
+        "staging": {
+            "title": "性能评估",
+            "content": f"基于{case.get('category', '材料分析')}的综合性能评价。\n\n该材料在实际应用中的表现需要通过系统性能测试来全面评估。"
         }
     }
     
-    # 问题分析
-    adapted["questions"] = case.get("questions", [])
+    # 解决方案
+    adapted["treatment_plan"] = solution_text if solution_text else "基于高分子物理原理，优化材料配方和加工工艺。"
+    
+    # 学习要点
+    adapted["questions"] = case.get("questions", ["分析材料结构特征", "评估性能影响因素", "提出改进方案"])
+    adapted["knowledge_points"] = case.get("knowledge_points", [])
+    adapted["key_points"] = case.get("knowledge_points", [])
     
     return adapted
 
 
 @st.cache_data(ttl=3600, show_spinner=False)
-def adapt_case_for_display(case):
-    """适配案例数据格式以便展示"""
-    if "diagnosis" in case and "chief_complaint" in case:
-        return case
-    
-    adapted = case.copy()
-    adapted["title"] = case.get("title", "企业案例")
-    adapted["difficulty"] = case.get("difficulty", "中等")
-    adapted["chief_complaint"] = case.get("case_info", "")
-    adapted["diagnosis"] = f"{case.get('category', '')} - {case.get('subcategory', '')}"
-    adapted["symptoms"] = case.get("keywords", [])
-    adapted["diagnosis_analysis"] = {
-        "clinical_exam": {"title": "现状调查", "items": [case.get("case_info", "")]},
-        "radiographic": {"title": "数据分析/问题识别", "items": [case.get("court_opinion", "")]},
-        "differential": {"title": "相关理论", "items": case.get("related_knowledge", [])}
-    }
-    adapted["questions"] = case.get("questions", [])
-    return adapted
-
 def get_all_sample_cases():
     """获取所有案例数据（从data/cases.py模块读取）"""
     try:
-        from data.cases import get_cases
+        from data.cases_gfz import get_cases
         cases = get_cases()
         # 适配展示
         adapted_cases = [adapt_case_for_display(case) for case in cases]
@@ -212,7 +282,7 @@ def get_all_sample_cases():
 
 def render_case_library():
     """渲染案例库页面"""
-    st.title("📚 管理学案例学习中心")
+    st.title("📚 高分子物理案例学习中心")
     
     # 初始化session_state以减少刷新
     if 'case_library_initialized' not in st.session_state:
@@ -226,8 +296,8 @@ def render_case_library():
     
     st.markdown("""
     <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; border-radius: 10px; color: white; margin-bottom: 20px;">
-        <h3 style="margin: 0; color: white;">📊 管理学教学案例库</h3>
-        <p style="margin: 10px 0 0 0; opacity: 1; color: white;">通过真实企业管理案例学习，掌握管理决策与实施的核心技能</p>
+        <h3 style="margin: 0; color: white;">📊 高分子物理教学案例库</h3>
+        <p style="margin: 10px 0 0 0; opacity: 1; color: white;">通过真实高分子材料案例学习，掌握材料设计与性能调控的核心技能</p>
     </div>
     """, unsafe_allow_html=True)
     
@@ -298,9 +368,9 @@ def render_case_library():
             st.markdown("#### 📢 基本情况")
             st.info(selected_case['chief_complaint'])
             
-            # 企业背景
+            # 案例详情
             if 'present_illness' in selected_case:
-                st.markdown("#### 📖 企业背景")
+                st.markdown("#### 📖 案例详情")
                 st.markdown(f"""
                 <div style="background: #fff3e0; padding: 15px; border-radius: 8px; border-left: 4px solid #ff9800; white-space: pre-line;">
                 {selected_case['present_illness']}
@@ -309,8 +379,8 @@ def render_case_library():
             
             col1, col2 = st.columns(2)
             with col1:
-                st.markdown("#### 📋 企业基本信息")
-                medical_history = selected_case.get('medical_history', '企业发展历程良好，无重大危机事件')
+                st.markdown("#### 📋 材料基本信息")
+                medical_history = selected_case.get('medical_history', '材料系统表征良好，无明显缺陷')
                 st.markdown(f"""
                 <div style="background: #fce4ec; padding: 15px; border-radius: 8px; border-left: 4px solid #e91e63; white-space: pre-line;">
                 {medical_history}
@@ -330,9 +400,9 @@ def render_case_library():
                 else:
                     st.markdown(symptoms)
             
-            # 管理现状（新增）
+            # 材料性能现状（新增）
             if 'clinical_manifestation' in selected_case:
-                st.markdown("#### 🔬 管理现状")
+                st.markdown("#### 🔬 材料性能现状")
                 st.markdown(f"""
                 <div style="background: #f3e5f5; padding: 15px; border-radius: 8px; border-left: 4px solid #9c27b0; white-space: pre-line;">
                 {selected_case['clinical_manifestation']}
@@ -359,7 +429,7 @@ def render_case_library():
                 col1, col2 = st.columns(2)
                 
                 with col1:
-                    # 现状调查发现
+                    # 实验数据
                     if 'clinical_exam' in diagnosis_analysis:
                         exam = diagnosis_analysis['clinical_exam']
                         st.markdown(f"#### 🔍 {exam['title']}")
@@ -370,7 +440,7 @@ def render_case_library():
                             </div>
                             """, unsafe_allow_html=True)
                     
-                    # 数据分析
+                    # 测试分析
                     if 'radiographic' in diagnosis_analysis:
                         st.markdown("")
                         xray = diagnosis_analysis['radiographic']
@@ -394,7 +464,7 @@ def render_case_library():
                             </div>
                             """, unsafe_allow_html=True)
                     
-                    # 问题程度分析
+                    # 性能评估
                     if 'staging' in diagnosis_analysis:
                         st.markdown("")
                         staging = diagnosis_analysis['staging']
@@ -410,7 +480,7 @@ def render_case_library():
                 st.markdown("#### 📊 关键发现")
                 key_points = ensure_list(
                     selected_case.get('key_points'),
-                    ['理解问题背景与成因', '分析关键影响因素', '识别核心管理矛盾']
+                    ['理解实验背景与现象', '分析关键影响因素', '识别性能调控关键']
                 )
                 for i, point in enumerate(key_points, 1):
                     st.markdown(f"""

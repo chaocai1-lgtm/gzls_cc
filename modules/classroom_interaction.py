@@ -51,11 +51,11 @@ def create_question(question_text):
         
         with driver.session() as session:
             # 先关闭所有活跃问题
-            session.run("MATCH (q:mfx_Question {status: 'active'}) SET q.status = 'closed'")
+            session.run("MATCH (q:gfz_Question {status: 'active'}) SET q.status = 'closed'")
             
             # 创建新问题
             result = session.run("""
-                CREATE (q:mfx_Question {
+                CREATE (q:gfz_Question {
                     id: randomUUID(),
                     text: $text,
                     created_at: datetime(),
@@ -80,7 +80,7 @@ def get_active_question():
         
         with driver.session() as session:
             result = session.run("""
-                MATCH (q:mfx_Question {status: 'active'})
+                MATCH (q:gfz_Question {status: 'active'})
                 RETURN q.id as id, q.text as text, q.created_at as created_at
                 ORDER BY q.created_at DESC
                 LIMIT 1
@@ -103,8 +103,8 @@ def submit_reply(question_id, student_name, content):
         
         with driver.session() as session:
             session.run("""
-                MATCH (q:mfx_Question {id: $question_id})
-                MERGE (s:mfx_Student {name: $student_name})
+                MATCH (q:gfz_Question {id: $question_id})
+                MERGE (s:gfz_Student {name: $student_name})
                 CREATE (s)-[:REPLIED {
                     content: $content,
                     timestamp: datetime(),
@@ -124,7 +124,7 @@ def get_recent_replies(question_id, limit=20):
         
         with driver.session() as session:
             result = session.run("""
-                MATCH (s:mfx_Student)-[r:REPLIED]->(q:mfx_Question {id: $question_id})
+                MATCH (s:gfz_Student)-[r:REPLIED]->(q:gfz_Question {id: $question_id})
                 RETURN s.name as student_name, r.content as content, r.timestamp as timestamp
                 ORDER BY r.timestamp DESC
                 LIMIT $limit
@@ -300,9 +300,9 @@ def render_classroom_interaction():
             st.markdown("当老师还没有发布问题时，你可以先练习回答以下问题：")
             
             practice_questions = [
-                "管理的四大职能是什么？它们之间的关系如何？",
-                "泰勒的科学管理理论的核心内容有哪些？",
-                "决策过程包括哪些主要步骤？如何提高决策质量？"
+                "聚合物的玻璃化转变温度Tg受哪些因素影响？如何调控？",
+                "橡胶弹性的本质是什么？与金属弹性有何不同？",
+                "如何通过DSC曲线判断聚合物的结晶度和熔点？"
             ]
             
             selected_practice = st.selectbox("选择练习题目", practice_questions)

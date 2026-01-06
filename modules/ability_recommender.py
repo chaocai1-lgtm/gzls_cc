@@ -8,18 +8,24 @@ from openai import OpenAI
 from config.settings import *
 
 
-# 能力ID到中文名称的映射
+# 能力ID到中文名称的映射（高分子物理）
 ABILITY_ID_TO_NAME = {
-    "glx_ability_01": "战略思维能力",
-    "glx_ability_02": "决策分析能力", 
-    "glx_ability_03": "计划组织能力",
-    "glx_ability_04": "组织设计能力",
-    "glx_ability_05": "人力资源管理能力",
-    "glx_ability_06": "领导影响能力",
-    "glx_ability_07": "激励赋能能力",
-    "glx_ability_08": "沟通协调能力",
-    "glx_ability_09": "控制评估能力",
-    "glx_ability_10": "创新变革能力",
+    "GFZ_A001": "高分子结构分析能力",
+    "GFZ_A002": "高分子结晶分析能力",
+    "GFZ_A003": "高分子溶液性质理解",
+    "GFZ_A004": "分子量测定与表征",
+    "GFZ_A005": "热转变行为分析",
+    "GFZ_A006": "橡胶弹性理解",
+    "GFZ_A007": "黏弹性分析",
+    "GFZ_A008": "力学性能评价",
+    "GFZ_A009": "流变行为分析",
+    "GFZ_A010": "电学性能理解",
+    "GFZ_A011": "热学性能分析",
+    "GFZ_A012": "表面与界面性质",
+    "GFZ_A013": "共混与复合材料设计",
+    "GFZ_A014": "材料改性设计",
+    "GFZ_A015": "加工工艺设计",
+    "GFZ_A016": "材料问题综合分析与解决",
 }
 
 def get_ability_name(ability_id):
@@ -59,6 +65,7 @@ def log_ability_activity(activity_type, content_id=None, content_name=None, deta
 
 def get_all_abilities():
     """获取所有能力列表"""
+    # 如果Neo4j不可用，直接返回空列表（将在调用处使用fallback）
     if not check_neo4j_available():
         return []
     
@@ -67,7 +74,7 @@ def get_all_abilities():
         
         with driver.session() as session:
             result = session.run("""
-                MATCH (a:mfx_Ability)
+                MATCH (a:gfz_Ability)
                 RETURN a.id as id, a.name as name, a.category as category, a.description as description
                 ORDER BY a.category, a.name
             """)
@@ -76,7 +83,11 @@ def get_all_abilities():
         
         # 不关闭driver，保持连接池复用
         return abilities
-    except Exception:
+    except Exception as e:
+        # 查询失败时记录错误并返回空列表
+        import traceback
+        print(f"[能力查询失败] {str(e)}")
+        traceback.print_exc()
         return []
 
 def analyze_learning_path(selected_abilities, mastery_levels, abilities_info=None):
@@ -91,7 +102,7 @@ def analyze_learning_path(selected_abilities, mastery_levels, abilities_info=Non
             # 获取能力需要的知识点
             with driver.session() as session:
                 result = session.run("""
-                MATCH (a:mfx_Ability)-[r:REQUIRES]->(k:mfx_Knowledge)
+                MATCH (a:gfz_Ability)-[r:REQUIRES]->(k:gfz_KnowledgePoint)
                 WHERE a.id IN $abilities
                 RETURN k.id as kp_id, k.name as kp_name, k.difficulty as difficulty, 
                        collect(a.name) as required_by, max(r.weight) as max_weight
@@ -106,18 +117,24 @@ def analyze_learning_path(selected_abilities, mastery_levels, abilities_info=Non
     
     # 如果没有从数据库获取到数据，使用示例知识点
     if not required_knowledge:
-        # 根据选择的能力生成相关知识点
+        # 根据选择的能力生成相关知识点（高分子物理）
         ability_knowledge_map = {
-            "glx_ability_01": [("SWOT分析方法", "基础", 0.9), ("波特五力模型", "中等", 0.8), ("PEST分析", "基础", 0.7)],
-            "glx_ability_02": [("决策树分析", "中等", 0.9), ("方案评估方法", "基础", 0.8), ("风险评估技术", "中等", 0.7)],
-            "glx_ability_03": [("目标管理(MBO)", "基础", 0.9), ("甘特图制作", "基础", 0.8), ("资源配置方法", "中等", 0.7)],
-            "glx_ability_04": [("组织结构类型", "基础", 0.9), ("职能制与事业部制", "中等", 0.8), ("矩阵式组织", "中等", 0.8)],
-            "glx_ability_05": [("招聘选拔技术", "中等", 0.9), ("绩效考核方法", "中等", 0.8), ("培训体系设计", "高级", 0.7)],
-            "glx_ability_06": [("领导风格理论", "基础", 0.9), ("情境领导模型", "中等", 0.9), ("变革型领导", "高级", 0.8)],
-            "glx_ability_07": [("马斯洛需求层次理论", "基础", 0.9), ("双因素理论", "中等", 0.9), ("期望理论", "中等", 0.8)],
-            "glx_ability_08": [("沟通技巧", "基础", 0.9), ("冲突管理", "中等", 0.8), ("团队协作方法", "基础", 0.7)],
-            "glx_ability_09": [("平衡计分卡", "高级", 0.9), ("KPI设计方法", "中等", 0.8), ("绩效面谈技巧", "中等", 0.8)],
-            "glx_ability_10": [("全面质量管理", "中等", 0.9), ("六西格玛", "高级", 0.8), ("ISO质量体系", "中等", 0.8)],
+            "GFZ_A001": [("高分子链结构", "基础", 0.9), ("构型与构象", "中等", 0.8), ("共聚物结构", "基础", 0.7)],
+            "GFZ_A002": [("晶体结构", "基础", 0.9), ("结晶动力学", "中等", 0.8), ("晶态形态", "中等", 0.7)],
+            "GFZ_A003": [("溶解热力学", "中等", 0.9), ("溶液相平衡", "高级", 0.8), ("溶剂选择", "基础", 0.7)],
+            "GFZ_A004": [("粘度法测Mw", "基础", 0.9), ("GPC技术", "中等", 0.8), ("光散射法", "高级", 0.7)],
+            "GFZ_A005": [("玻璃化转变", "基础", 0.9), ("Tg影响因素", "中等", 0.8), ("熔融转变", "中等", 0.8)],
+            "GFZ_A006": [("橡胶弹性理论", "基础", 0.9), ("交联网络", "中等", 0.9), ("弹性模量", "基础", 0.8)],
+            "GFZ_A007": [("松弛过程", "中等", 0.9), ("蠕变行为", "基础", 0.8), ("动态力学", "高级", 0.8)],
+            "GFZ_A008": [("应力-应变", "基础", 0.9), ("拉伸强度", "基础", 0.8), ("断裂机理", "中等", 0.7)],
+            "GFZ_A009": [("切黏度", "基础", 0.9), ("非牛顿流体", "中等", 0.8), ("熔体弹性", "高级", 0.8)],
+            "GFZ_A010": [("介电性能", "中等", 0.9), ("导电机理", "高级", 0.8), ("导电填料", "中等", 0.7)],
+            "GFZ_A011": [("热导率", "基础", 0.9), ("热稳定性", "中等", 0.8), ("热膨胀系数", "基础", 0.7)],
+            "GFZ_A012": [("表面张力", "基础", 0.9), ("界面粘结", "中等", 0.8), ("表面改性", "高级", 0.8)],
+            "GFZ_A013": [("相容性", "中等", 0.9), ("增容技术", "高级", 0.8), ("复合材料设计", "高级", 0.8)],
+            "GFZ_A014": [("增韧改性", "中等", 0.9), ("功能化改性", "高级", 0.8), ("表面改性", "中等", 0.7)],
+            "GFZ_A015": [("注塑工艺", "基础", 0.9), ("挤出成型", "基础", 0.8), ("流变与加工", "中等", 0.8)],
+            "GFZ_A016": [("失效分析", "高级", 0.9), ("性能优化", "高级", 0.8), ("材料选择", "中等", 0.8)],
         }
         
         for ability_id in selected_abilities:
@@ -174,7 +191,7 @@ def analyze_learning_path(selected_abilities, mastery_levels, abilities_info=Non
         )
         
         prompt = f"""
-你是一位管理学教学专家。学生对以下知识点的当前掌握情况如下：
+你是一位高分子物理教学专家。学生对以下知识点的当前掌握情况如下：
 
 {', '.join(ability_names)}
 
@@ -210,12 +227,12 @@ def analyze_learning_path(selected_abilities, mastery_levels, abilities_info=Non
 基于您选择的能力目标，建议按以下顺序学习：
 
 **第一阶段：基础理论学习**
-1. 管理学基本概念 - 了解管理的定义、职能和原则
-2. 组织结构基础 - 掌握各种组织结构形式
+1. 高分子链结构 - 了解化学组成、构型、构象等基础概念
+2. 凝聚态结构 - 掌握晶态、非晶态等结构形式
 
-**第二阶段：核心技能培养**
-3. 战略分析方法 - 学习SWOT、波特五力等工具
-4. 决策分析技能 - 练习决策树、方案评估
+**第二阶段：核心性能分析**
+3. 热转变行为 - 学习Tg、Tm测定与影响因素
+4. 力学性能 - 掌握应力应变、强度、韧性等性能
 
 **第三阶段：综合能力提升**
 5. 管理方案设计 - 整合知识进行系统决策
@@ -236,35 +253,73 @@ def render_ability_recommender():
     log_ability_activity("进入模块", details="访问知识点掌握评估")
     
     st.markdown("""
-    评估你对各个管理学知识点的掌握程度，系统将基于AI为你推荐个性化的学习路径和提升方案。
+    评估你对各个高分子物理知识点的掌握程度，系统将基于AI为你推荐个性化的学习路径和提升方案。
     """)
     
     # 获取所有能力
     abilities = get_all_abilities()
     
-    # 始终使用完整的10个知识点列表（无论数据库有无数据）
-    abilities = [
-        {"id": "glx_ability_01", "name": "战略管理基础知识", "category": "战略管理", "description": "包括SWOT分析、波特五力模型、PEST分析等战略分析工具和方法"},
-        {"id": "glx_ability_02", "name": "决策分析方法", "category": "决策管理", "description": "包括决策树、方案评估、风险评估等科学决策的理论和工具"},
-        {"id": "glx_ability_03", "name": "计划与目标管理", "category": "计划管理", "description": "包括目标管理(MBO)、甘特图、资源配置等计划制定相关知识"},
-        {"id": "glx_ability_04", "name": "组织结构设计", "category": "组织管理", "description": "包括职能制、事业部制、矩阵式组织等各种组织结构形式"},
-        {"id": "glx_ability_05", "name": "人力资源管理", "category": "人力资源", "description": "包括招聘选拔、绩效考核、培训开发等人力资源管理核心内容"},
-        {"id": "glx_ability_06", "name": "领导理论与实践", "category": "领导管理", "description": "包括领导风格理论、情境领导模型、变革型领导等相关知识"},
-        {"id": "glx_ability_07", "name": "激励理论与应用", "category": "激励管理", "description": "包括马斯洛需求层次、双因素理论、期望理论等激励理论知识"},
-        {"id": "glx_ability_08", "name": "沟通与协调技巧", "category": "沟通管理", "description": "包括沟通技巧、冲突管理、团队协作等沟通协调相关知识"},
-        {"id": "glx_ability_09", "name": "绩效管理体系", "category": "控制管理", "description": "包括平衡计分卡、KPI设计、绩效面谈等绩效管理相关知识"},
-        {"id": "glx_ability_10", "name": "质量与创新管理", "category": "创新管理", "description": "包括全面质量管理、六西格玛、ISO体系等质量管理知识"},
-    ]
+    # 如果数据库没有数据，使用高分子物理能力列表
+    if not abilities:
+        abilities = [
+            {"id": "GFZ_A001", "name": "高分子结构分析能力", "category": "基础理论", "description": "包括高分子链结构、构型构象、共聚物序列结构等基础知识"},
+            {"id": "GFZ_A002", "name": "高分子结晶分析能力", "category": "基础理论", "description": "包括晶体结构、结晶动力学、球晶形态等结晶相关知识"},
+            {"id": "GFZ_A003", "name": "高分子溶液性质理解", "category": "基础理论", "description": "包括溶解热力学、相平衡、溶液性质等相关理论"},
+            {"id": "GFZ_A004", "name": "分子量测定与表征", "category": "基础理论", "description": "包括粘度法、GPC、光散射等分子量测定方法"},
+            {"id": "GFZ_A005", "name": "热转变行为分析", "category": "性能分析", "description": "包括玻璃化转变、熔融转变、DSC分析等热性能"},
+            {"id": "GFZ_A006", "name": "橡胶弹性理解", "category": "性能分析", "description": "包括统计理论、唯象理论、交联网络等橡胶弹性知识"},
+            {"id": "GFZ_A007", "name": "黏弹性分析", "category": "性能分析", "description": "包括松弛、蠕变、动态力学性能等黏弹性行为"},
+            {"id": "GFZ_A008", "name": "力学性能评价", "category": "性能分析", "description": "包括应力应变、屈服、断裂等力学行为分析"},
+            {"id": "GFZ_A009", "name": "流变行为分析", "category": "性能分析", "description": "包括切黏度、非牛顿流体、熔体弹性等流变性能"},
+            {"id": "GFZ_A010", "name": "电学性能理解", "category": "功能性能", "description": "包括介电性能、导电机理、导电填料等电学知识"},
+            {"id": "GFZ_A011", "name": "热学性能分析", "category": "功能性能", "description": "包括热导率、热稳定性、热膨胀系数等热学性能"},
+            {"id": "GFZ_A012", "name": "表面与界面性质", "category": "功能性能", "description": "包括表面张力、界面粘结、表面改性等界面知识"},
+            {"id": "GFZ_A013", "name": "共混与复合材料设计", "category": "设计开发", "description": "包括相容性、增容技术、复合材料设计等知识"},
+            {"id": "GFZ_A014", "name": "材料改性设计", "category": "设计开发", "description": "包括增韧、功能化、表面改性等改性技术"},
+            {"id": "GFZ_A015", "name": "加工工艺设计", "category": "设计开发", "description": "包括注塑、挤出、流变与加工等加工工艺知识"},
+            {"id": "GFZ_A016", "name": "材料问题综合分析与解决", "category": "综合应用", "description": "包括失效分析、性能优化、材料选择等综合能力"},
+        ]
     
-    # 按类别分组
+    # 按类别分组，过滤掉None类别
     categories = {}
     for ability in abilities:
-        cat = ability['category']
-        if cat not in categories:
+        cat = ability.get('category')
+        if cat and cat not in categories:
             categories[cat] = []
-        categories[cat].append(ability)
+        if cat:
+            categories[cat].append(ability)
     
-    # 1. 知识点选择 - 使用form避免每次交互都刷新页面
+    # 如果分类后没有数据，强制使用fallback数据
+    if not categories:
+        st.warning("⚠️ 数据分类失败，使用默认能力列表")
+        abilities = [
+            {"id": "GFZ_A001", "name": "高分子结构分析能力", "category": "基础理论", "description": "包括高分子链结构、构型构象、共聚物序列结构等基础知识"},
+            {"id": "GFZ_A002", "name": "高分子结晶分析能力", "category": "基础理论", "description": "包括晶体结构、结晶动力学、球晶形态等结晶相关知识"},
+            {"id": "GFZ_A003", "name": "高分子溶液性质理解", "category": "基础理论", "description": "包括溶解热力学、相平衡、溶液性质等相关理论"},
+            {"id": "GFZ_A004", "name": "分子量测定与表征", "category": "基础理论", "description": "包括粘度法、GPC、光散射等分子量测定方法"},
+            {"id": "GFZ_A005", "name": "热转变行为分析", "category": "性能分析", "description": "包括玻璃化转变、熔融转变、DSC分析等热性能"},
+            {"id": "GFZ_A006", "name": "橡胶弹性理解", "category": "性能分析", "description": "包括统计理论、唯象理论、交联网络等橡胶弹性知识"},
+            {"id": "GFZ_A007", "name": "黏弹性分析", "category": "性能分析", "description": "包括松弛、蠕变、动态力学性能等黏弹性行为"},
+            {"id": "GFZ_A008", "name": "力学性能评价", "category": "性能分析", "description": "包括应力应变、屈服、断裂等力学行为分析"},
+            {"id": "GFZ_A009", "name": "流变行为分析", "category": "性能分析", "description": "包括切黏度、非牛顿流体、熔体弹性等流变性能"},
+            {"id": "GFZ_A010", "name": "电学性能理解", "category": "功能性能", "description": "包括介电性能、导电机理、导电填料等电学知识"},
+            {"id": "GFZ_A011", "name": "热学性能分析", "category": "功能性能", "description": "包括热导率、热稳定性、热膨胀系数等热学性能"},
+            {"id": "GFZ_A012", "name": "表面与界面性质", "category": "功能性能", "description": "包括表面张力、界面粘结、表面改性等界面知识"},
+            {"id": "GFZ_A013", "name": "共混与复合材料设计", "category": "设计开发", "description": "包括相容性、增容技术、复合材料设计等知识"},
+            {"id": "GFZ_A014", "name": "材料改性设计", "category": "设计开发", "description": "包括增韧、功能化、表面改性等改性技术"},
+            {"id": "GFZ_A015", "name": "加工工艺设计", "category": "设计开发", "description": "包括注塑、挤出、流变与加工等加工工艺知识"},
+            {"id": "GFZ_A016", "name": "材料问题综合分析与解决", "category": "综合应用", "description": "包括失效分析、性能优化、材料选择等综合能力"},
+        ]
+        # 重新分类
+        categories = {}
+        for ability in abilities:
+            cat = ability.get('category')
+            if cat and cat not in categories:
+                categories[cat] = []
+            if cat:
+                categories[cat].append(ability)
+    
+    # 1. 知识点选择
     st.subheader("1️⃣ 评估知识点掌握程度")
     
     # 初始化session_state
@@ -272,6 +327,11 @@ def render_ability_recommender():
         st.session_state.selected_abilities = []
     if 'mastery_levels' not in st.session_state:
         st.session_state.mastery_levels = {}
+    
+    # 最终检查：如果还是没有数据，显示错误
+    if not categories:
+        st.error("❌ 无法加载知识点数据，请联系管理员")
+        return
     
     # 使用expander分类显示知识点，减少页面复杂度
     for category, abs_list in categories.items():
@@ -386,7 +446,7 @@ def render_ability_recommender():
                 # 显示评估的知识点掌握程度
                 st.markdown("##### 📊 知识点掌握程度评估:")
                 abilities_display = st.empty()
-                abilities_html = ""
+                abilities_html = "<div style='line-height: 2.0;'>"
                 for ability_id in selected_abilities:
                     ability_name = next((a['name'] for a in abilities if a['id'] == ability_id), ability_id)
                     mastery = mastery_levels.get(ability_id, 0.5)
@@ -397,6 +457,7 @@ def render_ability_recommender():
                         {ability_name} ({int(mastery*100)}%)
                     </span>
                     """
+                abilities_html += "</div>"
                 abilities_display.markdown(abilities_html, unsafe_allow_html=True)
                 
                 # 步骤2: 知识匹配

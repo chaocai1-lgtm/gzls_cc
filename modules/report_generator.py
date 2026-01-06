@@ -28,7 +28,7 @@ def get_all_students():
         driver = get_neo4j_driver()
         with driver.session() as session:
             result = session.run("""
-                MATCH (s:mfx_Student)
+                MATCH (s:gfz_Student)
                 RETURN s.student_id as student_id, s.name as name
                 ORDER BY s.student_id
             """)
@@ -58,7 +58,7 @@ def get_student_learning_data(student_id):
         with driver.session() as session:
             # 获取学生基本信息
             student_info = session.run("""
-                MATCH (s:mfx_Student {student_id: $student_id})
+                MATCH (s:gfz_Student {student_id: $student_id})
                 RETURN s.student_id as student_id, s.name as name
             """, student_id=student_id).single()
             
@@ -67,7 +67,7 @@ def get_student_learning_data(student_id):
             
             # 获取学习活动记录
             activities = session.run("""
-                MATCH (s:mfx_Student {student_id: $student_id})-[:PERFORMED]->(a:mfx_Activity)
+                MATCH (s:gfz_Student {student_id: $student_id})-[:PERFORMED]->(a:gfz_Activity)
                 RETURN 
                     a.activity_type as activity_type,
                     a.module_name as module_name,
@@ -82,7 +82,7 @@ def get_student_learning_data(student_id):
             
             # 获取学生统计信息
             stats = session.run("""
-                MATCH (s:mfx_Student {student_id: $student_id})-[:PERFORMED]->(a:mfx_Activity)
+                MATCH (s:gfz_Student {student_id: $student_id})-[:PERFORMED]->(a:gfz_Activity)
                 RETURN 
                     count(a) as total_activities,
                     count(DISTINCT a.module_name) as modules_accessed,
@@ -113,7 +113,7 @@ def get_module_learning_data(module_id):
             
             # 获取该板块的学习活动统计
             student_stats = session.run("""
-                MATCH (s:mfx_Student)-[:PERFORMED]->(a:mfx_Activity)
+                MATCH (s:gfz_Student)-[:PERFORMED]->(a:gfz_Activity)
                 WHERE a.module_name = $module_name
                 RETURN 
                     s.student_id as student_id,
@@ -127,7 +127,7 @@ def get_module_learning_data(module_id):
             
             # 获取板块总体统计
             overall_stats = session.run("""
-                MATCH (s:mfx_Student)-[:PERFORMED]->(a:mfx_Activity)
+                MATCH (s:gfz_Student)-[:PERFORMED]->(a:gfz_Activity)
                 WHERE a.module_name = $module_name
                 RETURN 
                     count(DISTINCT s) as student_count,
@@ -136,7 +136,7 @@ def get_module_learning_data(module_id):
             
             # 获取该板块的热门内容
             popular_content = session.run("""
-                MATCH (s:mfx_Student)-[:PERFORMED]->(a:mfx_Activity)
+                MATCH (s:gfz_Student)-[:PERFORMED]->(a:gfz_Activity)
                 WHERE a.module_name = $module_name AND a.content_name IS NOT NULL
                 RETURN 
                     a.content_name as content_name,
@@ -167,12 +167,12 @@ def get_overall_learning_data():
         driver = get_neo4j_driver()
         with driver.session() as session:
             # 获取总体统计
-            overall_stats = session.run("""
-                MATCH (s:mfx_Student)
+            overall_stats = session.run(f"""
+                MATCH (s:{NEO4J_LABEL_STUDENT_GFZ})
                 WITH count(s) as total_students
-                MATCH (k:glx_Knowledge)
+                MATCH (k:{NEO4J_LABEL_KNOWLEDGE_GFZ})
                 WITH total_students, count(k) as total_kp
-                OPTIONAL MATCH (s:mfx_Student)-[:PERFORMED]->(a:mfx_Activity)
+                OPTIONAL MATCH (s:{NEO4J_LABEL_STUDENT_GFZ})-[:PERFORMED]->(a:{NEO4J_LABEL_ACTIVITY_GFZ})
                 RETURN 
                     total_students,
                     total_kp,
@@ -180,11 +180,11 @@ def get_overall_learning_data():
             """).single()
             
             # 获取各板块学习情况
-            module_stats = session.run("""
-                MATCH (m:glx_Module)
-                OPTIONAL MATCH (m)-[:CONTAINS]->(c:glx_Chapter)-[:CONTAINS]->(k:glx_Knowledge)
+            module_stats = session.run(f"""
+                MATCH (m:{NEO4J_LABEL_MODULE_GFZ})
+                OPTIONAL MATCH (m)-[:CONTAINS]->(c:{NEO4J_LABEL_CHAPTER_GFZ})-[:CONTAINS]->(k:{NEO4J_LABEL_KNOWLEDGE_GFZ})
                 WITH m, count(DISTINCT k) as kp_count, count(DISTINCT c) as chapter_count
-                OPTIONAL MATCH (s:mfx_Student)-[:PERFORMED]->(a:mfx_Activity)
+                OPTIONAL MATCH (s:{NEO4J_LABEL_STUDENT_GFZ})-[:PERFORMED]->(a:{NEO4J_LABEL_ACTIVITY_GFZ})
                 WHERE a.module_name = m.name
                 RETURN 
                     m.name as module_name,
@@ -199,7 +199,7 @@ def get_overall_learning_data():
             
             # 获取活跃学生Top10
             active_students = session.run("""
-                MATCH (s:mfx_Student)-[:PERFORMED]->(a:mfx_Activity)
+                MATCH (s:gfz_Student)-[:PERFORMED]->(a:gfz_Activity)
                 RETURN 
                     s.student_id as student_id,
                     s.name as student_name,
@@ -212,7 +212,7 @@ def get_overall_learning_data():
             
             # 获取热门学习内容
             popular_content = session.run("""
-                MATCH (s:mfx_Student)-[:PERFORMED]->(a:mfx_Activity)
+                MATCH (s:gfz_Student)-[:PERFORMED]->(a:gfz_Activity)
                 WHERE a.content_name IS NOT NULL
                 RETURN 
                     a.content_name as content_name,
@@ -263,7 +263,7 @@ def generate_personal_report_with_ai(student_data):
             module_counts[module] = module_counts.get(module, 0) + 1
         
         prompt = f"""
-请作为一名资深的管理学教师，为以下学生生成一份详细的学习分析报告。
+请作为一名资深的高分子物理教师，为以下学生生成一份详细的学习分析报告。
 
 # 学生信息
 - 学号：{student_info.get('student_id', 'N/A')}
@@ -295,7 +295,7 @@ def generate_personal_report_with_ai(student_data):
         response = client.chat.completions.create(
             model="deepseek-chat",
             messages=[
-                {"role": "system", "content": "你是一位经验丰富的管理学教师，擅长分析学生的学习数据并给出专业的指导建议。"},
+                {"role": "system", "content": "你是一位经验丰富的高分子物理教师，擅长分析学生的学习数据并给出专业的指导建议。"},
                 {"role": "user", "content": prompt}
             ],
             temperature=0.7,
@@ -326,8 +326,8 @@ def generate_module_report_with_ai(module_data):
         
         # 板块功能说明
         module_descriptions = {
-            "案例库": "提供管理学真实案例学习，包含案例阅读、AI辅助分析、案例讨论等功能",
-            "知识图谱": "展示管理学知识体系结构，帮助学生理解知识点之间的关联关系",
+            "案例库": "提供高分子物理真实案例学习，包含案例阅读、AI辅助分析、案例讨论等功能",
+            "知识图谱": "展示高分子物理知识体系结构，帮助学生理解知识点之间的关联关系",
             "知识点掌握评估": "基于能力自评进行AI智能推荐学习路径，帮助学生精准提升",
             "课中互动": "支持课堂实时互动，包括提问、抢答、投票等互动形式"
         }
@@ -336,7 +336,7 @@ def generate_module_report_with_ai(module_data):
         module_desc = module_descriptions.get(module_name, "系统功能模块")
         
         prompt = f"""
-请作为一名资深的管理学教师，为以下系统功能板块生成一份学习分析报告。
+请作为一名资深的高分子物理教师，为以下系统功能板块生成一份学习分析报告。
 
 # 板块信息
 - 板块名称：{module_name}
@@ -369,7 +369,7 @@ def generate_module_report_with_ai(module_data):
         response = client.chat.completions.create(
             model="deepseek-chat",
             messages=[
-                {"role": "system", "content": "你是一位经验丰富的管理学教师，擅长分析学习系统各功能板块的使用效果并给出改进建议。"},
+                {"role": "system", "content": "你是一位经验丰富的高分子物理教师，擅长分析学习系统各功能板块的使用效果并给出改进建议。"},
                 {"role": "user", "content": prompt}
             ],
             temperature=0.7,
@@ -399,7 +399,7 @@ def generate_overall_report_with_ai(overall_data):
         popular_content = overall_data.get('popular_content', [])
         
         prompt = f"""
-请作为一名资深的管理学教师和教学管理者，为整个管理学课程生成一份全面的教学分析报告。
+请作为一名资深的高分子物理教师和教学管理者，为整个高分子物理课程生成一份全面的教学分析报告。
 
 # 总体数据
 - 学生总数：{overall_stats.get('total_students', 0)}人
@@ -433,7 +433,7 @@ def generate_overall_report_with_ai(overall_data):
         response = client.chat.completions.create(
             model="deepseek-chat",
             messages=[
-                {"role": "system", "content": "你是一位经验丰富的管理学教师和教学管理专家，擅长分析整体教学数据并给出战略性的教学改进建议。"},
+                {"role": "system", "content": "你是一位经验丰富的高分子物理教师和教学管理专家，擅长分析整体教学数据并给出战略性的教学改进建议。"},
                 {"role": "user", "content": prompt}
             ],
             temperature=0.7,

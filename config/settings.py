@@ -36,32 +36,32 @@ def get_secret(key, default=None):
     # 最后使用默认值
     return default
 
-# Neo4j配置 - 阿里云私有版
-NEO4J_URI = get_secret("NEO4J_URI", "bolt://47.110.83.32:11001")
-NEO4J_USERNAME = get_secret("NEO4J_USERNAME", "neo4j")
-NEO4J_PASSWORD = get_secret("NEO4J_PASSWORD", "mima123456")
+# Neo4j配置 - 阿里云私有版 (高分子课程)
+# 注意：生产环境必须通过 Streamlit Secrets 或环境变量配置，不要使用默认值
+NEO4J_URI = get_secret("NEO4J_URI", None)
+NEO4J_USERNAME = get_secret("NEO4J_USERNAME", None)
+NEO4J_PASSWORD = get_secret("NEO4J_PASSWORD", None)
 
 # Elasticsearch配置
-ELASTICSEARCH_CLOUD_ID = get_secret(
-    "ELASTICSEARCH_CLOUD_ID",
-    "41ed8f6c58a942fb9aea8f6804841099:dXMtY2VudHJhbDEuZ2NwLmNsb3VkLmVzLmlvOjQ0MyQ1ZTRhNGI5ZGNlZjc0NDI4YjI3MWEzZDg3YzRmZjY2OCRlZjhhODRlYjliNzc0YjM3ODk0NWQ3ZTQ3OWVkOWRkNQ=="
-)
-ELASTICSEARCH_USERNAME = get_secret("ELASTICSEARCH_USERNAME", "elastic")
-ELASTICSEARCH_PASSWORD = get_secret("ELASTICSEARCH_PASSWORD", "x5ZwEPmZewPZlnZIn1Fy3XoQ")
+# 注意：生产环境必须通过 Streamlit Secrets 或环境变量配置
+ELASTICSEARCH_CLOUD_ID = get_secret("ELASTICSEARCH_CLOUD_ID", None)
+ELASTICSEARCH_USERNAME = get_secret("ELASTICSEARCH_USERNAME", None)
+ELASTICSEARCH_PASSWORD = get_secret("ELASTICSEARCH_PASSWORD", None)
 
 # DeepSeek API配置
-DEEPSEEK_API_KEY = get_secret("DEEPSEEK_API_KEY", "sk-bdf96d7f1aa74a53a83ff167f7f2f5a9")
+# 注意：生产环境必须通过 Streamlit Secrets 或环境变量配置
+DEEPSEEK_API_KEY = get_secret("DEEPSEEK_API_KEY", None)
 DEEPSEEK_BASE_URL = "https://api.deepseek.com/v1"
 
-# 应用配置
-APP_TITLE = "管理学自适应学习系统"
-APP_ICON = "📊"
+# 应用配置 (高分子课程)
+APP_TITLE_GFZ = "高分子自适应学习系统"
+APP_ICON_GFZ = "🧪"
 
-# Neo4j标签 - 实际数据库中的标签（无前缀）
-# 注意：数据库中使用的是 Module, Chapter, KnowledgePoint 等标签
-NEO4J_LABEL_MODULE = "Module"
-NEO4J_LABEL_CHAPTER = "Section"  # 数据库中的Section对应章节
-NEO4J_LABEL_KNOWLEDGE = "KnowledgePoint"
-NEO4J_LABEL_STUDENT = "Student"
-NEO4J_LABEL_ACTIVITY = "SearchLog"  # 学习活动日志
-NEO4J_LABEL_DANMU = "Log_Danmu_xinli"  # 弹幕日志
+# Neo4j标签 - 高分子课程数据库标签（添加gfz前缀）
+# 注意：数据库中使用的是 gfz_Module, gfz_Chapter, gfz_KnowledgePoint 等标签
+NEO4J_LABEL_MODULE_GFZ = "gfz_Module"
+NEO4J_LABEL_CHAPTER_GFZ = "gfz_Chapter"  # 数据库中的Chapter对应章节
+NEO4J_LABEL_KNOWLEDGE_GFZ = "gfz_KnowledgePoint"
+NEO4J_LABEL_STUDENT_GFZ = "gfz_Student"
+NEO4J_LABEL_ACTIVITY_GFZ = "gfz_SearchLog"  # 学习活动日志
+NEO4J_LABEL_DANMU_GFZ = "gfz_Log_Danmu"  # 弹幕日志

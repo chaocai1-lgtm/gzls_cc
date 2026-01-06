@@ -1,5 +1,5 @@
 ﻿"""
-管理学自适应学习系统 - 主应用
+高分子自适应学习系统 (GFZ) - 主应用
 """
 
 import streamlit as st
@@ -15,8 +15,8 @@ from modules.teaching_design import render_teaching_design
 
 # 页面配置
 st.set_page_config(
-    page_title="管理学自适应学习系统",
-    page_icon="📊",
+    page_title="高分子自适应学习系统 (GFZ)",
+    page_icon="🧪",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
@@ -549,7 +549,7 @@ def main():
         <div class="logo-section">
             <span class="logo-icon">📊</span>
             <div>
-                <div class="logo-text">管理学自适应学习系统</div>
+                <div class="logo-text">高分子自适应学习系统</div>
                 <div class="logo-subtitle">MANAGEMENT AI LEARNING PLATFORM</div>
             </div>
         </div>
@@ -563,9 +563,9 @@ def main():
     </div>
     """, unsafe_allow_html=True)
     
-    # 初始化当前页面状态
-    if 'current_page' not in st.session_state:
-        st.session_state.current_page = 'home'
+    # 初始化当前页面状态 (GFZ)
+    if 'gfz_current_page' not in st.session_state:
+        st.session_state.gfz_current_page = 'gfz_home'
     
     # 导航按钮行（教师端分两行）
     if user['role'] == 'teacher':
@@ -942,10 +942,10 @@ def render_home_page(user):
     from modules.auth import check_neo4j_available, get_neo4j_driver
     
     # 获取真实统计数据
-    from data.cases import get_cases
-    from data.abilities import ABILITIES
+    from data.cases_gfz import get_cases
+    from data.abilities_gfz import ABILITIES_GFZ
     
-    # 案例数量 - 从cases.py获取真实数量
+    # 案例数量 - 从cases_gfz.py获取真实数量
     case_count = len(get_cases())
     
     # 知识点数量 - 从数据库获取
@@ -954,13 +954,23 @@ def render_home_page(user):
         try:
             driver = get_neo4j_driver()
             with driver.session() as session:
-                result = session.run("MATCH (k:glx_Knowledge) RETURN count(k) as count")
+                result = session.run(f"MATCH (k:{NEO4J_LABEL_KNOWLEDGE_GFZ}) RETURN count(k) as count")
                 knowledge_points = result.single()['count']
         except:
-            knowledge_points = 0
+            # 如果数据库不可用，使用本地数据
+            from data.knowledge_graph_gfz import GFZ_KNOWLEDGE_GRAPH
+            for module in GFZ_KNOWLEDGE_GRAPH['modules']:
+                for chapter in module['chapters']:
+                    knowledge_points += len(chapter['knowledge_points'])
+    else:
+        # 使用本地数据
+        from data.knowledge_graph_gfz import GFZ_KNOWLEDGE_GRAPH
+        for module in GFZ_KNOWLEDGE_GRAPH['modules']:
+            for chapter in module['chapters']:
+                knowledge_points += len(chapter['knowledge_points'])
     
-    # 核心能力数量 - 从abilities.py获取
-    core_abilities = len(ABILITIES) if ABILITIES else 0
+    # 核心能力数量 - 从abilities_gfz.py获取
+    core_abilities = len(ABILITIES_GFZ) if ABILITIES_GFZ else 0
     
     # 欢迎横幅
     st.markdown(f"""
@@ -1031,7 +1041,7 @@ def render_home_page(user):
         <div class="feature-card">
             <span class="feature-icon">🗺️</span>
             <div class="feature-title">知识图谱</div>
-            <div class="feature-desc">可视化知识网络<br>理清知识脉络<br>构建管理学知识体系</div>
+            <div class="feature-desc">可视化知识网络<br>理清知识脉络<br>构建高分子物理知识体系</div>
         </div>
         """, unsafe_allow_html=True)
         if st.button("进入图谱", key="btn_graph", use_container_width=True):
@@ -1068,8 +1078,9 @@ def render_home_page(user):
             <span style="padding: 8px 16px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; border-radius: 20px; margin: 0 5px; display: inline-block;">📊 Neo4j</span>
             <span style="padding: 8px 16px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; border-radius: 20px; margin: 0 5px; display: inline-block;">🔍 Elasticsearch</span>
             <span style="padding: 8px 16px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; border-radius: 20px; margin: 0 5px; display: inline-block;">⚡ Streamlit</span>
+            <span style="padding: 8px 16px; background: linear-gradient(135deg, #ff9a56 0%, #ff6a00 100%); color: #fff; border-radius: 20px; margin: 0 5px; display: inline-block;">☁️ 阿里云</span>
         </div>
-        © 2026 管理学自适应学习系统 · Powered by AI Technology
+        © 2026 高分子物理自适应学习系统 · Powered by AI Technology
     </div>
     """, unsafe_allow_html=True)
 

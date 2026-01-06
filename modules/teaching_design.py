@@ -60,10 +60,10 @@ def get_all_chapters():
     try:
         driver = get_neo4j_driver()
         with driver.session() as session:
-            result = session.run("""
-                MATCH (m:glx_Module)-[:CONTAINS]->(c:glx_Chapter)
-                RETURN m.name as module_name, c.id as chapter_id, c.name as chapter_name
-                ORDER BY m.id, c.id
+            result = session.run(f"""
+                MATCH (m:{NEO4J_LABEL_MODULE_GFZ})-[:CONTAINS]->(c:{NEO4J_LABEL_CHAPTER_GFZ})
+                RETURN m.name as module_name, m.order as module_order, c.id as chapter_id, c.name as chapter_name, c.order as chapter_order
+                ORDER BY m.order, c.order
             """)
             chapters = [dict(record) for record in result]
         return chapters
@@ -79,8 +79,8 @@ def get_chapter_knowledge_points(chapter_id):
     try:
         driver = get_neo4j_driver()
         with driver.session() as session:
-            result = session.run("""
-                MATCH (c:glx_Chapter {id: $chapter_id})-[:CONTAINS]->(k:glx_Knowledge)
+            result = session.run(f"""
+                MATCH (c:{NEO4J_LABEL_CHAPTER_GFZ} {{id: $chapter_id}})-[:CONTAINS]->(k:{NEO4J_LABEL_KNOWLEDGE_GFZ})
                 RETURN k.name as name, k.importance as importance
                 ORDER BY k.importance DESC
             """, chapter_id=chapter_id)
@@ -105,7 +105,7 @@ def generate_teaching_design(chapter_name, knowledge_points, method_key):
         
         # 构建提示词
         prompt = f"""
-请作为一名资深的管理学教育专家，为以下教学内容设计一份详细的教学方案。
+请作为一名资深的高分子物理教育专家，为以下教学内容设计一份详细的教学方案。
 
 # 教学内容
 - 章节名称：{chapter_name}
@@ -163,7 +163,7 @@ def generate_teaching_design(chapter_name, knowledge_points, method_key):
 # 输出要求
 - 方案要具体、可操作
 - 体现{method_key}的教学理念和特色
-- 适合管理学专业本科生
+- 适合高分子材料专业本科生
 - 按照上述结构用 Markdown 格式输出
 - 总字数2000-3000字
 """
@@ -171,7 +171,7 @@ def generate_teaching_design(chapter_name, knowledge_points, method_key):
         response = client.chat.completions.create(
             model="deepseek-chat",
             messages=[
-                {"role": "system", "content": f"你是一位精通{method_key}教学法的管理学教育专家，擅长设计创新、有效的教学方案。"},
+                {"role": "system", "content": f"你是一位精通{method_key}教学法的高分子物理教育专家，擅长设计创新、有效的教学方案。"},
                 {"role": "user", "content": prompt}
             ],
             temperature=0.7,
