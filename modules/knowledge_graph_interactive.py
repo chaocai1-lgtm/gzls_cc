@@ -12,7 +12,7 @@ from data.knowledge_graph_graph_format import (
 )
 
 
-def create_knowledge_graph_html(selected_node_id=None):
+def create_knowledge_graph_html(selected_node_id=None, filter_module=None):
     """
     生成知识图谱的 HTML 内容
     使用 vis.js 库进行可视化
@@ -21,6 +21,25 @@ def create_knowledge_graph_html(selected_node_id=None):
         graph_data = get_graph_data()
         nodes = graph_data.get("nodes", [])
         relationships = graph_data.get("relationships", [])
+        
+        # 如果指定了模块筛选，只显示该模块及其子节点
+        if filter_module:
+            # 找到选中的模块节点
+            module_node = next((n for n in nodes if n["category"] == "模块" and n["label"] == filter_module), None)
+            if module_node:
+                module_id = module_node["id"]
+                # 找出所有相关节点（模块、其章节和知识点）
+                related_node_ids = {module_id}
+                for rel in relationships:
+                    if rel["source"] == module_id:
+                        related_node_ids.add(rel["target"])
+                    # 递归添加二级关系（章节的知识点）
+                    if rel["source"] in related_node_ids:
+                        related_node_ids.add(rel["target"])
+                
+                # 筛选节点和关系
+                nodes = [n for n in nodes if n["id"] in related_node_ids]
+                relationships = [r for r in relationships if r["source"] in related_node_ids and r["target"] in related_node_ids]
         
         if not nodes:
             return None
@@ -78,9 +97,15 @@ def create_knowledge_graph_html(selected_node_id=None):
                     padding: 0;
                 }}
                 
+                html, body {{
+                    height: 100%;
+                    margin: 0;
+                    padding: 0;
+                }}
+                
                 #network {{
                     width: 100%;
-                    height: 100%;
+                    height: 1000px;
                     border: 1px solid #ddd;
                     background-color: #ffffff;
                 }}
@@ -290,8 +315,11 @@ def render_knowledge_graph_interactive():
         if st.session_state.get("selected_node"):
             selected_node_id = st.session_state.selected_node["id"]
         
-        # 生成 HTML
-        html_content = create_knowledge_graph_html(selected_node_id)
+        # 根据选择的模块筛选节点
+        filter_module = None if selected_module == "全部模块" else selected_module
+        
+        # 生成 HTML (传入筛选条件)
+        html_content = create_knowledge_graph_html(selected_node_id, filter_module)
         
         if html_content:
             st.components.v1.html(html_content, height=1100, scrolling=True)
