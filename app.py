@@ -6,6 +6,7 @@ import streamlit as st
 import random
 from modules.case_library import render_case_library
 from modules.knowledge_graph import render_knowledge_graph
+from modules.knowledge_graph_new import render_knowledge_graph_interactive
 from modules.ability_recommender import render_ability_recommender
 from modules.classroom_interaction import render_classroom_interaction
 from modules.auth import render_login_page, check_login, get_current_user, logout
@@ -666,7 +667,8 @@ def main():
             elif current == 'case_library':
                 render_case_library()
             elif current == 'knowledge_graph':
-                render_knowledge_graph()
+                # 使用新的交互式知识图谱
+                render_knowledge_graph_interactive()
             elif current == 'ability_recommender':
                 render_ability_recommender()
             elif current == 'classroom':
