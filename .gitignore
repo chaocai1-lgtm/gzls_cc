@@ -52,9 +52,10 @@ temp_*
 *.bak
 *_backup.*
 
-# 数据备份和测试
+# 数据备份和测试（应用主文件除外）
 *_backup.json
 *_test.json
+!app_chuzhong_backup.py
 
 # IDE
 .vscode/
