@@ -1,0 +1,2196 @@
+[
+  {
+    "id": "bixiu_shang_unit_1",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 1,
+    "title": "从中华文明起源到秦汉统一多民族封建国家",
+    "lessons": []
+  },
+  {
+    "id": "bixiu_shang_unit_4",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 4,
+    "title": "明清中国版图的奠定与面临的挑战 70",
+    "lessons": []
+  },
+  {
+    "id": "bixiu_shang_unit_8",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 8,
+    "title": "中华民族的抗日战争和人民解放战争 134",
+    "lessons": []
+  },
+  {
+    "id": "bixiu_shang_unit_1",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 1,
+    "title": "从中华文明起源到秦汉统一多民族",
+    "lessons": [
+      "bixiu_shang_lesson_2"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_2",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 2,
+    "title": "三国两晋南北朝的民族交融",
+    "lessons": [
+      "bixiu_shang_lesson_6"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_2",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 2,
+    "title": "三国两晋南北朝的民族交融与隋唐统一多民族封建国家的发展",
+    "lessons": [
+      "bixiu_shang_lesson_7",
+      "bixiu_shang_lesson_8"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_3",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 3,
+    "title": "辽宋夏金多民族政权的并立",
+    "lessons": [
+      "bixiu_shang_lesson_9"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_3",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 3,
+    "title": "辽宋夏金多民族政权的并立与元朝的统一",
+    "lessons": []
+  },
+  {
+    "id": "bixiu_shang_unit_3",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 3,
+    "title": "辽宋夏金多民族政权的并立",
+    "lessons": []
+  },
+  {
+    "id": "bixiu_shang_unit_4",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 4,
+    "title": "明清中国版图的奠定与面临的挑战",
+    "lessons": [
+      "bixiu_shang_lesson_12"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_4",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 4,
+    "title": "明清中国版图的奠定与面临的挑战",
+    "lessons": [
+      "bixiu_shang_lesson_12"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_4",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 4,
+    "title": "明清中国版图的奠定与面临的挑战",
+    "lessons": [
+      "bixiu_shang_lesson_12"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_4",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 4,
+    "title": "明清中国版图的奠定与面临的挑战",
+    "lessons": [
+      "bixiu_shang_lesson_13"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_4",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 4,
+    "title": "明清中国版图的奠定与面临的挑战",
+    "lessons": [
+      "bixiu_shang_lesson_13"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_4",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 4,
+    "title": "明清中国版图的奠定与面临的挑战",
+    "lessons": [
+      "bixiu_shang_lesson_13"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_4",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 4,
+    "title": "明清中国版图的奠定与面临的挑战",
+    "lessons": [
+      "bixiu_shang_lesson_14"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_4",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 4,
+    "title": "明清中国版图的奠定与面临的挑战",
+    "lessons": [
+      "bixiu_shang_lesson_14"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_4",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 4,
+    "title": "明清中国版图的奠定与面临的挑战",
+    "lessons": [
+      "bixiu_shang_lesson_14"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_4",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 4,
+    "title": "明清中国版图的奠定与面临的挑战",
+    "lessons": []
+  },
+  {
+    "id": "bixiu_shang_unit_5",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 5,
+    "title": "晚清时期的内忧外患与救亡图存",
+    "lessons": []
+  },
+  {
+    "id": "bixiu_shang_unit_5",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 5,
+    "title": "晚清时期的内忧外患与救亡图存",
+    "lessons": [
+      "bixiu_shang_lesson_15"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_5",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 5,
+    "title": "晚清时期的内忧外患与救亡图存",
+    "lessons": [
+      "bixiu_shang_lesson_15"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_5",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 5,
+    "title": "晚清时期的内忧外患与救亡图存",
+    "lessons": [
+      "bixiu_shang_lesson_15"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_5",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 5,
+    "title": "晚清时期的内忧外患与救亡图存",
+    "lessons": [
+      "bixiu_shang_lesson_16"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_5",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 5,
+    "title": "晚清时期的内忧外患与救亡图存",
+    "lessons": [
+      "bixiu_shang_lesson_16"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_5",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 5,
+    "title": "晚清时期的内忧外患与救亡图存",
+    "lessons": [
+      "bixiu_shang_lesson_16"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_5",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 5,
+    "title": "晚清时期的内忧外患与救亡图存",
+    "lessons": [
+      "bixiu_shang_lesson_17"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_5",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 5,
+    "title": "晚清时期的内忧外患与救亡图存",
+    "lessons": [
+      "bixiu_shang_lesson_17"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_5",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 5,
+    "title": "晚清时期的内忧外患与救亡图存",
+    "lessons": [
+      "bixiu_shang_lesson_17"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_5",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 5,
+    "title": "晚清时期的内忧外患与救亡图存",
+    "lessons": []
+  },
+  {
+    "id": "bixiu_shang_unit_6",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 6,
+    "title": "辛亥革命与中华民国的建立",
+    "lessons": []
+  },
+  {
+    "id": "bixiu_shang_unit_6",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 6,
+    "title": "辛亥革命与中华民国的建立",
+    "lessons": [
+      "bixiu_shang_lesson_18"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_6",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 6,
+    "title": "辛亥革命与中华民国的建立",
+    "lessons": [
+      "bixiu_shang_lesson_18"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_6",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 6,
+    "title": "辛亥革命与中华民国的建立",
+    "lessons": [
+      "bixiu_shang_lesson_19"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_6",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 6,
+    "title": "辛亥革命与中华民国的建立",
+    "lessons": [
+      "bixiu_shang_lesson_19"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_6",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 6,
+    "title": "辛亥革命与中华民国的建立",
+    "lessons": [
+      "bixiu_shang_lesson_19"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_6",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 6,
+    "title": "辛亥革命与中华民国的建立",
+    "lessons": []
+  },
+  {
+    "id": "bixiu_shang_unit_7",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 7,
+    "title": "中国共产党成立与新民主主义革命兴起",
+    "lessons": []
+  },
+  {
+    "id": "bixiu_shang_unit_7",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 7,
+    "title": "中国共产党成立与新民主主义革命兴起",
+    "lessons": [
+      "bixiu_shang_lesson_20"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_7",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 7,
+    "title": "中国共产党成立与新民主主义革命兴起",
+    "lessons": [
+      "bixiu_shang_lesson_20"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_7",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 7,
+    "title": "中国共产党成立与新民主主义革命兴起",
+    "lessons": [
+      "bixiu_shang_lesson_20"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_7",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 7,
+    "title": "中国共产党成立与新民主主义革命兴起",
+    "lessons": [
+      "bixiu_shang_lesson_21"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_7",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 7,
+    "title": "中国共产党成立与新民主主义革命兴起",
+    "lessons": [
+      "bixiu_shang_lesson_21"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_7",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 7,
+    "title": "中国共产党成立与新民主主义革命兴起",
+    "lessons": [
+      "bixiu_shang_lesson_21"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_8",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 8,
+    "title": "中华民族的抗日战争和人民解放战争",
+    "lessons": [
+      "bixiu_shang_lesson_22"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_8",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 8,
+    "title": "中华民族的抗日战争和人民解放战争",
+    "lessons": [
+      "bixiu_shang_lesson_22"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_8",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 8,
+    "title": "中华民族的抗日战争和人民解放战争",
+    "lessons": [
+      "bixiu_shang_lesson_22"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_8",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 8,
+    "title": "中华民族的抗日战争和人民解放战争",
+    "lessons": [
+      "bixiu_shang_lesson_22"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_8",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 8,
+    "title": "中华民族的抗日战争和人民解放战争",
+    "lessons": [
+      "bixiu_shang_lesson_23"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_8",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 8,
+    "title": "中华民族的抗日战争和人民解放战争",
+    "lessons": [
+      "bixiu_shang_lesson_23"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_8",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 8,
+    "title": "中华民族的抗日战争和人民解放战争",
+    "lessons": [
+      "bixiu_shang_lesson_23"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_8",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 8,
+    "title": "中华民族的抗日战争和人民解放战争",
+    "lessons": [
+      "bixiu_shang_lesson_23"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_8",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 8,
+    "title": "中华民族的抗日战争和人民解放战争",
+    "lessons": [
+      "bixiu_shang_lesson_24"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_8",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 8,
+    "title": "中华民族的抗日战争和人民解放战争",
+    "lessons": [
+      "bixiu_shang_lesson_24"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_8",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 8,
+    "title": "中华民族的抗日战争和人民解放战争",
+    "lessons": [
+      "bixiu_shang_lesson_24"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_8",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 8,
+    "title": "中华民族的抗日战争和人民解放战争",
+    "lessons": [
+      "bixiu_shang_lesson_24"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_9",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 9,
+    "title": "中华人民共和国成立和社会主义革命与",
+    "lessons": [
+      "bixiu_shang_lesson_25"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_9",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 9,
+    "title": "中华人民共和国成立和社会主义革命与建设",
+    "lessons": [
+      "bixiu_shang_lesson_25"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_9",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 9,
+    "title": "中华人民共和国成立和社会主义革命与建设",
+    "lessons": [
+      "bixiu_shang_lesson_25"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_9",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 9,
+    "title": "中华人民共和国成立和社会主义革命与建设",
+    "lessons": [
+      "bixiu_shang_lesson_25"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_9",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 9,
+    "title": "中华人民共和国成立和社会主义革命与建设",
+    "lessons": [
+      "bixiu_shang_lesson_26"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_9",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 9,
+    "title": "中华人民共和国成立和社会主义革命与建设",
+    "lessons": [
+      "bixiu_shang_lesson_26"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_9",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 9,
+    "title": "中华人民共和国成立和社会主义革命与建设",
+    "lessons": [
+      "bixiu_shang_lesson_26"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_9",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 9,
+    "title": "中华人民共和国成立和社会主义革命与建设",
+    "lessons": [
+      "bixiu_shang_lesson_26"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_10",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 10,
+    "title": "改革开放和社会主义现代化建设新时期",
+    "lessons": [
+      "bixiu_shang_lesson_27"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_10",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 10,
+    "title": "改革开放和社会主义现代化建设新时期",
+    "lessons": [
+      "bixiu_shang_lesson_27"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_10",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 10,
+    "title": "改革开放和社会主义现代化建设新时期",
+    "lessons": [
+      "bixiu_shang_lesson_27"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_10",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 10,
+    "title": "改革开放和社会主义现代化建设新时期",
+    "lessons": [
+      "bixiu_shang_lesson_28"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_10",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 10,
+    "title": "改革开放和社会主义现代化建设新时期",
+    "lessons": [
+      "bixiu_shang_lesson_28"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_10",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 10,
+    "title": "改革开放和社会主义现代化建设新时期",
+    "lessons": [
+      "bixiu_shang_lesson_28"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_10",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 10,
+    "title": "改革开放和社会主义现代化建设新时期",
+    "lessons": [
+      "bixiu_shang_lesson_28"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_11",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 11,
+    "title": "中国特色社会主义新时代",
+    "lessons": [
+      "bixiu_shang_lesson_29"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_11",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 11,
+    "title": "中国特色社会主义新时代",
+    "lessons": [
+      "bixiu_shang_lesson_29"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_11",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 11,
+    "title": "中国特色社会主义新时代",
+    "lessons": [
+      "bixiu_shang_lesson_29"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_11",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 11,
+    "title": "中国特色社会主义新时代",
+    "lessons": [
+      "bixiu_shang_lesson_30"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_11",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 11,
+    "title": "中国特色社会主义新时代",
+    "lessons": [
+      "bixiu_shang_lesson_30"
+    ]
+  },
+  {
+    "id": "bixiu_shang_unit_11",
+    "book_id": "bixiu_shang",
+    "book_name": "必修 中外历史纲要（上）",
+    "unit_number": 11,
+    "title": "中国特色社会主义新时代",
+    "lessons": [
+      "bixiu_shang_lesson_30"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_1",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 1,
+    "title": "古代文明的产生与发展 1",
+    "lessons": []
+  },
+  {
+    "id": "bixiu_xia_unit_5",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 5,
+    "title": "工业革命与马克思主义的诞生 58",
+    "lessons": []
+  },
+  {
+    "id": "bixiu_xia_unit_9",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 9,
+    "title": "当代世界发展的特点与主要趋势 134",
+    "lessons": []
+  },
+  {
+    "id": "bixiu_xia_unit_1",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 1,
+    "title": "古代文明的产生与发展",
+    "lessons": []
+  },
+  {
+    "id": "bixiu_xia_unit_1",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 1,
+    "title": "古代文明的产生与发展",
+    "lessons": [
+      "bixiu_xia_lesson_1"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_1",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 1,
+    "title": "古代文明的产生与发展",
+    "lessons": [
+      "bixiu_xia_lesson_1"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_1",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 1,
+    "title": "古代文明的产生与发展",
+    "lessons": [
+      "bixiu_xia_lesson_1"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_1",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 1,
+    "title": "古代文明的产生与发展",
+    "lessons": [
+      "bixiu_xia_lesson_2"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_1",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 1,
+    "title": "古代文明的产生与发展",
+    "lessons": [
+      "bixiu_xia_lesson_2"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_1",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 1,
+    "title": "古代文明的产生与发展",
+    "lessons": [
+      "bixiu_xia_lesson_2"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_2",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 2,
+    "title": "中古时期的世界",
+    "lessons": [
+      "bixiu_xia_lesson_3"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_2",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 2,
+    "title": "中古时期的世界",
+    "lessons": [
+      "bixiu_xia_lesson_3"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_2",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 2,
+    "title": "中古时期的世界",
+    "lessons": [
+      "bixiu_xia_lesson_3"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_2",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 2,
+    "title": "中古时期的世界",
+    "lessons": [
+      "bixiu_xia_lesson_3"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_2",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 2,
+    "title": "中古时期的世界",
+    "lessons": [
+      "bixiu_xia_lesson_4"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_2",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 2,
+    "title": "中古时期的世界",
+    "lessons": [
+      "bixiu_xia_lesson_4"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_2",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 2,
+    "title": "中古时期的世界",
+    "lessons": [
+      "bixiu_xia_lesson_5"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_2",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 2,
+    "title": "中古时期的世界",
+    "lessons": [
+      "bixiu_xia_lesson_5"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_2",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 2,
+    "title": "中古时期的世界",
+    "lessons": [
+      "bixiu_xia_lesson_5"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_2",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 2,
+    "title": "中古时期的世界",
+    "lessons": []
+  },
+  {
+    "id": "bixiu_xia_unit_3",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 3,
+    "title": "走向整体的世界",
+    "lessons": []
+  },
+  {
+    "id": "bixiu_xia_unit_3",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 3,
+    "title": "走向整体的世界",
+    "lessons": [
+      "bixiu_xia_lesson_6"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_3",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 3,
+    "title": "走向整体的世界",
+    "lessons": [
+      "bixiu_xia_lesson_6"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_3",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 3,
+    "title": "走向整体的世界",
+    "lessons": [
+      "bixiu_xia_lesson_6"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_3",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 3,
+    "title": "走向整体的世界",
+    "lessons": [
+      "bixiu_xia_lesson_7"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_3",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 3,
+    "title": "走向整体的世界",
+    "lessons": [
+      "bixiu_xia_lesson_7"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_3",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 3,
+    "title": "走向整体的世界",
+    "lessons": [
+      "bixiu_xia_lesson_7"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_4",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 4,
+    "title": "资本主义制度的确立",
+    "lessons": [
+      "bixiu_xia_lesson_8"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_4",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 4,
+    "title": "资本主义制度的确立",
+    "lessons": [
+      "bixiu_xia_lesson_8"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_4",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 4,
+    "title": "资本主义制度的确立",
+    "lessons": [
+      "bixiu_xia_lesson_8"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_4",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 4,
+    "title": "资本主义制度的确立",
+    "lessons": [
+      "bixiu_xia_lesson_9"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_4",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 4,
+    "title": "资本主义制度的确立",
+    "lessons": [
+      "bixiu_xia_lesson_9"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_4",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 4,
+    "title": "资本主义制度的确立",
+    "lessons": [
+      "bixiu_xia_lesson_9"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_5",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 5,
+    "title": "工业革命与马克思主义的诞生",
+    "lessons": [
+      "bixiu_xia_lesson_10"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_5",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 5,
+    "title": "工业革命与马克思主义的诞生",
+    "lessons": [
+      "bixiu_xia_lesson_10"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_5",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 5,
+    "title": "工业革命与马克思主义的诞生",
+    "lessons": [
+      "bixiu_xia_lesson_10"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_5",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 5,
+    "title": "工业革命与马克思主义的诞生",
+    "lessons": [
+      "bixiu_xia_lesson_11"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_5",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 5,
+    "title": "工业革命与马克思主义的诞生",
+    "lessons": [
+      "bixiu_xia_lesson_11"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_5",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 5,
+    "title": "工业革命与马克思主义的诞生",
+    "lessons": [
+      "bixiu_xia_lesson_11"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_6",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 6,
+    "title": "世界殖民体系与亚非拉民族独立运动",
+    "lessons": [
+      "bixiu_xia_lesson_12"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_6",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 6,
+    "title": "世界殖民体系与亚非拉民族独立运动",
+    "lessons": [
+      "bixiu_xia_lesson_12"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_6",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 6,
+    "title": "世界殖民体系与亚非拉民族独立运动",
+    "lessons": [
+      "bixiu_xia_lesson_12"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_6",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 6,
+    "title": "世界殖民体系与亚非拉民族独立运动",
+    "lessons": [
+      "bixiu_xia_lesson_12"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_6",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 6,
+    "title": "世界殖民体系与亚非拉民族独立运动",
+    "lessons": [
+      "bixiu_xia_lesson_13"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_6",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 6,
+    "title": "世界殖民体系与亚非拉民族独立运动",
+    "lessons": [
+      "bixiu_xia_lesson_13"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_6",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 6,
+    "title": "世界殖民体系与亚非拉民族独立运动",
+    "lessons": []
+  },
+  {
+    "id": "bixiu_xia_unit_7",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 7,
+    "title": "两次世界大战、十月革命与国际秩序的",
+    "lessons": []
+  },
+  {
+    "id": "bixiu_xia_unit_7",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 7,
+    "title": "两次世界大战、十月革命与国际秩序的演变",
+    "lessons": [
+      "bixiu_xia_lesson_14"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_7",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 7,
+    "title": "两次世界大战、十月革命与国际秩序的演变",
+    "lessons": [
+      "bixiu_xia_lesson_14"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_7",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 7,
+    "title": "两次世界大战、十月革命与国际秩序的演变",
+    "lessons": [
+      "bixiu_xia_lesson_14"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_7",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 7,
+    "title": "两次世界大战、十月革命与国际秩序的演变",
+    "lessons": [
+      "bixiu_xia_lesson_15"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_7",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 7,
+    "title": "两次世界大战、十月革命与国际秩序的演变",
+    "lessons": [
+      "bixiu_xia_lesson_15"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_7",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 7,
+    "title": "两次世界大战、十月革命与国际秩序的演变",
+    "lessons": [
+      "bixiu_xia_lesson_15"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_7",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 7,
+    "title": "两次世界大战、十月革命与国际秩序的演变",
+    "lessons": [
+      "bixiu_xia_lesson_16"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_7",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 7,
+    "title": "两次世界大战、十月革命与国际秩序的演变",
+    "lessons": [
+      "bixiu_xia_lesson_16"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_7",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 7,
+    "title": "两次世界大战、十月革命与国际秩序的演变",
+    "lessons": [
+      "bixiu_xia_lesson_16"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_7",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 7,
+    "title": "两次世界大战、十月革命与国际秩序的演变",
+    "lessons": [
+      "bixiu_xia_lesson_17"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_7",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 7,
+    "title": "两次世界大战、十月革命与国际秩序的演变",
+    "lessons": [
+      "bixiu_xia_lesson_17"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_7",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 7,
+    "title": "两次世界大战、十月革命与国际秩序的演变",
+    "lessons": [
+      "bixiu_xia_lesson_17"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_7",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 7,
+    "title": "两次世界大战、十月革命与国际秩序的演变",
+    "lessons": []
+  },
+  {
+    "id": "bixiu_xia_unit_8",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 8,
+    "title": "20 世纪下半叶世界的新变化",
+    "lessons": []
+  },
+  {
+    "id": "bixiu_xia_unit_8",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 8,
+    "title": "20世纪下半叶世界的新变化",
+    "lessons": [
+      "bixiu_xia_lesson_18"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_8",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 8,
+    "title": "20世纪下半叶世界的新变化",
+    "lessons": [
+      "bixiu_xia_lesson_18"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_8",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 8,
+    "title": "20世纪下半叶世界的新变化",
+    "lessons": [
+      "bixiu_xia_lesson_18"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_8",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 8,
+    "title": "20世纪下半叶世界的新变化",
+    "lessons": [
+      "bixiu_xia_lesson_19"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_8",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 8,
+    "title": "20世纪下半叶世界的新变化",
+    "lessons": [
+      "bixiu_xia_lesson_19"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_8",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 8,
+    "title": "20世纪下半叶世界的新变化",
+    "lessons": [
+      "bixiu_xia_lesson_19"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_8",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 8,
+    "title": "20世纪下半叶世界的新变化",
+    "lessons": [
+      "bixiu_xia_lesson_20"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_8",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 8,
+    "title": "20世纪下半叶世界的新变化",
+    "lessons": [
+      "bixiu_xia_lesson_20"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_8",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 8,
+    "title": "20世纪下半叶世界的新变化",
+    "lessons": [
+      "bixiu_xia_lesson_20"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_8",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 8,
+    "title": "20世纪下半叶世界的新变化",
+    "lessons": [
+      "bixiu_xia_lesson_21"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_8",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 8,
+    "title": "20世纪下半叶世界的新变化",
+    "lessons": [
+      "bixiu_xia_lesson_21"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_8",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 8,
+    "title": "20世纪下半叶世界的新变化",
+    "lessons": [
+      "bixiu_xia_lesson_21"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_9",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 9,
+    "title": "当代世界发展的特点与主要趋势",
+    "lessons": [
+      "bixiu_xia_lesson_22"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_9",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 9,
+    "title": "当代世界发展的特点与主要趋势",
+    "lessons": [
+      "bixiu_xia_lesson_22"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_9",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 9,
+    "title": "当代世界发展的特点与主要趋势",
+    "lessons": [
+      "bixiu_xia_lesson_22"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_9",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 9,
+    "title": "当代世界发展的特点与主要趋势",
+    "lessons": [
+      "bixiu_xia_lesson_23"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_9",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 9,
+    "title": "当代世界发展的特点与主要趋势",
+    "lessons": [
+      "bixiu_xia_lesson_23"
+    ]
+  },
+  {
+    "id": "bixiu_xia_unit_9",
+    "book_id": "bixiu_xia",
+    "book_name": "必修 中外历史纲要（下）",
+    "unit_number": 9,
+    "title": "当代世界发展的特点与主要趋势",
+    "lessons": [
+      "bixiu_xia_lesson_23"
+    ]
+  },
+  {
+    "id": "xuanxiu1_unit_1",
+    "book_id": "xuanxiu1",
+    "book_name": "选择性必修1 国家制度与社会治理",
+    "unit_number": 1,
+    "title": "政治制度 1",
+    "lessons": []
+  },
+  {
+    "id": "xuanxiu1_unit_4",
+    "book_id": "xuanxiu1",
+    "book_name": "选择性必修1 国家制度与社会治理",
+    "unit_number": 4,
+    "title": "民族关系与国家关系 61",
+    "lessons": []
+  },
+  {
+    "id": "xuanxiu1_unit_1",
+    "book_id": "xuanxiu1",
+    "book_name": "选择性必修1 国家制度与社会治理",
+    "unit_number": 1,
+    "title": "政治制度",
+    "lessons": []
+  },
+  {
+    "id": "xuanxiu1_unit_1",
+    "book_id": "xuanxiu1",
+    "book_name": "选择性必修1 国家制度与社会治理",
+    "unit_number": 1,
+    "title": "政治制度",
+    "lessons": [
+      "xuanxiu1_lesson_3"
+    ]
+  },
+  {
+    "id": "xuanxiu1_unit_1",
+    "book_id": "xuanxiu1",
+    "book_name": "选择性必修1 国家制度与社会治理",
+    "unit_number": 1,
+    "title": "政治制度",
+    "lessons": [
+      "xuanxiu1_lesson_4"
+    ]
+  },
+  {
+    "id": "xuanxiu1_unit_2",
+    "book_id": "xuanxiu1",
+    "book_name": "选择性必修1 国家制度与社会治理",
+    "unit_number": 2,
+    "title": "官员的选拔与管理",
+    "lessons": [
+      "xuanxiu1_lesson_6"
+    ]
+  },
+  {
+    "id": "xuanxiu1_unit_2",
+    "book_id": "xuanxiu1",
+    "book_name": "选择性必修1 国家制度与社会治理",
+    "unit_number": 2,
+    "title": "官员的选拔与管理",
+    "lessons": []
+  },
+  {
+    "id": "xuanxiu1_unit_3",
+    "book_id": "xuanxiu1",
+    "book_name": "选择性必修1 国家制度与社会治理",
+    "unit_number": 3,
+    "title": "法律与教化",
+    "lessons": [
+      "xuanxiu1_lesson_8"
+    ]
+  },
+  {
+    "id": "xuanxiu1_unit_3",
+    "book_id": "xuanxiu1",
+    "book_name": "选择性必修1 国家制度与社会治理",
+    "unit_number": 3,
+    "title": "法律与教化",
+    "lessons": [
+      "xuanxiu1_lesson_9",
+      "xuanxiu1_lesson_9",
+      "xuanxiu1_lesson_10"
+    ]
+  },
+  {
+    "id": "xuanxiu1_unit_3",
+    "book_id": "xuanxiu1",
+    "book_name": "选择性必修1 国家制度与社会治理",
+    "unit_number": 3,
+    "title": "法律与教化",
+    "lessons": [
+      "xuanxiu1_lesson_10"
+    ]
+  },
+  {
+    "id": "xuanxiu1_unit_3",
+    "book_id": "xuanxiu1",
+    "book_name": "选择性必修1 国家制度与社会治理",
+    "unit_number": 3,
+    "title": "法律与教化",
+    "lessons": []
+  },
+  {
+    "id": "xuanxiu1_unit_4",
+    "book_id": "xuanxiu1",
+    "book_name": "选择性必修1 国家制度与社会治理",
+    "unit_number": 4,
+    "title": "民族关系与国家关系",
+    "lessons": [
+      "xuanxiu1_lesson_11"
+    ]
+  },
+  {
+    "id": "xuanxiu1_unit_4",
+    "book_id": "xuanxiu1",
+    "book_name": "选择性必修1 国家制度与社会治理",
+    "unit_number": 4,
+    "title": "民族关系与国家关系",
+    "lessons": [
+      "xuanxiu1_lesson_11",
+      "xuanxiu1_lesson_12",
+      "xuanxiu1_lesson_13",
+      "xuanxiu1_lesson_14",
+      "xuanxiu1_lesson_14"
+    ]
+  },
+  {
+    "id": "xuanxiu1_unit_4",
+    "book_id": "xuanxiu1",
+    "book_name": "选择性必修1 国家制度与社会治理",
+    "unit_number": 4,
+    "title": "民族关系与国家关系",
+    "lessons": [
+      "xuanxiu1_lesson_14"
+    ]
+  },
+  {
+    "id": "xuanxiu1_unit_5",
+    "book_id": "xuanxiu1",
+    "book_name": "选择性必修1 国家制度与社会治理",
+    "unit_number": 5,
+    "title": "货币与赋税制度",
+    "lessons": [
+      "xuanxiu1_lesson_15"
+    ]
+  },
+  {
+    "id": "xuanxiu1_unit_5",
+    "book_id": "xuanxiu1",
+    "book_name": "选择性必修1 国家制度与社会治理",
+    "unit_number": 5,
+    "title": "货币与赋税制度",
+    "lessons": [
+      "xuanxiu1_lesson_15"
+    ]
+  },
+  {
+    "id": "xuanxiu1_unit_5",
+    "book_id": "xuanxiu1",
+    "book_name": "选择性必修1 国家制度与社会治理",
+    "unit_number": 5,
+    "title": "货币与赋税制度",
+    "lessons": [
+      "xuanxiu1_lesson_16"
+    ]
+  },
+  {
+    "id": "xuanxiu1_unit_5",
+    "book_id": "xuanxiu1",
+    "book_name": "选择性必修1 国家制度与社会治理",
+    "unit_number": 5,
+    "title": "货币与赋税制度",
+    "lessons": [
+      "xuanxiu1_lesson_16"
+    ]
+  },
+  {
+    "id": "xuanxiu1_unit_5",
+    "book_id": "xuanxiu1",
+    "book_name": "选择性必修1 国家制度与社会治理",
+    "unit_number": 5,
+    "title": "货币与赋税制度",
+    "lessons": []
+  },
+  {
+    "id": "xuanxiu1_unit_6",
+    "book_id": "xuanxiu1",
+    "book_name": "选择性必修1 国家制度与社会治理",
+    "unit_number": 6,
+    "title": "基层治理与社会保障",
+    "lessons": []
+  },
+  {
+    "id": "xuanxiu1_unit_6",
+    "book_id": "xuanxiu1",
+    "book_name": "选择性必修1 国家制度与社会治理",
+    "unit_number": 6,
+    "title": "基层治理与社会保障",
+    "lessons": []
+  },
+  {
+    "id": "xuanxiu2_unit_1",
+    "book_id": "xuanxiu2",
+    "book_name": "选择性必修2 经济与社会生活",
+    "unit_number": 1,
+    "title": "食物生产与社会生活 1",
+    "lessons": []
+  },
+  {
+    "id": "xuanxiu2_unit_5",
+    "book_id": "xuanxiu2",
+    "book_name": "选择性必修2 经济与社会生活",
+    "unit_number": 5,
+    "title": "交通与社会变迁 68",
+    "lessons": []
+  },
+  {
+    "id": "xuanxiu2_unit_1",
+    "book_id": "xuanxiu2",
+    "book_name": "选择性必修2 经济与社会生活",
+    "unit_number": 1,
+    "title": "食物生产与社会生活",
+    "lessons": [
+      "xuanxiu2_lesson_1"
+    ]
+  },
+  {
+    "id": "xuanxiu2_unit_1",
+    "book_id": "xuanxiu2",
+    "book_name": "选择性必修2 经济与社会生活",
+    "unit_number": 1,
+    "title": "食物生产与社会生活",
+    "lessons": []
+  },
+  {
+    "id": "xuanxiu2_unit_1",
+    "book_id": "xuanxiu2",
+    "book_name": "选择性必修2 经济与社会生活",
+    "unit_number": 1,
+    "title": "食物生产与社会生活",
+    "lessons": [
+      "xuanxiu2_lesson_3"
+    ]
+  },
+  {
+    "id": "xuanxiu2_unit_1",
+    "book_id": "xuanxiu2",
+    "book_name": "选择性必修2 经济与社会生活",
+    "unit_number": 1,
+    "title": "食物生产与社会生活",
+    "lessons": []
+  },
+  {
+    "id": "xuanxiu2_unit_2",
+    "book_id": "xuanxiu2",
+    "book_name": "选择性必修2 经济与社会生活",
+    "unit_number": 2,
+    "title": "生产工具与劳作方式",
+    "lessons": [
+      "xuanxiu2_lesson_4",
+      "xuanxiu2_lesson_5"
+    ]
+  },
+  {
+    "id": "xuanxiu2_unit_2",
+    "book_id": "xuanxiu2",
+    "book_name": "选择性必修2 经济与社会生活",
+    "unit_number": 2,
+    "title": "生产工具与劳作方式",
+    "lessons": [
+      "xuanxiu2_lesson_5",
+      "xuanxiu2_lesson_6"
+    ]
+  },
+  {
+    "id": "xuanxiu2_unit_3",
+    "book_id": "xuanxiu2",
+    "book_name": "选择性必修2 经济与社会生活",
+    "unit_number": 3,
+    "title": "商业贸易与日常生活",
+    "lessons": []
+  },
+  {
+    "id": "xuanxiu2_unit_3",
+    "book_id": "xuanxiu2",
+    "book_name": "选择性必修2 经济与社会生活",
+    "unit_number": 3,
+    "title": "商业贸易与日常生活",
+    "lessons": [
+      "xuanxiu2_lesson_7",
+      "xuanxiu2_lesson_8"
+    ]
+  },
+  {
+    "id": "xuanxiu2_unit_3",
+    "book_id": "xuanxiu2",
+    "book_name": "选择性必修2 经济与社会生活",
+    "unit_number": 3,
+    "title": "商业贸易与日常生活",
+    "lessons": []
+  },
+  {
+    "id": "xuanxiu2_unit_3",
+    "book_id": "xuanxiu2",
+    "book_name": "选择性必修2 经济与社会生活",
+    "unit_number": 3,
+    "title": "商业贸易与日常生活",
+    "lessons": []
+  },
+  {
+    "id": "xuanxiu2_unit_3",
+    "book_id": "xuanxiu2",
+    "book_name": "选择性必修2 经济与社会生活",
+    "unit_number": 3,
+    "title": "商业贸易与日常生活",
+    "lessons": []
+  },
+  {
+    "id": "xuanxiu2_unit_4",
+    "book_id": "xuanxiu2",
+    "book_name": "选择性必修2 经济与社会生活",
+    "unit_number": 4,
+    "title": "村落、城镇与居住环境",
+    "lessons": []
+  },
+  {
+    "id": "xuanxiu2_unit_4",
+    "book_id": "xuanxiu2",
+    "book_name": "选择性必修2 经济与社会生活",
+    "unit_number": 4,
+    "title": "村落、城镇与居住环境",
+    "lessons": [
+      "xuanxiu2_lesson_10"
+    ]
+  },
+  {
+    "id": "xuanxiu2_unit_4",
+    "book_id": "xuanxiu2",
+    "book_name": "选择性必修2 经济与社会生活",
+    "unit_number": 4,
+    "title": "村落、城镇与居住环境",
+    "lessons": []
+  },
+  {
+    "id": "xuanxiu2_unit_5",
+    "book_id": "xuanxiu2",
+    "book_name": "选择性必修2 经济与社会生活",
+    "unit_number": 5,
+    "title": "交通与社会变迁",
+    "lessons": [
+      "xuanxiu2_lesson_12",
+      "xuanxiu2_lesson_12",
+      "xuanxiu2_lesson_12",
+      "xuanxiu2_lesson_13"
+    ]
+  },
+  {
+    "id": "xuanxiu2_unit_5",
+    "book_id": "xuanxiu2",
+    "book_name": "选择性必修2 经济与社会生活",
+    "unit_number": 5,
+    "title": "交通与社会变迁",
+    "lessons": [
+      "xuanxiu2_lesson_13",
+      "xuanxiu2_lesson_13"
+    ]
+  },
+  {
+    "id": "xuanxiu2_unit_6",
+    "book_id": "xuanxiu2",
+    "book_name": "选择性必修2 经济与社会生活",
+    "unit_number": 6,
+    "title": "医疗与公共卫生",
+    "lessons": [
+      "xuanxiu2_lesson_14"
+    ]
+  },
+  {
+    "id": "xuanxiu2_unit_6",
+    "book_id": "xuanxiu2",
+    "book_name": "选择性必修2 经济与社会生活",
+    "unit_number": 6,
+    "title": "医疗与公共卫生",
+    "lessons": []
+  },
+  {
+    "id": "xuanxiu2_unit_6",
+    "book_id": "xuanxiu2",
+    "book_name": "选择性必修2 经济与社会生活",
+    "unit_number": 6,
+    "title": "医疗与公共卫生",
+    "lessons": []
+  },
+  {
+    "id": "xuanxiu3_unit_1",
+    "book_id": "xuanxiu3",
+    "book_name": "选择性必修3 文化交流与传播",
+    "unit_number": 1,
+    "title": "源远流长的中华文化 1",
+    "lessons": []
+  },
+  {
+    "id": "xuanxiu3_unit_4",
+    "book_id": "xuanxiu3",
+    "book_name": "选择性必修3 文化交流与传播",
+    "unit_number": 4,
+    "title": "商路、贸易与文化交流 48",
+    "lessons": []
+  },
+  {
+    "id": "xuanxiu3_unit_1",
+    "book_id": "xuanxiu3",
+    "book_name": "选择性必修3 文化交流与传播",
+    "unit_number": 1,
+    "title": "源远流长的中华文化",
+    "lessons": []
+  },
+  {
+    "id": "xuanxiu3_unit_2",
+    "book_id": "xuanxiu3",
+    "book_name": "选择性必修3 文化交流与传播",
+    "unit_number": 2,
+    "title": "丰富多样的世界文化",
+    "lessons": []
+  },
+  {
+    "id": "xuanxiu3_unit_2",
+    "book_id": "xuanxiu3",
+    "book_name": "选择性必修3 文化交流与传播",
+    "unit_number": 2,
+    "title": "丰富多样的世界文化",
+    "lessons": []
+  },
+  {
+    "id": "xuanxiu3_unit_3",
+    "book_id": "xuanxiu3",
+    "book_name": "选择性必修3 文化交流与传播",
+    "unit_number": 3,
+    "title": "人口迁徙、文化交融与认同",
+    "lessons": []
+  },
+  {
+    "id": "xuanxiu3_unit_4",
+    "book_id": "xuanxiu3",
+    "book_name": "选择性必修3 文化交流与传播",
+    "unit_number": 4,
+    "title": "商路、贸易与文化交流",
+    "lessons": [
+      "xuanxiu3_lesson_9"
+    ]
+  },
+  {
+    "id": "xuanxiu3_unit_4",
+    "book_id": "xuanxiu3",
+    "book_name": "选择性必修3 文化交流与传播",
+    "unit_number": 4,
+    "title": "商路、贸易与文化交流",
+    "lessons": [
+      "xuanxiu3_lesson_9"
+    ]
+  },
+  {
+    "id": "xuanxiu3_unit_4",
+    "book_id": "xuanxiu3",
+    "book_name": "选择性必修3 文化交流与传播",
+    "unit_number": 4,
+    "title": "商路、贸易与文化交流",
+    "lessons": [
+      "xuanxiu3_lesson_9"
+    ]
+  },
+  {
+    "id": "xuanxiu3_unit_4",
+    "book_id": "xuanxiu3",
+    "book_name": "选择性必修3 文化交流与传播",
+    "unit_number": 4,
+    "title": "商路、贸易与文化交流",
+    "lessons": [
+      "xuanxiu3_lesson_10"
+    ]
+  },
+  {
+    "id": "xuanxiu3_unit_4",
+    "book_id": "xuanxiu3",
+    "book_name": "选择性必修3 文化交流与传播",
+    "unit_number": 4,
+    "title": "商路、贸易与文化交流",
+    "lessons": [
+      "xuanxiu3_lesson_10"
+    ]
+  },
+  {
+    "id": "xuanxiu3_unit_4",
+    "book_id": "xuanxiu3",
+    "book_name": "选择性必修3 文化交流与传播",
+    "unit_number": 4,
+    "title": "商路、贸易与文化交流",
+    "lessons": [
+      "xuanxiu3_lesson_10"
+    ]
+  },
+  {
+    "id": "xuanxiu3_unit_5",
+    "book_id": "xuanxiu3",
+    "book_name": "选择性必修3 文化交流与传播",
+    "unit_number": 5,
+    "title": "战争与文化交锋",
+    "lessons": [
+      "xuanxiu3_lesson_11"
+    ]
+  },
+  {
+    "id": "xuanxiu3_unit_5",
+    "book_id": "xuanxiu3",
+    "book_name": "选择性必修3 文化交流与传播",
+    "unit_number": 5,
+    "title": "战争与文化交锋",
+    "lessons": [
+      "xuanxiu3_lesson_11"
+    ]
+  },
+  {
+    "id": "xuanxiu3_unit_5",
+    "book_id": "xuanxiu3",
+    "book_name": "选择性必修3 文化交流与传播",
+    "unit_number": 5,
+    "title": "战争与文化交锋",
+    "lessons": [
+      "xuanxiu3_lesson_11"
+    ]
+  },
+  {
+    "id": "xuanxiu3_unit_5",
+    "book_id": "xuanxiu3",
+    "book_name": "选择性必修3 文化交流与传播",
+    "unit_number": 5,
+    "title": "战争与文化交锋",
+    "lessons": [
+      "xuanxiu3_lesson_12"
+    ]
+  },
+  {
+    "id": "xuanxiu3_unit_5",
+    "book_id": "xuanxiu3",
+    "book_name": "选择性必修3 文化交流与传播",
+    "unit_number": 5,
+    "title": "战争与文化交锋",
+    "lessons": [
+      "xuanxiu3_lesson_12"
+    ]
+  },
+  {
+    "id": "xuanxiu3_unit_5",
+    "book_id": "xuanxiu3",
+    "book_name": "选择性必修3 文化交流与传播",
+    "unit_number": 5,
+    "title": "战争与文化交锋",
+    "lessons": [
+      "xuanxiu3_lesson_12"
+    ]
+  },
+  {
+    "id": "xuanxiu3_unit_5",
+    "book_id": "xuanxiu3",
+    "book_name": "选择性必修3 文化交流与传播",
+    "unit_number": 5,
+    "title": "战争与文化交锋",
+    "lessons": [
+      "xuanxiu3_lesson_13"
+    ]
+  },
+  {
+    "id": "xuanxiu3_unit_5",
+    "book_id": "xuanxiu3",
+    "book_name": "选择性必修3 文化交流与传播",
+    "unit_number": 5,
+    "title": "战争与文化交锋",
+    "lessons": [
+      "xuanxiu3_lesson_13"
+    ]
+  },
+  {
+    "id": "xuanxiu3_unit_5",
+    "book_id": "xuanxiu3",
+    "book_name": "选择性必修3 文化交流与传播",
+    "unit_number": 5,
+    "title": "战争与文化交锋",
+    "lessons": [
+      "xuanxiu3_lesson_13"
+    ]
+  },
+  {
+    "id": "xuanxiu3_unit_5",
+    "book_id": "xuanxiu3",
+    "book_name": "选择性必修3 文化交流与传播",
+    "unit_number": 5,
+    "title": "战争与文化交锋",
+    "lessons": []
+  },
+  {
+    "id": "xuanxiu3_unit_6",
+    "book_id": "xuanxiu3",
+    "book_name": "选择性必修3 文化交流与传播",
+    "unit_number": 6,
+    "title": "文化的传承与保护",
+    "lessons": []
+  },
+  {
+    "id": "xuanxiu3_unit_6",
+    "book_id": "xuanxiu3",
+    "book_name": "选择性必修3 文化交流与传播",
+    "unit_number": 6,
+    "title": "文化的传承与保护",
+    "lessons": [
+      "xuanxiu3_lesson_14"
+    ]
+  },
+  {
+    "id": "xuanxiu3_unit_6",
+    "book_id": "xuanxiu3",
+    "book_name": "选择性必修3 文化交流与传播",
+    "unit_number": 6,
+    "title": "文化的传承与保护",
+    "lessons": [
+      "xuanxiu3_lesson_14"
+    ]
+  },
+  {
+    "id": "xuanxiu3_unit_6",
+    "book_id": "xuanxiu3",
+    "book_name": "选择性必修3 文化交流与传播",
+    "unit_number": 6,
+    "title": "文化的传承与保护",
+    "lessons": [
+      "xuanxiu3_lesson_14"
+    ]
+  },
+  {
+    "id": "xuanxiu3_unit_6",
+    "book_id": "xuanxiu3",
+    "book_name": "选择性必修3 文化交流与传播",
+    "unit_number": 6,
+    "title": "文化的传承与保护",
+    "lessons": [
+      "xuanxiu3_lesson_15"
+    ]
+  },
+  {
+    "id": "xuanxiu3_unit_6",
+    "book_id": "xuanxiu3",
+    "book_name": "选择性必修3 文化交流与传播",
+    "unit_number": 6,
+    "title": "文化的传承与保护",
+    "lessons": [
+      "xuanxiu3_lesson_15"
+    ]
+  },
+  {
+    "id": "xuanxiu3_unit_6",
+    "book_id": "xuanxiu3",
+    "book_name": "选择性必修3 文化交流与传播",
+    "unit_number": 6,
+    "title": "文化的传承与保护",
+    "lessons": [
+      "xuanxiu3_lesson_15"
+    ]
+  },
+  {
+    "id": "xuanxiu3_unit_6",
+    "book_id": "xuanxiu3",
+    "book_name": "选择性必修3 文化交流与传播",
+    "unit_number": 6,
+    "title": "文化的传承与保护",
+    "lessons": []
+  }
+]

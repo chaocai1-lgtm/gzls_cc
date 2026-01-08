@@ -15,6 +15,7 @@ config/local_secrets.py
 .env
 *.env
 .env.local
+配置.txt
 
 # 测试和调试文件
 test_*.py

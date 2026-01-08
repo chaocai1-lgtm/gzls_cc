@@ -1,15 +1,16 @@
-﻿# 高分子自适应学习系统 🧪
+﻿# 高中历史自适应学习系统 📚
 
-基于知识图谱的高分子物理课程智能学习系统，提供个性化学习路径推荐、案例库检索、课堂互动等功能。
+基于知识图谱的高中历史智能学习系统（GZLS增强版），提供AI助教、题目解析、材料批改、知识图谱可视化等功能。
 
 ## ✨ 核心功能
 
-- 📚 **知识图谱可视化**：展示高分子物理知识结构和关系
-- 🎯 **能力推荐系统**：基于学习数据智能推荐学习内容
-- 📖 **案例库检索**：快速查找相关教学案例
-- 💬 **课堂互动**：实时弹幕交流和 AI 助教
-- 📊 **学习分析**：可视化学习进度和效果
-- 📝 **报告生成**：自动生成学习报告和教学设计
+- 📚 **知识图谱可视化**：展示高中历史知识结构和关系（5本教科书，101课）
+- 🔍 **智能搜索引擎**：基于Elasticsearch的历史资料检索
+- 🤖 **AI智能助教**：DeepSeek驱动的"史老师"，苏格拉底式教学
+- ✍️ **材料题批改**：自动批改历史材料分析题，提供详细反馈
+- 📝 **题目解析系统**：智能解析历史选择题和材料题
+- 📊 **学习追踪分析**：错题本、学习报告、重点注意
+- 👨‍🏫 **教师仪表盘**：班级数据分析和教学管理
 
 ## 🚀 快速开始
 
@@ -17,8 +18,8 @@
 
 1. **克隆仓库**
 ```bash
-git clone <your-repo-url>
-cd 高分子自适应学习系统
+git clone https://github.com/chaocai1-lgtm/gzls_cc.git
+cd 高中历史自适应学习系统
 ```
 
 2. **安装依赖**
@@ -27,58 +28,62 @@ pip install -r requirements.txt
 ```
 
 3. **配置密钥**
-```bash
-# 复制配置模板
-cp .streamlit/secrets.toml.example .streamlit/secrets.toml
 
-# 编辑 .streamlit/secrets.toml，填入真实的数据库和 API 密钥
+复制 `.env.example` 为 `.env` 并填入真实配置：
+```bash
+cp .env.example .env
+# 编辑 .env 文件，填入你的数据库和API密钥
 ```
 
 4. **运行应用**
 ```bash
-streamlit run app.py
+streamlit run app_chuzhong_backup.py
+# 或使用批处理文件（Windows）
+启动GZLS系统.bat
 ```
 
 ### Streamlit Cloud 部署
 
-详见 [DEPLOYMENT.md](DEPLOYMENT.md)
+1. Fork 本仓库到你的GitHub账号
+2. 登录 [Streamlit Cloud](https://streamlit.io/cloud)
+3. 新建应用，选择你的仓库
+4. 主文件路径设置为：`高中历史自适应学习系统/app_chuzhong_backup.py`
+5. 在 Settings -> Secrets 中添加配置（参考 `STREAMLIT_SECRETS.md`）
+
+详细部署说明参见仓库根目录下的 `STREAMLIT_SECRETS.md`
 
 ## 🔧 技术栈
 
 - **前端框架**：Streamlit
-- **数据库**：Neo4j (知识图谱), Elasticsearch (案例检索)
-- **AI 模型**：DeepSeek API
-- **可视化**：Plotly, PyVis
+- **数据库**：Neo4j (知识图谱), Elasticsearch (搜索引擎)
+- **AI 模型**：DeepSeek API (deepseek-chat)
+- **可视化**：Vis.js, Plotly
 
 ## 📦 项目结构
 
 ```
-高分子自适应学习系统/
-├── app.py                 # 主应用入口
-├── requirements.txt       # 依赖列表
-├── DEPLOYMENT.md          # 部署指南
-├── config/               # 配置文件
-│   └── settings.py       # 环境配置
-├── modules/              # 功能模块
-│   ├── knowledge_graph.py      # 知识图谱
-│   ├── ability_recommender.py  # 能力推荐
-│   ├── case_library.py         # 案例库
-│   ├── classroom_interaction.py # 课堂互动
-│   ├── analytics.py            # 数据分析
-│   ├── report_generator.py     # 报告生成
-│   └── teaching_design.py      # 教学设计
-├── data/                 # 数据文件
-└── .streamlit/           # Streamlit 配置
-    ├── config.toml       # 应用配置
-    ├── secrets.toml      # 密钥（不提交）
-    └── secrets.toml.example # 密钥模板
-```
-
-## 🧪 部署前测试
-
-运行测试脚本确保配置正确：
-```bash
-python test_deployment.py
+高中历史自适应学习系统/
+├── app_chuzhong_backup.py  # 主应用入口
+├── requirements.txt        # 依赖列表
+├── .env.example            # 环境变量模板
+├── config/                 # 配置文件
+│   ├── settings.py         # 数据库配置
+│   ├── ai_config.py        # AI配置
+│   └── history_config.py   # 历史课程配置
+├── modules/                # 功能模块
+│   ├── photo_search_gzls_simple.py   # 搜索引擎
+│   ├── question_solver_gzls.py       # 题目解析
+│   ├── essay_grading_new.py          # 材料批改
+│   ├── knowledge_graph_browser.py    # 知识图谱
+│   ├── learning_tracker.py           # 学习追踪
+│   └── teacher_dashboard.py          # 教师仪表盘
+├── data/                   # 数据文件
+│   ├── history_questions.py          # 题库
+│   ├── history_knowledge_graph.py    # 知识图谱数据
+│   └── history_flashcards.py         # 闪卡数据
+└── scripts/                # 初始化脚本
+    ├── init_neo4j.py       # Neo4j初始化
+    └── init_elasticsearch.py # ES初始化
 ```
 
 ## 👥 测试账户
@@ -88,10 +93,24 @@ python test_deployment.py
 
 ## ⚠️ 注意事项
 
-- 本项目配置为个人使用，需自行提供数据库和 API 密钥
-- **请勿将密钥文件**（`.streamlit/secrets.toml`）**提交到 Git**
-- 部署前请确保所有配置正确填写
-- 建议将 GitHub 仓库设为私有
+- ✅ 本项目为个人使用，需自行提供数据库和API密钥
+- ✅ **请勿将密钥文件**（`.env`, `配置.txt`）**提交到Git**
+- ✅ 部署前请确保在Streamlit Secrets中正确填写所有配置
+- ✅ 建议将GitHub仓库设为私有（如包含敏感数据）
+
+## 📄 环境变量说明
+
+系统需要以下环境变量（通过`.env`或Streamlit Secrets配置）：
+
+- `NEO4J_URI`: Neo4j数据库连接URI
+- `NEO4J_USERNAME`: Neo4j用户名
+- `NEO4J_PASSWORD`: Neo4j密码
+- `ELASTICSEARCH_CLOUD_ID`: Elasticsearch Cloud ID
+- `ELASTICSEARCH_USERNAME`: Elasticsearch用户名
+- `ELASTICSEARCH_PASSWORD`: Elasticsearch密码
+- `DEEPSEEK_API_KEY`: DeepSeek API密钥
+
+详细配置说明参见 `STREAMLIT_SECRETS.md`
 
 ## 📄 许可
 
@@ -99,4 +118,4 @@ python test_deployment.py
 
 ---
 
-💡 如有问题，请参考 [DEPLOYMENT.md](DEPLOYMENT.md)。
+💡 如有问题，请参考 `STREAMLIT_SECRETS.md` 或查看代码注释。

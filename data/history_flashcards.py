@@ -1,0 +1,262 @@
+"""
+高中历史知识卡片数据
+用于闪卡复习功能
+"""
+
+HISTORY_FLASHCARDS = [
+    # ===== 中国古代史 =====
+    {
+        "id": "card_001",
+        "chapter_id": "chapter_origin",
+        "front": "夏朝的建立时间和建立者是？",
+        "back": "约公元前2070年，禹建立夏朝，这是中国历史上第一个王朝。",
+        "category": "基础知识",
+        "difficulty": "easy",
+        "keywords": ["夏朝", "禹"]
+    },
+    {
+        "id": "card_002",
+        "chapter_id": "chapter_origin",
+        "front": "西周的分封制和宗法制的作用是什么？",
+        "back": "分封制：通过分封诸侯，扩大了周朝的统治范围，巩固了周王的统治。\n宗法制：以血缘关系为纽带，确立了严格的等级制度，维护了政治上的统治秩序。",
+        "category": "制度分析",
+        "difficulty": "medium",
+        "keywords": ["西周", "分封制", "宗法制"]
+    },
+    {
+        "id": "card_003",
+        "chapter_id": "chapter_warring_states",
+        "front": "春秋战国时期的主要特征有哪些？",
+        "back": "1. 政治：诸侯争霸，分裂割据\n2. 经济：铁器牛耕推广，生产力提高\n3. 思想：百家争鸣，思想活跃\n4. 社会：社会变革，新兴地主阶级兴起",
+        "category": "时代特征",
+        "difficulty": "hard",
+        "keywords": ["春秋战国", "百家争鸣", "变法"]
+    },
+    {
+        "id": "card_004",
+        "chapter_id": "chapter_qin_unification",
+        "front": "秦朝巩固统一的措施有哪些？",
+        "back": "政治：建立专制主义中央集权制度，实行郡县制\n经济：统一货币、度量衡\n文化：统一文字（小篆），焚书坑儒\n思想：以法为教，以吏为师\n军事：修筑长城，抵御匈奴",
+        "category": "措施归纳",
+        "difficulty": "medium",
+        "keywords": ["秦朝", "统一", "中央集权"]
+    },
+    {
+        "id": "card_005",
+        "chapter_id": "chapter_han_dynasty",
+        "front": "汉武帝为加强中央集权采取了哪些措施？",
+        "back": "政治：颁布'推恩令'，削弱诸侯势力\n思想：接受董仲舒建议，'罢黜百家，独尊儒术'\n经济：将铸币权和盐铁经营权收归中央\n选官：建立察举制\n对外：派张骞出使西域，开通丝绸之路",
+        "category": "措施归纳",
+        "difficulty": "hard",
+        "keywords": ["汉武帝", "推恩令", "独尊儒术"]
+    },
+    {
+        "id": "card_006",
+        "chapter_id": "chapter_sui_tang_prosperity",
+        "front": "隋朝开通大运河的意义是什么？",
+        "back": "1. 加强了南北经济文化交流\n2. 巩固了国家统一\n3. 促进了沿岸城市的繁荣\n4. 为后世留下了宝贵的水利工程",
+        "category": "历史意义",
+        "difficulty": "medium",
+        "keywords": ["隋朝", "大运河"]
+    },
+    {
+        "id": "card_007",
+        "chapter_id": "chapter_sui_tang_system",
+        "front": "唐朝科举制的影响有哪些？",
+        "back": "积极：1. 改善了用人制度，使有才能的人有机会进入统治阶层\n2. 促进了教育事业的发展\n3. 促进了文学艺术的发展\n局限：1. 考试内容以儒家经典为主，束缚思想\n2. 录取名额有限，大多数读书人无法通过",
+        "category": "制度分析",
+        "difficulty": "hard",
+        "keywords": ["科举制", "唐朝"]
+    },
+    
+    # ===== 中国近代史 =====
+    {
+        "id": "card_101",
+        "chapter_id": "chapter_opium_wars",
+        "front": "鸦片战争对中国社会的影响是什么？",
+        "back": "1. 社会性质：中国开始沦为半殖民地半封建社会\n2. 主权丧失：领土、关税、司法等主权遭到破坏\n3. 社会矛盾：外国资本主义与中华民族的矛盾成为主要矛盾\n4. 历史转折：中国近代史的开端",
+        "category": "历史影响",
+        "difficulty": "hard",
+        "keywords": ["鸦片战争", "半殖民地半封建社会"]
+    },
+    {
+        "id": "card_102",
+        "chapter_id": "chapter_opium_wars",
+        "front": "《南京条约》的主要内容是什么？",
+        "back": "1. 割地：割让香港岛给英国\n2. 赔款：赔款2100万银元\n3. 通商：开放广州、厦门、福州、宁波、上海五处为通商口岸\n4. 关税：协定关税（中国丧失关税自主权）",
+        "category": "条约内容",
+        "difficulty": "easy",
+        "keywords": ["南京条约", "割地赔款", "五口通商"]
+    },
+    {
+        "id": "card_103",
+        "chapter_id": "chapter_reform_movement",
+        "front": "洋务运动的主要内容和口号是什么？",
+        "back": "口号：前期'自强'，后期'求富'\n内容：\n1. 创办近代军事工业（江南制造总局、福州船政局）\n2. 创办近代民用工业（轮船招商局、开平矿务局）\n3. 筹建海军（北洋、南洋、福建三支海军）\n4. 创办新式学堂（京师同文馆）",
+        "category": "运动内容",
+        "difficulty": "medium",
+        "keywords": ["洋务运动", "自强求富"]
+    },
+    {
+        "id": "card_104",
+        "chapter_id": "chapter_reform_movement",
+        "front": "为什么说洋务运动失败了？根本原因是什么？",
+        "back": "失败标志：1894年甲午战争中北洋水师全军覆没\n根本原因：洋务运动没有改变封建制度，只学习西方技术，指导思想是'中体西用'，在不改变封建制度的前提下，不可能使国家真正富强。",
+        "category": "原因分析",
+        "difficulty": "hard",
+        "keywords": ["洋务运动", "失败原因", "中体西用"]
+    },
+    {
+        "id": "card_105",
+        "chapter_id": "chapter_xinhai_revolution",
+        "front": "辛亥革命的历史意义是什么？",
+        "back": "1. 推翻了清朝统治，结束了中国两千多年的君主专制制度\n2. 建立了资产阶级共和国，使民主共和观念深入人心\n3. 沉重打击了帝国主义侵略势力\n4. 为中国的进步打开了闸门\n局限：没有改变中国半殖民地半封建社会的性质",
+        "category": "历史意义",
+        "difficulty": "hard",
+        "keywords": ["辛亥革命", "民主共和"]
+    },
+    {
+        "id": "card_106",
+        "chapter_id": "chapter_may_fourth",
+        "front": "五四运动的历史意义是什么？",
+        "back": "1. 彻底的反帝反封建的爱国运动\n2. 标志着中国新民主主义革命的开端\n3. 促进了马克思主义在中国的传播\n4. 为中国共产党的成立做了思想和干部准备\n特点：青年学生起先锋作用，工人阶级登上政治舞台",
+        "category": "历史意义",
+        "difficulty": "hard",
+        "keywords": ["五四运动", "新民主主义革命"]
+    },
+    {
+        "id": "card_107",
+        "chapter_id": "chapter_war_resistance",
+        "front": "抗日战争胜利的原因和意义是什么？",
+        "back": "原因：\n1. 全民族抗战（根本原因）\n2. 国共合作，建立抗日民族统一战线\n3. 中国共产党的中流砥柱作用\n4. 世界反法西斯同盟的支持\n\n意义：\n1. 是近代以来中国反抗外敌入侵第一次取得完全胜利\n2. 增强了民族自尊心和自信心\n3. 为世界反法西斯战争的胜利作出了重要贡献\n4. 中国的国际地位提高",
+        "category": "原因意义",
+        "difficulty": "hard",
+        "keywords": ["抗日战争", "全民族抗战"]
+    },
+    
+    # ===== 中国现代史 =====
+    {
+        "id": "card_201",
+        "chapter_id": "chapter_prc_founding",
+        "front": "新中国成立初期巩固政权的措施有哪些？",
+        "back": "1. 军事：继续解放全国，剿灭残余国民党军队\n2. 外交：抗美援朝，保家卫国\n3. 经济：土地改革，废除封建土地制度\n4. 政治：召开一届人大，制定宪法\n5. 民族：实行民族区域自治",
+        "category": "措施归纳",
+        "difficulty": "medium",
+        "keywords": ["新中国成立", "巩固政权"]
+    },
+    {
+        "id": "card_202",
+        "chapter_id": "chapter_prc_founding",
+        "front": "抗美援朝战争的意义是什么？",
+        "back": "1. 保卫了新中国的安全\n2. 保卫了中朝两国人民的和平生活\n3. 提高了新中国的国际威望\n4. 为国家建设赢得了相对稳定的和平环境",
+        "category": "历史意义",
+        "difficulty": "medium",
+        "keywords": ["抗美援朝", "保家卫国"]
+    },
+    {
+        "id": "card_203",
+        "chapter_id": "chapter_reform_opening",
+        "front": "十一届三中全会的主要内容和意义是什么？",
+        "back": "内容：\n1. 思想：彻底否定'两个凡是'，重新确立实事求是的思想路线\n2. 政治：停止'以阶级斗争为纲'，把工作重心转移到经济建设上来\n3. 经济：作出实行改革开放的伟大决策\n4. 组织：形成以邓小平为核心的第二代领导集体\n\n意义：是建国以来党的历史上的伟大转折，开启了改革开放的历史新时期",
+        "category": "重大会议",
+        "difficulty": "hard",
+        "keywords": ["十一届三中全会", "改革开放"]
+    },
+    {
+        "id": "card_204",
+        "chapter_id": "chapter_reform_opening",
+        "front": "改革开放以来我国对外开放格局的形成过程？",
+        "back": "1. 1980年：设立深圳、珠海、汕头、厦门经济特区\n2. 1984年：开放14个沿海港口城市\n3. 1985年：开辟沿海经济开放区\n4. 1988年：设立海南省，建立海南经济特区\n5. 1990年：开发开放上海浦东\n格局：经济特区→沿海开放城市→沿海经济开放区→内地，形成全方位、多层次、宽领域的对外开放格局",
+        "category": "历史进程",
+        "difficulty": "hard",
+        "keywords": ["对外开放", "经济特区"]
+    },
+    
+    # ===== 世界史 =====
+    {
+        "id": "card_301",
+        "chapter_id": "chapter_new_routes",
+        "front": "新航路开辟的原因和影响是什么？",
+        "back": "原因：\n1. 经济根源：商品经济发展，对黄金的需求增加\n2. 社会根源：传统商路受阻\n3. 条件：航海技术进步，地理知识增长\n\n影响：\n1. 世界开始连为一个整体\n2. 促进了资本主义的发展\n3. 引起商业革命和价格革命\n4. 给亚非拉人民带来灾难（殖民掠夺）",
+        "category": "原因影响",
+        "difficulty": "hard",
+        "keywords": ["新航路开辟", "地理大发现"]
+    },
+    {
+        "id": "card_302",
+        "chapter_id": "chapter_industrial_revolution",
+        "front": "第一次工业革命和第二次工业革命的主要成就对比？",
+        "back": "第一次工业革命（18世纪60年代-19世纪中期）：\n- 标志：蒸汽机的改良和应用\n- 主要成就：珍妮纺纱机、蒸汽机、火车、轮船\n- 时代特征：蒸汽时代\n\n第二次工业革命（19世纪70年代-20世纪初）：\n- 标志：电力的广泛应用\n- 主要成就：发电机、电动机、电灯、汽车、飞机\n- 时代特征：电气时代",
+        "category": "对比分析",
+        "difficulty": "medium",
+        "keywords": ["工业革命", "科技革命"]
+    },
+    {
+        "id": "card_303",
+        "chapter_id": "chapter_world_wars",
+        "front": "第二次世界大战爆发的原因和影响？",
+        "back": "原因：\n1. 根本原因：资本主义经济政治发展不平衡\n2. 直接原因：德意日法西斯发动侵略战争\n3. 历史原因：凡尔赛-华盛顿体系的矛盾\n\n影响：\n1. 是人类历史上规模最大的战争\n2. 彻底改变了世界格局\n3. 促进了殖民地人民的觉醒\n4. 推动了科技进步",
+        "category": "原因影响",
+        "difficulty": "hard",
+        "keywords": ["二战", "法西斯"]
+    }
+]
+
+
+def get_cards_by_chapter(chapter_id):
+    """根据章节获取卡片"""
+    return [card for card in HISTORY_FLASHCARDS if card.get('chapter_id') == chapter_id]
+
+
+def get_cards_by_difficulty(difficulty):
+    """根据难度获取卡片"""
+    return [card for card in HISTORY_FLASHCARDS if card.get('difficulty') == difficulty]
+
+
+def get_cards_by_category(category):
+    """根据分类获取卡片"""
+    return [card for card in HISTORY_FLASHCARDS if card.get('category') == category]
+
+
+def get_all_flashcards():
+    """获取所有闪卡"""
+    # 转换数据格式以适配新的双模式系统
+    formatted_cards = []
+    
+    for card in HISTORY_FLASHCARDS:
+        # 从问题中提取标题（取前15个字作为标题）
+        question = card['front']
+        if '？' in question:
+            title = question.split('？')[0]
+        elif '是' in question and len(question) > 10:
+            title = question[:question.find('是')]
+        else:
+            title = question[:15] if len(question) > 15 else question
+        
+        formatted_card = {
+            'id': card['id'],
+            'chapter': card.get('chapter_id', '未分类').replace('chapter_', '').replace('_', ' '),
+            'title': title,  # 使用提取的标题，不显示ID
+            'question': card['front'],
+            'answer': card['back'],
+            'key_points': card['back'].split('\n') if '\n' in card['back'] else [card['back']],
+            'difficulty': card.get('difficulty', 'medium'),
+            'category': card.get('category', '基础知识')
+        }
+        formatted_cards.append(formatted_card)
+    
+    return formatted_cards
+
+
+def search_cards(keyword):
+    """搜索卡片"""
+    results = []
+    keyword = keyword.lower()
+    
+    for card in HISTORY_FLASHCARDS:
+        if (keyword in card.get('front', '').lower() or 
+            keyword in card.get('back', '').lower() or
+            any(keyword in kw.lower() for kw in card.get('keywords', []))):
+            results.append(card)
+    
+    return results

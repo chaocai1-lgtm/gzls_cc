@@ -1,0 +1,4377 @@
+[
+  {
+    "id": "event_bixiu_shang_0",
+    "lesson_id": "bixiu_shang_lesson_2",
+    "year": "256",
+    "description": "被秦国吞并",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_1",
+    "lesson_id": "bixiu_shang_lesson_6",
+    "year": "1957",
+    "description": "陕西西安鲜",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_2",
+    "lesson_id": "bixiu_shang_lesson_15",
+    "year": "1846",
+    "description": "前英美争议地区 其扩张所获得的领土",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_3",
+    "lesson_id": "bixiu_shang_lesson_15",
+    "year": "4804",
+    "description": "0年前前的的中中国国和和世世界界形形势势图图",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_4",
+    "lesson_id": "bixiu_shang_lesson_15",
+    "year": "1860",
+    "description": "8月占领天津",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_5",
+    "lesson_id": "bixiu_shang_lesson_16",
+    "year": "1878",
+    "description": "2月收复新疆南北两路",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_6",
+    "lesson_id": "bixiu_shang_lesson_16",
+    "year": "1885",
+    "description": "台湾建省",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_7",
+    "lesson_id": "bixiu_shang_lesson_16",
+    "year": "1895",
+    "description": "5至10月",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_8",
+    "lesson_id": "bixiu_shang_lesson_17",
+    "year": "1895",
+    "description": "在广州万木草堂讲学期",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_9",
+    "lesson_id": "bixiu_shang_lesson_17",
+    "year": "1898",
+    "description": "6月11日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_10",
+    "lesson_id": "bixiu_shang_lesson_17",
+    "year": "1900",
+    "description": "6月10日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_11",
+    "lesson_id": "bixiu_shang_lesson_17",
+    "year": "1901",
+    "description": "2月14日）",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_12",
+    "lesson_id": "bixiu_shang_lesson_17",
+    "year": "1895",
+    "description": "2月4日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_13",
+    "lesson_id": "bixiu_shang_lesson_18",
+    "year": "1894",
+    "description": "11月在",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_14",
+    "lesson_id": "bixiu_shang_lesson_18",
+    "year": "1905",
+    "description": "8月20日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_15",
+    "lesson_id": "bixiu_shang_lesson_18",
+    "year": "1911",
+    "description": "4月27日的广州黄",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_16",
+    "lesson_id": "bixiu_shang_lesson_19",
+    "year": "1912",
+    "description": "3月10日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_17",
+    "lesson_id": "bixiu_shang_lesson_19",
+    "year": "1914",
+    "description": "5月公布",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_18",
+    "lesson_id": "bixiu_shang_lesson_19",
+    "year": "1912",
+    "description": "12月开始举行的中华民国首次国会选举中",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_19",
+    "lesson_id": "bixiu_shang_lesson_19",
+    "year": "1913",
+    "description": "3月20日夜晚",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_20",
+    "lesson_id": "bixiu_shang_lesson_19",
+    "year": "1917",
+    "description": "8月14日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_21",
+    "lesson_id": "bixiu_shang_lesson_19",
+    "year": "1915",
+    "description": "9月陈独秀在上海创办《青年 学习聚焦",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_22",
+    "lesson_id": "bixiu_shang_lesson_19",
+    "year": "1916",
+    "description": "▲ 蔡元培（前排右四）、陈独秀（前排右三）等与北大",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_23",
+    "lesson_id": "bixiu_shang_lesson_20",
+    "year": "2019",
+    "description": "4月30日）",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_24",
+    "lesson_id": "bixiu_shang_lesson_20",
+    "year": "1919",
+    "description": "出版 《共产党宣言》出版",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_25",
+    "lesson_id": "bixiu_shang_lesson_20",
+    "year": "1920",
+    "description": "11月《共",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_26",
+    "lesson_id": "bixiu_shang_lesson_20",
+    "year": "1922",
+    "description": "7月16日至23日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_27",
+    "lesson_id": "bixiu_shang_lesson_20",
+    "year": "1925",
+    "description": "3月孙中山逝世后",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_28",
+    "lesson_id": "bixiu_shang_lesson_20",
+    "year": "1927",
+    "description": "4月12日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_29",
+    "lesson_id": "bixiu_shang_lesson_20",
+    "year": "1921",
+    "description": "2月11日）",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_30",
+    "lesson_id": "bixiu_shang_lesson_20",
+    "year": "1927",
+    "description": "2月武汉国民政府收回汉",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_31",
+    "lesson_id": "bixiu_shang_lesson_21",
+    "year": "1927",
+    "description": "8月1日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_32",
+    "lesson_id": "bixiu_shang_lesson_21",
+    "year": "1927",
+    "description": "8月7日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_33",
+    "lesson_id": "bixiu_shang_lesson_21",
+    "year": "2016",
+    "description": "10月21日）",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_34",
+    "lesson_id": "bixiu_shang_lesson_21",
+    "year": "1930",
+    "description": "5至11月",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_35",
+    "lesson_id": "bixiu_shang_lesson_22",
+    "year": "1931",
+    "description": "9月18日夜",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_36",
+    "lesson_id": "bixiu_shang_lesson_22",
+    "year": "1932",
+    "description": "1月28日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_37",
+    "lesson_id": "bixiu_shang_lesson_22",
+    "year": "1936",
+    "description": "12月12日）",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_38",
+    "lesson_id": "bixiu_shang_lesson_22",
+    "year": "1937",
+    "description": "7月7日晚",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_39",
+    "lesson_id": "bixiu_shang_lesson_22",
+    "year": "1937",
+    "description": "12月14日）",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_40",
+    "lesson_id": "bixiu_shang_lesson_22",
+    "year": "2014",
+    "description": "2月27日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_41",
+    "lesson_id": "bixiu_shang_lesson_23",
+    "year": "1937",
+    "description": "11月1日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_42",
+    "lesson_id": "bixiu_shang_lesson_23",
+    "year": "1941",
+    "description": "12月开始的第三次长沙会战中",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_43",
+    "lesson_id": "bixiu_shang_lesson_23",
+    "year": "1945",
+    "description": "4至6月",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_44",
+    "lesson_id": "bixiu_shang_lesson_24",
+    "year": "1946",
+    "description": "1月4日）",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_45",
+    "lesson_id": "bixiu_shang_lesson_24",
+    "year": "1945",
+    "description": "10月10日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_46",
+    "lesson_id": "bixiu_shang_lesson_24",
+    "year": "1946",
+    "description": "1月10日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_47",
+    "lesson_id": "bixiu_shang_lesson_24",
+    "year": "1946",
+    "description": "11至12月",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_48",
+    "lesson_id": "bixiu_shang_lesson_24",
+    "year": "1947",
+    "description": "9月6日）",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_49",
+    "lesson_id": "bixiu_shang_lesson_24",
+    "year": "1949",
+    "description": "1月21日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_50",
+    "lesson_id": "bixiu_shang_lesson_25",
+    "year": "1949",
+    "description": "10月1日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_51",
+    "lesson_id": "bixiu_shang_lesson_25",
+    "year": "1949",
+    "description": "9月21日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_52",
+    "lesson_id": "bixiu_shang_lesson_25",
+    "year": "1949",
+    "description": "增加了49 %",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_53",
+    "lesson_id": "bixiu_shang_lesson_25",
+    "year": "1956",
+    "description": "1月15日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_54",
+    "lesson_id": "bixiu_shang_lesson_25",
+    "year": "1954",
+    "description": "9月15日至28日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_55",
+    "lesson_id": "bixiu_shang_lesson_26",
+    "year": "1956",
+    "description": "以基本完成对生产资料私有制的社会主义改造和",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_56",
+    "lesson_id": "bixiu_shang_lesson_26",
+    "year": "1956",
+    "description": "4月28日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_57",
+    "lesson_id": "bixiu_shang_lesson_26",
+    "year": "1966",
+    "description": "夏全面发动起来后",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_58",
+    "lesson_id": "bixiu_shang_lesson_26",
+    "year": "1971",
+    "description": "10月周恩来在北京东方红石油化工总厂视察",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_59",
+    "lesson_id": "bixiu_shang_lesson_27",
+    "year": "1989",
+    "description": "中共十三届四中全会以后",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_60",
+    "lesson_id": "bixiu_shang_lesson_27",
+    "year": "2002",
+    "description": "中共十六大上",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_61",
+    "lesson_id": "bixiu_shang_lesson_27",
+    "year": "2007",
+    "description": "中共十七大上",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_62",
+    "lesson_id": "bixiu_shang_lesson_27",
+    "year": "2012",
+    "description": "中共十八大上",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_63",
+    "lesson_id": "bixiu_shang_lesson_28",
+    "year": "2008",
+    "description": "北京奥运会开幕式",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_64",
+    "lesson_id": "bixiu_shang_lesson_28",
+    "year": "1984",
+    "description": "至1988年",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_65",
+    "lesson_id": "bixiu_shang_lesson_28",
+    "year": "1996",
+    "description": "增加了海洋技术领域",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_66",
+    "lesson_id": "bixiu_shang_lesson_28",
+    "year": "2008",
+    "description": "3月11日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_67",
+    "lesson_id": "bixiu_shang_lesson_28",
+    "year": "2008",
+    "description": "9月27日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_68",
+    "lesson_id": "bixiu_shang_lesson_28",
+    "year": "1996",
+    "description": "增长54 %",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_69",
+    "lesson_id": "bixiu_shang_lesson_28",
+    "year": "2000",
+    "description": "翻了两番多",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_70",
+    "lesson_id": "bixiu_shang_lesson_28",
+    "year": "1979",
+    "description": "元旦全国人大常委会发表《告台湾同胞书》 到怎样的作用",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_71",
+    "lesson_id": "bixiu_shang_lesson_28",
+    "year": "2005",
+    "description": "3月14日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_72",
+    "lesson_id": "bixiu_shang_lesson_28",
+    "year": "2005",
+    "description": "3月14日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_73",
+    "lesson_id": "bixiu_shang_lesson_28",
+    "year": "2008",
+    "description": "国际金融危机爆发后",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_74",
+    "lesson_id": "bixiu_shang_lesson_29",
+    "year": "2012",
+    "description": "11月29日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_75",
+    "lesson_id": "bixiu_shang_lesson_29",
+    "year": "2035",
+    "description": "到本世纪中叶把我国建",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_76",
+    "lesson_id": "bixiu_shang_lesson_29",
+    "year": "2017",
+    "description": "10月25日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_77",
+    "lesson_id": "bixiu_shang_lesson_29",
+    "year": "2017",
+    "description": "10月18日）",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_78",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "2021",
+    "description": "2月25日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_79",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "2021",
+    "description": "达到114万亿元",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_80",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "2021",
+    "description": "9月17日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_81",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "2015",
+    "description": "11月7日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_82",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1949",
+    "description": "以来两岸领导人的首次会面",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_83",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "2021",
+    "description": "两岸贸易",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_84",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "2016",
+    "description": "民进党上台后",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_85",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "2018",
+    "description": "4月10日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_86",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "2018",
+    "description": "年会开幕式",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_87",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1600",
+    "description": "商 约公元前1600—前1046年",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_88",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1125",
+    "description": "北宋 960—1127年",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_89",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1227",
+    "description": "金 1115—1234年",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_90",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1276",
+    "description": "204 中外历史纲要 上 附录",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_91",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1368",
+    "description": "明 1368—1644年",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_92",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1911",
+    "description": "中国古代史大事年表",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_93",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "5000",
+    "description": "长江下游有河姆渡文化",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_94",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "5000",
+    "description": "游有红山文化",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_95",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "2070",
+    "description": "禹建立夏朝",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_96",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1046",
+    "description": "周武王伐纣灭商",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_97",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1038",
+    "description": "党项族首领元昊建立西夏",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_98",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1069",
+    "description": "王安石开始变法",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_99",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1115",
+    "description": "女真族首领完颜阿骨打建立金朝",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_100",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1127",
+    "description": "金灭北宋",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_101",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1141",
+    "description": "南宋与金订立绍兴和议",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_102",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1206",
+    "description": "铁木真建立蒙古汗国",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_103",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1271",
+    "description": "忽必烈定国号为大元",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_104",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1276",
+    "description": "南宋灭亡",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_105",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1351",
+    "description": "元末农民起义爆发",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_106",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1368",
+    "description": "朱元璋建立明朝",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_107",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1433",
+    "description": "郑和下西洋",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_108",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1616",
+    "description": "努尔哈赤建立后金",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_109",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1636",
+    "description": "皇太极在盛京称帝",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_110",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1644",
+    "description": "清军入关",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_111",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1662",
+    "description": "郑成功收复台湾",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_112",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1684",
+    "description": "清朝设置台湾府",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_113",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1689",
+    "description": "中俄《尼布楚条约》签订",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_114",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1727",
+    "description": "清朝开始派遣驻藏大臣",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_115",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1762",
+    "description": "清朝设立伊犁将军",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_116",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1793",
+    "description": "清朝颁布治理西藏的章程",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_117",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1840",
+    "description": "鸦片战争爆发",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_118",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1842",
+    "description": "中英《南京条约》签订",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_119",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1843",
+    "description": "中英《虎门条约》签订",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_120",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1844",
+    "description": "中美《望厦条约》、中法《黄埔条约》签订",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_121",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1851",
+    "description": "金田起义",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_122",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1858",
+    "description": "中英、中法《天津条约》签订",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_123",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1860",
+    "description": "中俄《北京条约》签订",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_124",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1864",
+    "description": "天京陷落",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_125",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1885",
+    "description": "中法战争",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_126",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1895",
+    "description": "甲午中日战争",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_127",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1895",
+    "description": "中日《马关条约》签订",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_128",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1895",
+    "description": "5—10月 台湾义勇军和刘永福留台清军武装反抗日本占据台湾",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_129",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1895",
+    "description": "11月 “三国干涉还辽”",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_130",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1898",
+    "description": "戊戌变法运动",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_131",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1900",
+    "description": "义和团运动达到高潮",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_132",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1901",
+    "description": "《辛丑条约》签订",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_133",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1905",
+    "description": "中国同盟会成立",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_134",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1906",
+    "description": "清政府预备立宪",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_135",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1911",
+    "description": "10月10日 武昌起义",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_136",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1912",
+    "description": "1月1日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_137",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1912",
+    "description": "2月12日 清帝退位",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_138",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1912",
+    "description": "3月11日 《中华民国临时约法》颁布",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_139",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1915",
+    "description": "9月 陈独秀创办《青年杂志》",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_140",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1915",
+    "description": "12月 袁世凯复辟帝制",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_141",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1917",
+    "description": "6月 张勋复辟",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_142",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1917",
+    "description": "8月 护法运动开始",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_143",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1917",
+    "description": "8月14日 中国加入第一次世界大战协约国方面",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_144",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1919",
+    "description": "5月4日 五四运动爆发",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_145",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1921",
+    "description": "7月23日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_146",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1926",
+    "description": "国共两党合作北伐",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_147",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1927",
+    "description": "4月12日 蒋介石发动四一二反革命政变",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_148",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1927",
+    "description": "7月15日 汪精卫“分共”",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_149",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1927",
+    "description": "秋 宁汉合流",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_150",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1927",
+    "description": "8月1日 南昌起义爆发",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_151",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1927",
+    "description": "8月7日 八七会议召开",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_152",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1927",
+    "description": "9月 湘赣边秋收起义爆发",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_153",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1927",
+    "description": "10月 毛泽东在井冈山创建革命根据地",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_154",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1928",
+    "description": "4月 毛泽东、朱德在井冈山会师",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_155",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1928",
+    "description": "12月 张学良改旗易帜",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_156",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1929",
+    "description": "12月 古田会议召开",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_157",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1930",
+    "description": "10月 蒋介石向革命根据地发动“围剿”",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_158",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1931",
+    "description": "9月18日 九一八事变爆发",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_159",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1931",
+    "description": "11月 中华苏维埃共和国临时中央政府成立",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_160",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1932",
+    "description": "1月28日 一 • 二八事变爆发",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_161",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1932",
+    "description": "3月 伪满洲国成立",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_162",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1934",
+    "description": "10月 中央红军被迫战略转移",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_163",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1935",
+    "description": "1月 遵义会议召开",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_164",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1935",
+    "description": "10月 中国工农红军第一方面军到达陕北",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_165",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1935",
+    "description": "12月9日 一二 • 九运动爆发",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_166",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1936",
+    "description": "10月 红军三大主力在甘肃会宁等地会师",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_167",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1936",
+    "description": "12月12日 西安事变",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_168",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1937",
+    "description": "7月7日 卢沟桥事变爆发",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_169",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1937",
+    "description": "8月13日 八一三事变爆发",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_170",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1937",
+    "description": "8月22日 洛川会议召开",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_171",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1937",
+    "description": "9月 国共第二次合作实现",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_172",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1937",
+    "description": "12月 南京大屠杀",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_173",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1938",
+    "description": "1—5月 徐州会战",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_174",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1938",
+    "description": "5月 毛泽东发表《论持久战》",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_175",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1938",
+    "description": "6—10月 武汉会战",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_176",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1940",
+    "description": "3月 汪精卫在南京成立伪国民政府",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_177",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1940",
+    "description": "8月 百团大战开始",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_178",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1941",
+    "description": "1月 皖南事变",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_179",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1941",
+    "description": "12月 第三次长沙会战开始",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_180",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1942",
+    "description": "1月 国际反法西斯统一战线正式建立",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_181",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1945",
+    "description": "4—6月",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_182",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1945",
+    "description": "8月15日 日本无条件投降",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_183",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1945",
+    "description": "8月底 重庆谈判开始",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_184",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1945",
+    "description": "9月2日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_185",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1945",
+    "description": "10月10日 “双十协定”签订",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_186",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1945",
+    "description": "10月25日 台湾光复",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_187",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1946",
+    "description": "6月 国民党发动全面内战",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_188",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1947",
+    "description": "《中国土地法大纲》颁布",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_189",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1948",
+    "description": "9 —11月 辽沈战役",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_190",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1948",
+    "description": "11月—1949年1月 淮海战役",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_191",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1949",
+    "description": "3月 中共七届二中全会召开",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_192",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1949",
+    "description": "4月21日 渡江战役开始",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_193",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1949",
+    "description": "4月23日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_194",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1949",
+    "description": "10月1日 中华人民共和国成立",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_195",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1950",
+    "description": "4月 《中华人民共和国婚姻法》颁布",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_196",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1950",
+    "description": "6月 《中华人民共和国土地改革法》颁布",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_197",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1950",
+    "description": "10月 中国人民志愿军赴朝作战",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_198",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1953",
+    "description": "7月 朝鲜停战协定签署",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_199",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1953",
+    "description": "12月 中国首次提出和平共处五项原则",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_200",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1954",
+    "description": "4月 中国参加日内瓦会议",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_201",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1955",
+    "description": "4月 中国参加万隆会议",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_202",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1956",
+    "description": "9月 中国共产党第八次全国代表大会举行",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_203",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1956",
+    "description": "基本完成对农业、手工业和资本主义工商业的社会主义改造",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_204",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1958",
+    "description": "“大跃进”和人民公社化运动开始",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_205",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1964",
+    "description": "10月16日 第一颗原子弹爆炸成功",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_206",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1976",
+    "description": "“文化大革命”",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_207",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1970",
+    "description": "4月24日 第一颗人造地球卫星发射成功",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_208",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1971",
+    "description": "中华人民共和国恢复在联合国的一切合法权利",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_209",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1972",
+    "description": "中美关系开始走向正常化",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_210",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1978",
+    "description": "12月 中共十一届三中全会召开",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_211",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1979",
+    "description": "中美正式建交",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_212",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1980",
+    "description": "设立深圳、珠海、汕头、厦门经济特区",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_213",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1982",
+    "description": "12月 五届全国人大五次会议通过新修改的《中华人民共和国宪法",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_214",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1984",
+    "description": "开放14个沿海港口城市",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_215",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1989",
+    "description": "6月 中共十三届四中全会召开",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_216",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1992",
+    "description": "10月 中国共产党第十四次全国代表大会举行",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_217",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1992",
+    "description": "11月 “九二共识”",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_218",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1993",
+    "description": "汪辜会谈",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_219",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1997",
+    "description": "7月1日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_220",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1999",
+    "description": "12月20日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_221",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "2001",
+    "description": "12月 中国正式加入世界贸易组织",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_222",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "2002",
+    "description": "11月 “三个代表”重要思想被确立为党的指导思想",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_223",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "2005",
+    "description": "3月 十届全国人大三次会议通过《反分裂国家法》",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_224",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "2006",
+    "description": "取消农业税",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_225",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "2007",
+    "description": "10月 中国共产党第十七次全国代表大会举行",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_226",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "2008",
+    "description": "中国成功举办第29届夏季奥运会",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_227",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "2012",
+    "description": "11月 科学发展观被确立为党的指导思想",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_228",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "2013",
+    "description": "习近平提出共建“一带一路”倡议",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_229",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "2015",
+    "description": "11月7日 两岸领导人习近平、马英九在新加坡会面",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_230",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "2017",
+    "description": "10月 习近平新时代中国特色社会主义思想被确立为党的指导思想",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_231",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "2021",
+    "description": "7月1日",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_232",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "2021",
+    "description": "11月 通过《中共中央关于党的百年奋斗重大成就",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_233",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "2019",
+    "description": "经国家教材委员会审核通过",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_234",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "9",
+    "description": "东汉 25—220年",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_235",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "2070",
+    "description": "禹建立夏朝",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_236",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "1046",
+    "description": "周武王伐纣灭商",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_237",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "841",
+    "description": "“国人暴动”",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_238",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "771",
+    "description": "犬戎攻破镐京",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_239",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "770",
+    "description": "中国历史进入东周时期",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_240",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "356",
+    "description": "商鞅变法开始",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_241",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "256",
+    "description": "周王室被秦国所灭",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_242",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "221",
+    "description": "秦朝建立",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_243",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "209",
+    "description": "秦末农民起义爆发",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_244",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "207",
+    "description": "刘邦攻入咸阳",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_245",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "202",
+    "description": "刘邦建立汉朝",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_246",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "138",
+    "description": "张骞首次出使西域",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_247",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "119",
+    "description": "汉武帝派卫青、霍去病出击匈奴",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_248",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "60",
+    "description": "西域都护府设立",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_shang_249",
+    "lesson_id": "bixiu_shang_lesson_30",
+    "year": "9",
+    "description": "外戚王莽夺取皇位",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "event_bixiu_xia_250",
+    "lesson_id": "bixiu_xia_lesson_1",
+    "year": "3000",
+    "description": "到公元前2001年之间的时期",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_251",
+    "lesson_id": "bixiu_xia_lesson_1",
+    "year": "3000",
+    "description": "到公元前2001年之间的时期",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_252",
+    "lesson_id": "bixiu_xia_lesson_1",
+    "year": "3100",
+    "description": "律的来源",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_253",
+    "lesson_id": "bixiu_xia_lesson_1",
+    "year": "3100",
+    "description": "律的来源",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_254",
+    "lesson_id": "bixiu_xia_lesson_1",
+    "year": "776",
+    "description": "即古代第一",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_255",
+    "lesson_id": "bixiu_xia_lesson_3",
+    "year": "1264",
+    "description": "和1265年",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_256",
+    "lesson_id": "bixiu_xia_lesson_3",
+    "year": "1265",
+    "description": "的议会代表中",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_257",
+    "lesson_id": "bixiu_xia_lesson_5",
+    "year": "5000",
+    "description": "的中国黄河流域和公元前",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_258",
+    "lesson_id": "bixiu_xia_lesson_5",
+    "year": "3000",
+    "description": "的中美洲",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_259",
+    "lesson_id": "bixiu_xia_lesson_5",
+    "year": "5000",
+    "description": "的中国黄河流域和公元前",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_260",
+    "lesson_id": "bixiu_xia_lesson_6",
+    "year": "1518",
+    "description": "3月21日",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_261",
+    "lesson_id": "bixiu_xia_lesson_6",
+    "year": "1846",
+    "description": "撰写的《德意志意识",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_262",
+    "lesson_id": "bixiu_xia_lesson_6",
+    "year": "1858",
+    "description": "撰写的《经济学手稿》中指出：",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_263",
+    "lesson_id": "bixiu_xia_lesson_7",
+    "year": "1571",
+    "description": "马尼拉大帆",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_264",
+    "lesson_id": "bixiu_xia_lesson_9",
+    "year": "1789",
+    "description": "这场革命（法国大革",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_265",
+    "lesson_id": "bixiu_xia_lesson_9",
+    "year": "1863",
+    "description": "1月1日起",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_266",
+    "lesson_id": "bixiu_xia_lesson_9",
+    "year": "1861",
+    "description": "建立意大利王国",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_267",
+    "lesson_id": "bixiu_xia_lesson_9",
+    "year": "1831",
+    "description": "的48.8万人上升到1833年的80.8万人",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_268",
+    "lesson_id": "bixiu_xia_lesson_12",
+    "year": "1914",
+    "description": "世界总人口约18亿",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_269",
+    "lesson_id": "bixiu_xia_lesson_13",
+    "year": "1917",
+    "description": "墨西哥宪法",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_270",
+    "lesson_id": "bixiu_xia_lesson_13",
+    "year": "1882",
+    "description": "反抗英国侵略埃及的斗争中",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_271",
+    "lesson_id": "bixiu_xia_lesson_13",
+    "year": "1896",
+    "description": "打败侵埃意军",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_272",
+    "lesson_id": "bixiu_xia_lesson_13",
+    "year": "1896",
+    "description": "3月发生的阿杜瓦战",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_273",
+    "lesson_id": "bixiu_xia_lesson_13",
+    "year": "1913",
+    "description": "在位）亲自率军战",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_274",
+    "lesson_id": "bixiu_xia_lesson_14",
+    "year": "1914",
+    "description": "6月28日",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_275",
+    "lesson_id": "bixiu_xia_lesson_14",
+    "year": "1882",
+    "description": "形成的三国同盟",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_276",
+    "lesson_id": "bixiu_xia_lesson_14",
+    "year": "1907",
+    "description": "形成的三国协约",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_277",
+    "lesson_id": "bixiu_xia_lesson_14",
+    "year": "1918",
+    "description": "退出了战争",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_278",
+    "lesson_id": "bixiu_xia_lesson_14",
+    "year": "1919",
+    "description": "和1921—1922年分别 学习聚焦",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_279",
+    "lesson_id": "bixiu_xia_lesson_14",
+    "year": "1919",
+    "description": "6月28日）",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_280",
+    "lesson_id": "bixiu_xia_lesson_15",
+    "year": "1918",
+    "description": "8月苏维埃政权控制地区 红军进攻方向",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_281",
+    "lesson_id": "bixiu_xia_lesson_15",
+    "year": "1917",
+    "description": "俄国革命的亲历者",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_282",
+    "lesson_id": "bixiu_xia_lesson_16",
+    "year": "1838",
+    "description": "末至1919年间",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_283",
+    "lesson_id": "bixiu_xia_lesson_16",
+    "year": "1919",
+    "description": "签订和约",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_284",
+    "lesson_id": "bixiu_xia_lesson_16",
+    "year": "1934",
+    "description": "是运动的第二阶段",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_285",
+    "lesson_id": "bixiu_xia_lesson_16",
+    "year": "1942",
+    "description": "是运动的第三阶段",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_286",
+    "lesson_id": "bixiu_xia_lesson_16",
+    "year": "1917",
+    "description": "墨西哥宪法颁布后",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_287",
+    "lesson_id": "bixiu_xia_lesson_17",
+    "year": "1929",
+    "description": "的经济大危机",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_288",
+    "lesson_id": "bixiu_xia_lesson_17",
+    "year": "1500",
+    "description": "以后的世界》",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_289",
+    "lesson_id": "bixiu_xia_lesson_17",
+    "year": "1933",
+    "description": "富兰克林·罗斯福任美国总统后",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_290",
+    "lesson_id": "bixiu_xia_lesson_17",
+    "year": "1945",
+    "description": "5月8日",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_291",
+    "lesson_id": "bixiu_xia_lesson_17",
+    "year": "1945",
+    "description": "的1欧94洲3—、1北94非5年战的场欧示洲意图、北非战场示",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_292",
+    "lesson_id": "bixiu_xia_lesson_17",
+    "year": "1945",
+    "description": "5月以后欧洲19领45土年变5月迁以示后意图欧洲领土变迁示意",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_293",
+    "lesson_id": "bixiu_xia_lesson_17",
+    "year": "1945",
+    "description": "4月至6月召开的制定《联合国宪章》的旧金",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_294",
+    "lesson_id": "bixiu_xia_lesson_17",
+    "year": "1945",
+    "description": "5月以后的国界",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_295",
+    "lesson_id": "bixiu_xia_lesson_17",
+    "year": "1937",
+    "description": "与1945年5月以后",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_296",
+    "lesson_id": "bixiu_xia_lesson_18",
+    "year": "1937",
+    "description": "波兰边界 克",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_297",
+    "lesson_id": "bixiu_xia_lesson_18",
+    "year": "1945",
+    "description": "波兰边界",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_298",
+    "lesson_id": "bixiu_xia_lesson_18",
+    "year": "1944",
+    "description": "10月21日）",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_299",
+    "lesson_id": "bixiu_xia_lesson_18",
+    "year": "1945",
+    "description": "2月斯大林在雅尔塔会议上的讲",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_300",
+    "lesson_id": "bixiu_xia_lesson_18",
+    "year": "1990",
+    "description": "以前） 未定国界 军事分界线",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_301",
+    "lesson_id": "bixiu_xia_lesson_18",
+    "year": "1955",
+    "description": "） 地区界",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_302",
+    "lesson_id": "bixiu_xia_lesson_18",
+    "year": "1968",
+    "description": "退出华沙条约组织",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_303",
+    "lesson_id": "bixiu_xia_lesson_18",
+    "year": "1961",
+    "description": "8月12—13日",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_304",
+    "lesson_id": "bixiu_xia_lesson_19",
+    "year": "1948",
+    "description": "开始临时运行",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_305",
+    "lesson_id": "bixiu_xia_lesson_19",
+    "year": "1970",
+    "description": "6月10日）",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_306",
+    "lesson_id": "bixiu_xia_lesson_19",
+    "year": "1963",
+    "description": "8月28日",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_307",
+    "lesson_id": "bixiu_xia_lesson_19",
+    "year": "1859",
+    "description": "撰写的《〈政治经济学批判〉序言》",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_308",
+    "lesson_id": "bixiu_xia_lesson_19",
+    "year": "2002",
+    "description": "人类发展报告》中指",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_309",
+    "lesson_id": "bixiu_xia_lesson_19",
+    "year": "1997",
+    "description": "达到23倍”",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_310",
+    "lesson_id": "bixiu_xia_lesson_20",
+    "year": "1956",
+    "description": "赫鲁晓夫在苏共二十大上所作的《关于个人迷信及其",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_311",
+    "lesson_id": "bixiu_xia_lesson_20",
+    "year": "1956",
+    "description": "2月14日）",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_312",
+    "lesson_id": "bixiu_xia_lesson_20",
+    "year": "1980",
+    "description": "苏联国民收入年均增长率",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_313",
+    "lesson_id": "bixiu_xia_lesson_20",
+    "year": "1960",
+    "description": "1961—1970年 1971—1980年 发展重工业",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_314",
+    "lesson_id": "bixiu_xia_lesson_20",
+    "year": "1960",
+    "description": "实施国民经济第一个五年计划",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_315",
+    "lesson_id": "bixiu_xia_lesson_20",
+    "year": "1973",
+    "description": "间国民收入年递增率为6%",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_316",
+    "lesson_id": "bixiu_xia_lesson_20",
+    "year": "2012",
+    "description": "11月15日）",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_317",
+    "lesson_id": "bixiu_xia_lesson_21",
+    "year": "1962",
+    "description": "3月19日埃维昂谈判结束时通过的各项声明》（1962年7月3",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_318",
+    "lesson_id": "bixiu_xia_lesson_21",
+    "year": "1957",
+    "description": "宣布独立",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_319",
+    "lesson_id": "bixiu_xia_lesson_21",
+    "year": "1997",
+    "description": "的亚洲金融危机曾使它们受到巨大打击",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_320",
+    "lesson_id": "bixiu_xia_lesson_22",
+    "year": "2016",
+    "description": "二十国集团领导人杭州峰会",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_321",
+    "lesson_id": "bixiu_xia_lesson_22",
+    "year": "1993",
+    "description": "在欧洲共同体基础上成立",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_322",
+    "lesson_id": "bixiu_xia_lesson_22",
+    "year": "2020",
+    "description": "1月31日正式退出欧盟",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_323",
+    "lesson_id": "bixiu_xia_lesson_22",
+    "year": "1995",
+    "description": "世界贸易组织①的诞生",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_324",
+    "lesson_id": "bixiu_xia_lesson_22",
+    "year": "2001",
+    "description": "的5098亿美元",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_325",
+    "lesson_id": "bixiu_xia_lesson_22",
+    "year": "2011",
+    "description": "商务部发布的中国加入",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_326",
+    "lesson_id": "bixiu_xia_lesson_22",
+    "year": "1995",
+    "description": "1月1日",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_327",
+    "lesson_id": "bixiu_xia_lesson_22",
+    "year": "1995",
+    "description": "与关贸总协定共存一年",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_328",
+    "lesson_id": "bixiu_xia_lesson_22",
+    "year": "1996",
+    "description": "1月1日世界贸易组织成为全球经",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_329",
+    "lesson_id": "bixiu_xia_lesson_22",
+    "year": "2018",
+    "description": "11月5—10日",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_330",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "2008",
+    "description": "国际金融危机发生以来",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_331",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "2020",
+    "description": "世界不平等状况",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_332",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "2021",
+    "description": "6月发出",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_333",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "2021",
+    "description": "全球财富报告》显示",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_334",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "2009",
+    "description": "刚果（金）",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_335",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "2011",
+    "description": "发生的叙利亚内战",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_336",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "2001",
+    "description": "成立的上海合作组织①",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_337",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "2009",
+    "description": "首次召开的金砖国家②领导人会晤",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_338",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "2015",
+    "description": "成立的新开发银行",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_339",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "2017",
+    "description": "在中国厦门召开的金砖国",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_340",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "2017",
+    "description": "10月18日）",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_341",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "2001",
+    "description": "6月15日在中国上海宣布成立的永久性政府间国际组织",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_342",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "2010",
+    "description": "吸收南非加入",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_343",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "2017",
+    "description": "2月10",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_344",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "2022",
+    "description": "10月16日",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_345",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "3100",
+    "description": "埃及初步实现统一",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_346",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "2900",
+    "description": "苏美尔地区产生一系列城市国家",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_347",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1600",
+    "description": "夏朝时期",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_348",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1046",
+    "description": "商朝时期",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_349",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1115",
+    "description": "金朝建立",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_350",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1271",
+    "description": "元朝建立",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_351",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1368",
+    "description": "明朝建立",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_352",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1433",
+    "description": "郑和七次下西洋",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_353",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1453",
+    "description": "拜占庭帝国灭亡",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_354",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1492",
+    "description": "哥伦布到达美洲",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_355",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1498",
+    "description": "达·伽马绕过好望角到达印度",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_356",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1522",
+    "description": "麦哲伦船队完成第一次环球航行",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_357",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1547",
+    "description": "伊凡四世正式加冕为沙皇",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_358",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1640",
+    "description": "英国资产阶级革命爆发",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_359",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1662",
+    "description": "郑成功收复台湾",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_360",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1684",
+    "description": "清朝设置台湾府",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_361",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1688",
+    "description": "英国“光荣革命”",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_362",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1689",
+    "description": "中俄《尼布楚条约》签订 英国议会通过《权利法案》",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_363",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1727",
+    "description": "清朝开始派遣驻藏大臣",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_364",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1776",
+    "description": "北美大陆会议发表《独立宣言》",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_365",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1787",
+    "description": "美国制定宪法",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_366",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1789",
+    "description": "法国大革命爆发",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_367",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1804",
+    "description": "海地独立",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_368",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1842",
+    "description": "鸦片战争",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_369",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1848",
+    "description": "《共产党宣言》发表",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_370",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1864",
+    "description": "太平天国运动",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_371",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1858",
+    "description": "《天津条约》签订",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_372",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1860",
+    "description": "《北京条约》签订",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_373",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1861",
+    "description": "俄国农奴制改革",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_374",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1865",
+    "description": "美国内战",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_375",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1864",
+    "description": "国际工人协会成立",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_376",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1871",
+    "description": "外的德意志",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_377",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1867",
+    "description": "《资本论》第一卷问世",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_378",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1868",
+    "description": "日本开始明治维新",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_379",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1870",
+    "description": "意大利统一",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_380",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1871",
+    "description": "巴黎公社建立",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_381",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1881",
+    "description": "苏丹爆发大起义",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_382",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1882",
+    "description": "埃及抗英战争",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_383",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1889",
+    "description": "巴西建立共和国",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_384",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1895",
+    "description": "甲午中日战争",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_385",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1898",
+    "description": "戊戌变法运动 美西战争爆发",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_386",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1901",
+    "description": "《辛丑条约》签订",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_387",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1905",
+    "description": "中国同盟会成立 伊朗爆发立宪革命",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_388",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1910",
+    "description": "墨西哥爆发资产阶级革命",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_389",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1911",
+    "description": "武昌起义",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_390",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1912",
+    "description": "中华民国成立",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_391",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1917",
+    "description": "美国和中国参加协约国一方",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_392",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1919",
+    "description": "五四运动爆发 巴黎和会召开",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_393",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1940",
+    "description": "拉丁美洲进入民族民主革命",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_394",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1921",
+    "description": "中国共产党成立",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_395",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1922",
+    "description": "华盛顿会议召开",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_396",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1922",
+    "description": "苏联建立",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_397",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1924",
+    "description": "列宁逝世",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_398",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1929",
+    "description": "古田会议召开 资本主义经济大危机爆发",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_399",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1931",
+    "description": "日本发动九一八事变",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_400",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1933",
+    "description": "罗斯福就任美国总统",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_401",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1935",
+    "description": "一二·九运动爆发",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_402",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1941",
+    "description": "意大利侵略埃塞俄比亚",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_403",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1936",
+    "description": "西安事变",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_404",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1938",
+    "description": "台儿庄大捷 德国吞并奥地利",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_405",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1941",
+    "description": "大战发展到全球阶段",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_406",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1945",
+    "description": "日本无条件投降",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_407",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1946",
+    "description": "解放战争开始",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_408",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1947",
+    "description": "《中国土地法大纲》颁布",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_409",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1949",
+    "description": "北约成立",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_410",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1953",
+    "description": "抗美援朝战争",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_411",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1953",
+    "description": "五年计划",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_412",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1955",
+    "description": "周恩来率团参加万隆会议",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_413",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1956",
+    "description": "大会举行",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_414",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1960",
+    "description": "17个非洲国家独立",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_415",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1961",
+    "description": "古巴宣布为社会主义国家",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_416",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1962",
+    "description": "古巴导弹危机",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_417",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1964",
+    "description": "设“四个现代化”的伟大目标",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_418",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1976",
+    "description": "“文化大革命”",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_419",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1967",
+    "description": "中国第一颗氢弹爆炸成功",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_420",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1970",
+    "description": "中国第一颗人造地球卫星发射成功",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_421",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1971",
+    "description": "的一切合法权利",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_422",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1972",
+    "description": "中日正式建交",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_423",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1978",
+    "description": "中共十一届三中全会召开",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_424",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1979",
+    "description": "中美正式建交 苏联入侵阿富汗",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_425",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1980",
+    "description": "特区建立",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_426",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1982",
+    "description": "五届全国人大五次会议通过新",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_427",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1985",
+    "description": "戈尔巴乔夫开始改革",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_428",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1987",
+    "description": "大会举行",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_429",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1992",
+    "description": "制度急剧变化",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_430",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1991",
+    "description": "12月26日 苏联解体",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_431",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1992",
+    "description": "南非黑人获得公民权",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_432",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1995",
+    "description": "世界贸易组织正式成立",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_433",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1997",
+    "description": "中国共产党第十五次全国代表 亚洲金融危机",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_434",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "1999",
+    "description": "澳门回归祖国",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_435",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "2001",
+    "description": "中国正式加入世界贸易组织",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_436",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "2002",
+    "description": "大会举行",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_437",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "2003",
+    "description": "美国发动伊拉克战争",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_438",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "2007",
+    "description": "大会举行",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_439",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "2008",
+    "description": "中国成功举办第29届夏季奥运会",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_440",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "2011",
+    "description": "叙利亚爆发内战",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_441",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "2012",
+    "description": "大会举行",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_442",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "2016",
+    "description": "二十国集团领导人杭州峰会 英国脱欧公投",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_443",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "2017",
+    "description": "大会举行",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_444",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "2022",
+    "description": "大会举行",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_445",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "2019",
+    "description": "经国家教材委员会审核通过",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_446",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "3100",
+    "description": "埃及初步实现统一",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_447",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "2900",
+    "description": "苏美尔地区产生一系列城市国家",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_448",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "356",
+    "description": "商鞅变法开始",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_449",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "221",
+    "description": "秦朝建立",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_bixiu_xia_450",
+    "lesson_id": "bixiu_xia_lesson_23",
+    "year": "202",
+    "description": "西汉建立",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "event_xuanxiu1_451",
+    "lesson_id": "xuanxiu1_lesson_3",
+    "year": "1941",
+    "description": "5月1日）",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_452",
+    "lesson_id": "xuanxiu1_lesson_3",
+    "year": "1949",
+    "description": "6月30日）",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_453",
+    "lesson_id": "xuanxiu1_lesson_3",
+    "year": "1949",
+    "description": "成立的中华人民共和国",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_454",
+    "lesson_id": "xuanxiu1_lesson_3",
+    "year": "1954",
+    "description": "《中华人民 1957年以后",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_455",
+    "lesson_id": "xuanxiu1_lesson_3",
+    "year": "1982",
+    "description": "通过的《中华人民共和国宪法》进",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_456",
+    "lesson_id": "xuanxiu1_lesson_3",
+    "year": "1982",
+    "description": "宪法是社会主义民主和法治建设的重要成果",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_457",
+    "lesson_id": "xuanxiu1_lesson_3",
+    "year": "1956",
+    "description": "社会主义改造基本完成后",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_458",
+    "lesson_id": "xuanxiu1_lesson_3",
+    "year": "2019",
+    "description": "10月28日至31日",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_459",
+    "lesson_id": "xuanxiu1_lesson_3",
+    "year": "2021",
+    "description": "2月25日）",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_460",
+    "lesson_id": "xuanxiu1_lesson_3",
+    "year": "2005",
+    "description": "2月18日）",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_461",
+    "lesson_id": "xuanxiu1_lesson_3",
+    "year": "1898",
+    "description": "6月开始",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_462",
+    "lesson_id": "xuanxiu1_lesson_3",
+    "year": "2018",
+    "description": "12月18日）",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_463",
+    "lesson_id": "xuanxiu1_lesson_4",
+    "year": "2017",
+    "description": "的82.7万亿元",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_464",
+    "lesson_id": "xuanxiu1_lesson_4",
+    "year": "2019",
+    "description": "1月23日主持召开的中央全面",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_465",
+    "lesson_id": "xuanxiu1_lesson_4",
+    "year": "1881",
+    "description": "7月2日",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_466",
+    "lesson_id": "xuanxiu1_lesson_6",
+    "year": "2018",
+    "description": "日本公务员考试现场",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_467",
+    "lesson_id": "xuanxiu1_lesson_6",
+    "year": "1883",
+    "description": "通过的美国文官法案",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_468",
+    "lesson_id": "xuanxiu1_lesson_6",
+    "year": "1907",
+    "description": "绘制的《两江师范学堂全图》",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_469",
+    "lesson_id": "xuanxiu1_lesson_6",
+    "year": "1906",
+    "description": "易名为两江师范学堂",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_470",
+    "lesson_id": "xuanxiu1_lesson_6",
+    "year": "1933",
+    "description": "颁布《公务员任用法》",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_471",
+    "lesson_id": "xuanxiu1_lesson_6",
+    "year": "1929",
+    "description": "公布的《考试法》规定",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_472",
+    "lesson_id": "xuanxiu1_lesson_6",
+    "year": "1929",
+    "description": "8月2日）",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_473",
+    "lesson_id": "xuanxiu1_lesson_6",
+    "year": "2018",
+    "description": "12月29日",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_474",
+    "lesson_id": "xuanxiu1_lesson_6",
+    "year": "2006",
+    "description": "1月《中华人民共和国公务员法》正式实施以 阅读材料",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_475",
+    "lesson_id": "xuanxiu1_lesson_9",
+    "year": "1878",
+    "description": "德国颁布的《国家律师法》",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_476",
+    "lesson_id": "xuanxiu1_lesson_10",
+    "year": "1949",
+    "description": "9月召开的中国人民政治协商会议第一届全体",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_477",
+    "lesson_id": "xuanxiu1_lesson_10",
+    "year": "2014",
+    "description": "10月23日）",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_478",
+    "lesson_id": "xuanxiu1_lesson_10",
+    "year": "1994",
+    "description": "8月23日）",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_479",
+    "lesson_id": "xuanxiu1_lesson_10",
+    "year": "2018",
+    "description": "纪念中国人民抗日战争暨世界反法西斯战争胜利70周年、",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_480",
+    "lesson_id": "xuanxiu1_lesson_10",
+    "year": "2017",
+    "description": "1月8日",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_481",
+    "lesson_id": "xuanxiu1_lesson_10",
+    "year": "2017",
+    "description": "在蒙古国中戈壁省发现的一",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_482",
+    "lesson_id": "xuanxiu1_lesson_11",
+    "year": "1784",
+    "description": "出土于日本",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_483",
+    "lesson_id": "xuanxiu1_lesson_12",
+    "year": "1625",
+    "description": "出版的《战争与和平法》一书中提出君主应",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_484",
+    "lesson_id": "xuanxiu1_lesson_12",
+    "year": "1648",
+    "description": "10月24日）",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_485",
+    "lesson_id": "xuanxiu1_lesson_12",
+    "year": "1982",
+    "description": "12月10日）",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_486",
+    "lesson_id": "xuanxiu1_lesson_12",
+    "year": "1864",
+    "description": "8月22日）",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_487",
+    "lesson_id": "xuanxiu1_lesson_12",
+    "year": "1919",
+    "description": "6月28日列入《凡尔",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_488",
+    "lesson_id": "xuanxiu1_lesson_12",
+    "year": "1945",
+    "description": "6月26日）",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_489",
+    "lesson_id": "xuanxiu1_lesson_12",
+    "year": "2015",
+    "description": "8月9日",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_490",
+    "lesson_id": "xuanxiu1_lesson_12",
+    "year": "1947",
+    "description": "5月1日",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_491",
+    "lesson_id": "xuanxiu1_lesson_12",
+    "year": "1954",
+    "description": "通过的《中华人民共和国宪法》规定：各少数",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_492",
+    "lesson_id": "xuanxiu1_lesson_12",
+    "year": "2001",
+    "description": "2月28日",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_493",
+    "lesson_id": "xuanxiu1_lesson_12",
+    "year": "2000",
+    "description": "开始实施西部大开发战略",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_494",
+    "lesson_id": "xuanxiu1_lesson_12",
+    "year": "2013",
+    "description": "10月31日",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_495",
+    "lesson_id": "xuanxiu1_lesson_13",
+    "year": "2019",
+    "description": "5月15日",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_496",
+    "lesson_id": "xuanxiu1_lesson_14",
+    "year": "1955",
+    "description": "的万隆会议上",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_497",
+    "lesson_id": "xuanxiu1_lesson_14",
+    "year": "1949",
+    "description": "12月至1950年2月",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_498",
+    "lesson_id": "xuanxiu1_lesson_14",
+    "year": "1972",
+    "description": "2月21日",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_499",
+    "lesson_id": "xuanxiu1_lesson_14",
+    "year": "1980",
+    "description": "1月16日）",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_500",
+    "lesson_id": "xuanxiu1_lesson_14",
+    "year": "2000",
+    "description": "正式成立中非合作论坛",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_501",
+    "lesson_id": "xuanxiu1_lesson_14",
+    "year": "2003",
+    "description": "加入《东南亚友好合作条约》",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_502",
+    "lesson_id": "xuanxiu1_lesson_14",
+    "year": "1950",
+    "description": "1976年 1979年 2024年",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_503",
+    "lesson_id": "xuanxiu1_lesson_14",
+    "year": "1999",
+    "description": "倡议成立",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_504",
+    "lesson_id": "xuanxiu1_lesson_14",
+    "year": "2008",
+    "description": "国际金融危机后",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_505",
+    "lesson_id": "xuanxiu1_lesson_15",
+    "year": "1948",
+    "description": "12月1日在河北石家",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_506",
+    "lesson_id": "xuanxiu1_lesson_15",
+    "year": "1999",
+    "description": "10月1日启用新版",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_507",
+    "lesson_id": "xuanxiu1_lesson_15",
+    "year": "1999",
+    "description": "12月28日通过）",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_508",
+    "lesson_id": "xuanxiu1_lesson_15",
+    "year": "1795",
+    "description": "的法郎硬币",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_509",
+    "lesson_id": "xuanxiu1_lesson_15",
+    "year": "1945",
+    "description": "12月27日）",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_510",
+    "lesson_id": "xuanxiu1_lesson_16",
+    "year": "2000",
+    "description": "的人头税彻底废除",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_511",
+    "lesson_id": "xuanxiu1_lesson_16",
+    "year": "1931",
+    "description": "才开始取消国内关税",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_512",
+    "lesson_id": "xuanxiu1_lesson_16",
+    "year": "1854",
+    "description": "来到中国",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_513",
+    "lesson_id": "xuanxiu1_lesson_16",
+    "year": "1863",
+    "description": "正式担任海关总税务",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_514",
+    "lesson_id": "xuanxiu1_lesson_16",
+    "year": "1908",
+    "description": "离职回国",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_515",
+    "lesson_id": "xuanxiu1_lesson_16",
+    "year": "1927",
+    "description": "南京国民政府成立后",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_516",
+    "lesson_id": "xuanxiu1_lesson_16",
+    "year": "2018",
+    "description": "8月31日",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_517",
+    "lesson_id": "xuanxiu1_lesson_16",
+    "year": "1330",
+    "description": "前后海德堡的一册手抄",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_518",
+    "lesson_id": "xuanxiu1_lesson_16",
+    "year": "1977",
+    "description": "苏联颁布的宪法",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_519",
+    "lesson_id": "xuanxiu1_lesson_16",
+    "year": "1951",
+    "description": "2月政务院发布的《中华人民共和国",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu1_520",
+    "lesson_id": "xuanxiu1_lesson_16",
+    "year": "2019",
+    "description": "经国家教材委员会审核通过",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "event_xuanxiu2_521",
+    "lesson_id": "xuanxiu2_lesson_1",
+    "year": "1950",
+    "description": "江苏徐州睢宁双沟出土的",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_522",
+    "lesson_id": "xuanxiu2_lesson_1",
+    "year": "1763",
+    "description": "英国禁止向西垦殖界线",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_523",
+    "lesson_id": "xuanxiu2_lesson_1",
+    "year": "1885",
+    "description": "创作的油画《吃马铃薯的人》",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_524",
+    "lesson_id": "xuanxiu2_lesson_3",
+    "year": "1945",
+    "description": "成立的联合国粮",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_525",
+    "lesson_id": "xuanxiu2_lesson_3",
+    "year": "2018",
+    "description": "12月29日第十三届全国人大常委会第七次会议修正）",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_526",
+    "lesson_id": "xuanxiu2_lesson_3",
+    "year": "2005",
+    "description": "度国际粮食援助监测报告》显示",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_527",
+    "lesson_id": "xuanxiu2_lesson_3",
+    "year": "5000",
+    "description": "左右的新石器时代晚期",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_528",
+    "lesson_id": "xuanxiu2_lesson_4",
+    "year": "1890",
+    "description": "由张之 范旭东于1917年筹建的天津永利碱厂是中国最早的制",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_529",
+    "lesson_id": "xuanxiu2_lesson_5",
+    "year": "1830",
+    "description": "英国已拥有人",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_530",
+    "lesson_id": "xuanxiu2_lesson_5",
+    "year": "1870",
+    "description": "英国铁路里程已达2.5万千米",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_531",
+    "lesson_id": "xuanxiu2_lesson_5",
+    "year": "1886",
+    "description": "5月1日",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_532",
+    "lesson_id": "xuanxiu2_lesson_5",
+    "year": "1957",
+    "description": "苏联发射世界上第一颗人造地球卫星以来",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_533",
+    "lesson_id": "xuanxiu2_lesson_5",
+    "year": "2019",
+    "description": "1月3日",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_534",
+    "lesson_id": "xuanxiu2_lesson_5",
+    "year": "1500",
+    "description": "以后的世界》",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_535",
+    "lesson_id": "xuanxiu2_lesson_6",
+    "year": "2015",
+    "description": "12月16日）",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_536",
+    "lesson_id": "xuanxiu2_lesson_6",
+    "year": "2013",
+    "description": "4月四川芦山地震灾后的排",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_537",
+    "lesson_id": "xuanxiu2_lesson_6",
+    "year": "2018",
+    "description": "5月28日）",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_538",
+    "lesson_id": "xuanxiu2_lesson_8",
+    "year": "1914",
+    "description": "主要资本输出国",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_539",
+    "lesson_id": "xuanxiu2_lesson_8",
+    "year": "1914",
+    "description": "主要帝国主义国家资本输出示意图",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_540",
+    "lesson_id": "xuanxiu2_lesson_8",
+    "year": "1914",
+    "description": "主要资本主义国家资本输出示意图",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_541",
+    "lesson_id": "xuanxiu2_lesson_8",
+    "year": "1600",
+    "description": "12月31日）",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_542",
+    "lesson_id": "xuanxiu2_lesson_8",
+    "year": "1872",
+    "description": "开业的轮船招",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_543",
+    "lesson_id": "xuanxiu2_lesson_8",
+    "year": "1876",
+    "description": "开始筹办的开平矿务局发行的股",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_544",
+    "lesson_id": "xuanxiu2_lesson_8",
+    "year": "1870",
+    "description": "、1913年主要资本主义国家在世界贸易中的占比",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_545",
+    "lesson_id": "xuanxiu2_lesson_8",
+    "year": "1870",
+    "description": "22% 8% 13%① 10% —",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_546",
+    "lesson_id": "xuanxiu2_lesson_8",
+    "year": "1913",
+    "description": "15% 11% 13% 8% 4%",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_547",
+    "lesson_id": "xuanxiu2_lesson_8",
+    "year": "1997",
+    "description": "亚洲金融危机",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_548",
+    "lesson_id": "xuanxiu2_lesson_8",
+    "year": "1997",
+    "description": "的亚洲金融危机、2008年的国际金融危",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_549",
+    "lesson_id": "xuanxiu2_lesson_8",
+    "year": "1990",
+    "description": "部分国家经济数据表",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_550",
+    "lesson_id": "xuanxiu2_lesson_8",
+    "year": "1910",
+    "description": "钢产量 3.3 13.1 26.5 6.5 3.4 * 0.",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_551",
+    "lesson_id": "xuanxiu2_lesson_8",
+    "year": "1937",
+    "description": "钢产量 17.7 19.8 51.4 13.2 7.9 5.",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_552",
+    "lesson_id": "xuanxiu2_lesson_8",
+    "year": "1950",
+    "description": "钢产量 27.3 12.1 87.8 16.6 8.7 4.",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_553",
+    "lesson_id": "xuanxiu2_lesson_8",
+    "year": "1970",
+    "description": "钢产量 * 116 45.0 119.3 28.3 23.8",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_554",
+    "lesson_id": "xuanxiu2_lesson_8",
+    "year": "1990",
+    "description": "钢产量 * 154 38.4 89.7 16.5 19.0",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_555",
+    "lesson_id": "xuanxiu2_lesson_8",
+    "year": "2019",
+    "description": "已举办126届",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_556",
+    "lesson_id": "xuanxiu2_lesson_8",
+    "year": "1947",
+    "description": "达成《关税与贸易总协定》",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_557",
+    "lesson_id": "xuanxiu2_lesson_8",
+    "year": "2015",
+    "description": "6月29日）",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_558",
+    "lesson_id": "xuanxiu2_lesson_8",
+    "year": "1987",
+    "description": "在珠海出现的中国大陆",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_559",
+    "lesson_id": "xuanxiu2_lesson_8",
+    "year": "2018",
+    "description": "8月31日",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_560",
+    "lesson_id": "xuanxiu2_lesson_10",
+    "year": "1986",
+    "description": "4月—1991年4月",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_561",
+    "lesson_id": "xuanxiu2_lesson_10",
+    "year": "1793",
+    "description": "医师关于曼彻斯特城工人住宅的调查报告》",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_562",
+    "lesson_id": "xuanxiu2_lesson_10",
+    "year": "1950",
+    "description": "城市公路里程为51.98万千米",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_563",
+    "lesson_id": "xuanxiu2_lesson_10",
+    "year": "2000",
+    "description": "达到138.24万",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_564",
+    "lesson_id": "xuanxiu2_lesson_10",
+    "year": "2011",
+    "description": "美国单位车辆平均",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_565",
+    "lesson_id": "xuanxiu2_lesson_10",
+    "year": "1890",
+    "description": "的欧洲建筑》",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_566",
+    "lesson_id": "xuanxiu2_lesson_12",
+    "year": "5000",
+    "description": "前后的中亚阿姆河和锡尔河地区",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_567",
+    "lesson_id": "xuanxiu2_lesson_12",
+    "year": "2500",
+    "description": "的埃及海船",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_568",
+    "lesson_id": "xuanxiu2_lesson_12",
+    "year": "2500",
+    "description": "的埃及海船",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_569",
+    "lesson_id": "xuanxiu2_lesson_12",
+    "year": "1405",
+    "description": "到1433年",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_570",
+    "lesson_id": "xuanxiu2_lesson_12",
+    "year": "1869",
+    "description": "开通的苏伊士运河连接了红海和地中",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_571",
+    "lesson_id": "xuanxiu2_lesson_12",
+    "year": "1914",
+    "description": "巴拿马运河通航",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_572",
+    "lesson_id": "xuanxiu2_lesson_12",
+    "year": "1909",
+    "description": "竣工的京张铁",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_573",
+    "lesson_id": "xuanxiu2_lesson_12",
+    "year": "1867",
+    "description": "巴黎世博会上",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_574",
+    "lesson_id": "xuanxiu2_lesson_12",
+    "year": "1897",
+    "description": "创办的大清邮政官局",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_575",
+    "lesson_id": "xuanxiu2_lesson_13",
+    "year": "1908",
+    "description": "生产的福特T型汽车 ▲ 1958年5月",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_576",
+    "lesson_id": "xuanxiu2_lesson_13",
+    "year": "1994",
+    "description": "开通的英法海底隧道",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_577",
+    "lesson_id": "xuanxiu2_lesson_13",
+    "year": "2014",
+    "description": "建成通车",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_578",
+    "lesson_id": "xuanxiu2_lesson_13",
+    "year": "1919",
+    "description": "德国生产的全金属民航客机 苏民用航空股份公司",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_579",
+    "lesson_id": "xuanxiu2_lesson_13",
+    "year": "2014",
+    "description": "开工建设",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_580",
+    "lesson_id": "xuanxiu2_lesson_13",
+    "year": "1980",
+    "description": "前有何特点",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_581",
+    "lesson_id": "xuanxiu2_lesson_13",
+    "year": "1965",
+    "description": "史料阅读",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_582",
+    "lesson_id": "xuanxiu2_lesson_13",
+    "year": "1969",
+    "description": "10月一",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_583",
+    "lesson_id": "xuanxiu2_lesson_14",
+    "year": "1632",
+    "description": "创作的油画《杜普教授的解剖学课》 用",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_584",
+    "lesson_id": "xuanxiu2_lesson_14",
+    "year": "1910",
+    "description": "末到1911年初",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_585",
+    "lesson_id": "xuanxiu2_lesson_14",
+    "year": "1911",
+    "description": "4月国际鼠疫研究会在沈阳",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_586",
+    "lesson_id": "xuanxiu2_lesson_14",
+    "year": "1941",
+    "description": "毛泽东为中国医科",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_587",
+    "lesson_id": "xuanxiu2_lesson_14",
+    "year": "2013",
+    "description": "6月29日第十二届全国人大常委会第三次会议",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_588",
+    "lesson_id": "xuanxiu2_lesson_14",
+    "year": "2019",
+    "description": "8月26日第十三届全国人大常委会第十二次会议第",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu2_589",
+    "lesson_id": "xuanxiu2_lesson_14",
+    "year": "2019",
+    "description": "经国家教材委员会审核通过",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "event_xuanxiu3_590",
+    "lesson_id": "xuanxiu3_lesson_10",
+    "year": "1690",
+    "description": "左右荷兰生产的装饰",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "event_xuanxiu3_591",
+    "lesson_id": "xuanxiu3_lesson_10",
+    "year": "2010",
+    "description": "跨国公司海外分支机构经营情况",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "event_xuanxiu3_592",
+    "lesson_id": "xuanxiu3_lesson_10",
+    "year": "1985",
+    "description": "4.77 ％ 20.02 ％ 30.30 ％",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "event_xuanxiu3_593",
+    "lesson_id": "xuanxiu3_lesson_10",
+    "year": "1990",
+    "description": "6.27 ％ 23.56 ％ 26.41 ％",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "event_xuanxiu3_594",
+    "lesson_id": "xuanxiu3_lesson_10",
+    "year": "1995",
+    "description": "5.99 ％ 27.63 ％ 14.86 ％",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "event_xuanxiu3_595",
+    "lesson_id": "xuanxiu3_lesson_10",
+    "year": "2000",
+    "description": "9.63 ％ 47.70 ％ 44.67 ％",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "event_xuanxiu3_596",
+    "lesson_id": "xuanxiu3_lesson_10",
+    "year": "2005",
+    "description": "9.03 ％ 46.18 ％ 32.31 ％",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "event_xuanxiu3_597",
+    "lesson_id": "xuanxiu3_lesson_10",
+    "year": "2010",
+    "description": "10.24 ％ 39.98 ％ 33.04 ％",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "event_xuanxiu3_598",
+    "lesson_id": "xuanxiu3_lesson_10",
+    "year": "2002",
+    "description": "中共十六大报告首次把“文化事业”和“文化产业”并",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "event_xuanxiu3_599",
+    "lesson_id": "xuanxiu3_lesson_11",
+    "year": "218",
+    "description": "5月5日",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "event_xuanxiu3_600",
+    "lesson_id": "xuanxiu3_lesson_11",
+    "year": "1275",
+    "description": "由陆路来华",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "event_xuanxiu3_601",
+    "lesson_id": "xuanxiu3_lesson_12",
+    "year": "1777",
+    "description": "的萨拉托加战役是美国独立战争中的重要战役",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "event_xuanxiu3_602",
+    "lesson_id": "xuanxiu3_lesson_12",
+    "year": "1812",
+    "description": "打败拿破",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "event_xuanxiu3_603",
+    "lesson_id": "xuanxiu3_lesson_12",
+    "year": "1860",
+    "description": "《北京条约》签订后",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "event_xuanxiu3_604",
+    "lesson_id": "xuanxiu3_lesson_12",
+    "year": "1870",
+    "description": "爆发天津教案",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "event_xuanxiu3_605",
+    "lesson_id": "xuanxiu3_lesson_12",
+    "year": "1894",
+    "description": "完成的《盛世",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "event_xuanxiu3_606",
+    "lesson_id": "xuanxiu3_lesson_13",
+    "year": "1919",
+    "description": "到1945年",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "event_xuanxiu3_607",
+    "lesson_id": "xuanxiu3_lesson_13",
+    "year": "1941",
+    "description": "8月英、美两国首脑签订的《大西洋宪章》",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "event_xuanxiu3_608",
+    "lesson_id": "xuanxiu3_lesson_13",
+    "year": "1988",
+    "description": "汉城①奥运会的宣传海报",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "event_xuanxiu3_609",
+    "lesson_id": "xuanxiu3_lesson_13",
+    "year": "1988",
+    "description": "汉城奥运会的宣传海报",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "event_xuanxiu3_610",
+    "lesson_id": "xuanxiu3_lesson_14",
+    "year": "1917",
+    "description": "蔡元培就任北京大",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "event_xuanxiu3_611",
+    "lesson_id": "xuanxiu3_lesson_14",
+    "year": "1911",
+    "description": "创办的清华学堂",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "event_xuanxiu3_612",
+    "lesson_id": "xuanxiu3_lesson_14",
+    "year": "1928",
+    "description": "派出4批共120名学生赴美",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "event_xuanxiu3_613",
+    "lesson_id": "xuanxiu3_lesson_14",
+    "year": "1925",
+    "description": "设立大学部",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "event_xuanxiu3_614",
+    "lesson_id": "xuanxiu3_lesson_14",
+    "year": "1905",
+    "description": "张謇在江苏南通建立的南通博物苑",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "event_xuanxiu3_615",
+    "lesson_id": "xuanxiu3_lesson_14",
+    "year": "1948",
+    "description": "4月第一期工程及附属工程才竣工",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "event_xuanxiu3_616",
+    "lesson_id": "xuanxiu3_lesson_14",
+    "year": "1925",
+    "description": "10月10日",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "event_xuanxiu3_617",
+    "lesson_id": "xuanxiu3_lesson_14",
+    "year": "1959",
+    "description": "7月建成的中国人民革命军事博物馆",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "event_xuanxiu3_618",
+    "lesson_id": "xuanxiu3_lesson_15",
+    "year": "1964",
+    "description": "的《国际古迹保护与修复宪章》",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "event_xuanxiu3_619",
+    "lesson_id": "xuanxiu3_lesson_15",
+    "year": "2001",
+    "description": "毁于战火的阿富汗巴米",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "event_xuanxiu3_620",
+    "lesson_id": "xuanxiu3_lesson_15",
+    "year": "1994",
+    "description": "被列入《世界遗产 扬山谷的文化景观和考古遗址",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "event_xuanxiu3_621",
+    "lesson_id": "xuanxiu3_lesson_15",
+    "year": "2003",
+    "description": "同时被列",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "event_xuanxiu3_622",
+    "lesson_id": "xuanxiu3_lesson_15",
+    "year": "1979",
+    "description": "列入《世界遗产名录》",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "event_xuanxiu3_623",
+    "lesson_id": "xuanxiu3_lesson_15",
+    "year": "1982",
+    "description": "列入《世界遗产名录》",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "event_xuanxiu3_624",
+    "lesson_id": "xuanxiu3_lesson_15",
+    "year": "2019",
+    "description": "经国家教材委员会审核通过",
+    "book_id": "xuanxiu3"
+  }
+]

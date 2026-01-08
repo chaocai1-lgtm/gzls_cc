@@ -1,0 +1,359 @@
+[
+  {
+    "id": "figure_bixiu_shang_秦始皇",
+    "name": "秦始皇",
+    "lesson_id": "bixiu_shang_lesson_2",
+    "description": "嬴政自称“始皇帝”，史称“秦始皇”。",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "figure_bixiu_shang_汉武帝",
+    "name": "汉武帝",
+    "lesson_id": "bixiu_shang_lesson_2",
+    "description": "汉武帝继\n汉武帝顺应时代需要， 位后，加强中央集权。",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "figure_bixiu_shang_唐太宗",
+    "name": "唐太宗",
+    "lesson_id": "bixiu_shang_lesson_6",
+    "description": " 唐前期出现盛世局面，\n统一多民族封建国家得到\n继位的唐太宗李世民吸取隋亡的教训，轻徭薄赋，劝课农\n进一步巩固和发展。",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "figure_bixiu_shang_康熙",
+    "name": "康熙",
+    "lesson_id": "bixiu_shang_lesson_6",
+    "description": "年号是皇帝用来纪年的\n称号，如康熙、乾隆。",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "figure_bixiu_shang_乾隆",
+    "name": "乾隆",
+    "lesson_id": "bixiu_shang_lesson_6",
+    "description": "年号是皇帝用来纪年的\n称号，如康熙、乾隆。",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "figure_bixiu_shang_马克思",
+    "name": "马克思",
+    "lesson_id": "bixiu_shang_lesson_15",
+    "description": "广州城\n厢内外民众组织团练，用\n1857年3月，马克思在《英人在华的残暴行动》一文中 游击战术袭击敌人。",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "figure_bixiu_shang_恩格斯",
+    "name": "恩格斯",
+    "lesson_id": "bixiu_shang_lesson_15",
+    "description": "恩格斯当年指出：\n人九十九桩。",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "figure_bixiu_shang_慈禧",
+    "name": "慈禧",
+    "lesson_id": "bixiu_shang_lesson_17",
+    "description": "6月21日，慈禧太后作出向各国“宣战”的决定。",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "figure_bixiu_shang_孙中山",
+    "name": "孙中山",
+    "lesson_id": "bixiu_shang_lesson_18",
+    "description": "▲ 孙中山（1866—1925）及其题词 ▲《 民报》创刊号\n地比较系统地接受了西式的近代教育。",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "figure_bixiu_shang_毛泽东",
+    "name": "毛泽东",
+    "lesson_id": "bixiu_shang_lesson_21",
+    "description": "会上，毛泽东提出了“政权是由枪\n杆子中取得的”重要思想。",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "figure_bixiu_shang_列宁",
+    "name": "列宁",
+    "lesson_id": "bixiu_shang_lesson_23",
+    "description": "\n历史纵横\n毛泽东思想\n成为党的指导思想\n在中共七大上，刘少\n奇作《关于修改党章的报\n告》，他指出：我们党要以\n毛泽东思想作为一切工作\n▲ 中共七大会场\n的指针，毛泽东思想，就\n中共七大提出了党的政治",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "figure_bixiu_shang_邓小平",
+    "name": "邓小平",
+    "lesson_id": "bixiu_shang_lesson_24",
+    "description": "\n1947年6月，刘伯承、邓小平率领晋冀鲁豫野战军主力12万\n人，一举突破黄河天险，千里跃进大别山，直接威胁到国\n民党统治的中心南京、武汉，揭开了战略进攻的序幕。",
+    "book_id": "bixiu_shang"
+  },
+  {
+    "id": "figure_bixiu_xia_林肯",
+    "name": "林肯",
+    "lesson_id": "bixiu_xia_lesson_3",
+    "description": "学习拓展\n英王亨利二世给予林肯城之特许状\n任何人在林肯城城内按土地保有权购买土地，保有之\n达一年零一日，无人反对，而购买土地之人又能证明在此\n期间内，有声请权之人确在英格兰境内，但未提出异议，\n则予将",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "figure_bixiu_xia_汉武帝",
+    "name": "汉武帝",
+    "lesson_id": "bixiu_xia_lesson_5",
+    "description": "有人认为，《史记》中的黎 早期的炼铁活动，这时西亚\n靬（qiWn）就是埃及著名的亚历山大城，汉武帝遣使前往的西 技术尚未传播到埃及。",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "figure_bixiu_xia_马克思",
+    "name": "马克思",
+    "lesson_id": "bixiu_xia_lesson_6",
+    "description": "\n学习拓展\n马克思、恩格斯在1845—1846年撰写的《德意志意识\n形态》中指出：\n各民族的原始封闭状态由于日益完善的生产方式、交\n往以及因交往而自然形成的不同民族之间的分工消灭得越\n是彻底，历史也就",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "figure_bixiu_xia_恩格斯",
+    "name": "恩格斯",
+    "lesson_id": "bixiu_xia_lesson_6",
+    "description": "\n学习拓展\n马克思、恩格斯在1845—1846年撰写的《德意志意识\n形态》中指出：\n各民族的原始封闭状态由于日益完善的生产方式、交\n往以及因交往而自然形成的不同民族之间的分工消灭得越\n是彻底，历史也就",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "figure_bixiu_xia_拿破仑",
+    "name": "拿破仑",
+    "lesson_id": "bixiu_xia_lesson_9",
+    "description": "1799年，拿破仑发动军事政变，建立军事独裁\n著，冯棠译《旧制度与大\n统治。",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "figure_bixiu_xia_华盛顿",
+    "name": "华盛顿",
+    "lesson_id": "bixiu_xia_lesson_14",
+    "description": "\n▲ 一战中的华工在英国军官带领下去前线挖战壕\n一战后的国际秩序\n战争结束后，战胜国在1919年和1921—1922年分别 学习聚焦\n一战后战胜国以强权政\n召开了巴黎和会与华盛顿会议，与会各国缔结了以",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "figure_bixiu_xia_列宁",
+    "name": "列宁",
+    "lesson_id": "bixiu_xia_lesson_15",
+    "description": "为了引导革命胜利前进，1917年4月，流亡国外的列宁\n回到彼得格勒。",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "figure_bixiu_xia_斯大林",
+    "name": "斯大林",
+    "lesson_id": "bixiu_xia_lesson_15",
+    "description": "第15课 十月革命的胜利与苏联的社会主义实践 95\n▲ 斯大林格勒拖拉机厂\n▲\n发的状况形成了鲜明的对照。",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "figure_bixiu_xia_孙中山",
+    "name": "孙中山",
+    "lesson_id": "bixiu_xia_lesson_16",
+    "description": "1924年，中国共产党和孙中山\n学习聚焦\n领导的中国国民党实现了第一次国共合作。",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "figure_bixiu_xia_罗斯福",
+    "name": "罗斯福",
+    "lesson_id": "bixiu_xia_lesson_17",
+    "description": "\n—［日］矢部贞治《近卫文麿》\n历史纵横\n罗斯福新政\n罗斯福新政是指1933年富兰克林·罗斯福任美国总统后，为摆脱经济危机而实行的一系列新\n政策，基本做法是国家通过立法的形式，加强对经济生活的干预和调",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "figure_bixiu_xia_丘吉尔",
+    "name": "丘吉尔",
+    "lesson_id": "bixiu_xia_lesson_17",
+    "description": "挪\n冰 岛\n威\n海\n挪 瑞 芬\n兰\n威\n典\n苏\n英\n波\n北 海 罗 ▲ 雅尔塔会议三巨头，前排从左至\n丹 的\n国 麦 海 右分别是丘吉尔、罗斯福和斯大林\n荷 联\n兰 德\n比利时 波 兰\n国\n卢森堡 捷",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "figure_bixiu_xia_邓小平",
+    "name": "邓小平",
+    "lesson_id": "bixiu_xia_lesson_20",
+    "description": "\n— 邓小平《在武昌、深圳、珠海、上海等地的谈话\n要点》，《邓小平文选》第3卷\n人民对美好生活的向往，就是我们的奋斗目标。",
+    "book_id": "bixiu_xia"
+  },
+  {
+    "id": "figure_xuanxiu1_慈禧",
+    "name": "慈禧",
+    "lesson_id": "xuanxiu1_lesson_3",
+    "description": "9月，慈禧太后\n发动政变，废除了大部分变法措施。",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "figure_xuanxiu1_毛泽东",
+    "name": "毛泽东",
+    "lesson_id": "xuanxiu1_lesson_3",
+    "description": "\n—《陕甘宁边区施政\n新中国成立前夕，毛泽东发表《论人民民主专政》，\n纲领》（1941年5月1日）\n指出资产阶级共和国的方案在中国已经破产，资产阶级共\n阅读材料，谈谈你对\n和国应让位给人民共和国，要“",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "figure_xuanxiu1_邓小平",
+    "name": "邓小平",
+    "lesson_id": "xuanxiu1_lesson_3",
+    "description": "\n1978年12月，中共十一届三中全会召开，以邓小平为\n史料阅读\n主要代表的中国共产党人决定停止“以阶级斗争为纲”的\n我们党作出实行改革开\n错误做法，作出把全党工作着重点转移到社会主义现代化\n放的历史",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "figure_xuanxiu1_汉武帝",
+    "name": "汉武帝",
+    "lesson_id": "xuanxiu1_lesson_4",
+    "description": "于是汉武帝让大臣们“议不举者罪”，有大臣提\n出“不举孝，不奉诏，当以不敬论；",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "figure_xuanxiu1_康熙",
+    "name": "康熙",
+    "lesson_id": "xuanxiu1_lesson_4",
+    "description": "康熙帝说：\n“朕观人必先心术，次才学。",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "figure_xuanxiu1_华盛顿",
+    "name": "华盛顿",
+    "lesson_id": "xuanxiu1_lesson_4",
+    "description": "\n加菲尔德被刺杀\n1881年7月2日，美国新任总统加菲尔德在华盛顿的\n一座火车站遭到一个没有得到满意官职的党内支持者刺\n杀，身受重伤，两个多月后不治身亡。",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "figure_xuanxiu1_列宁",
+    "name": "列宁",
+    "lesson_id": "xuanxiu1_lesson_6",
+    "description": "\n—［苏］列宁《革命的一个根本问题》，《列宁全\n集》第三十二卷\n阅读材料，谈谈你对西方文官制度的看法。",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "figure_xuanxiu1_孙中山",
+    "name": "孙中山",
+    "lesson_id": "xuanxiu1_lesson_6",
+    "description": "孙中山的文官考试思想，进一步奠定了近代中国文官\n制度的基础。",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "figure_xuanxiu1_拿破仑",
+    "name": "拿破仑",
+    "lesson_id": "xuanxiu1_lesson_9",
+    "description": "1804年，拿破仑签署法令，颁布\n了《法国民法典》，又称《拿破仑法典》。",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "figure_xuanxiu1_林肯",
+    "name": "林肯",
+    "lesson_id": "xuanxiu1_lesson_9",
+    "description": "从民众中产生陪审团，参与案件审理和判决，\n▲林肯（右一）在法庭上辩护的情景 使民众能够直接参与法律事务。",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "figure_xuanxiu1_马克思",
+    "name": "马克思",
+    "lesson_id": "xuanxiu1_lesson_9",
+    "description": "\n——［德］恩格斯《德国农民战争》，《马克思恩格斯文\n集》第二卷 ▲宗教法庭\n想一想：基督教在中古时期的欧洲发挥了什么样的作用？",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "figure_xuanxiu1_恩格斯",
+    "name": "恩格斯",
+    "lesson_id": "xuanxiu1_lesson_9",
+    "description": "\n——［德］恩格斯《德国农民战争》，《马克思恩格斯文\n集》第二卷 ▲宗教法庭\n想一想：基督教在中古时期的欧洲发挥了什么样的作用？",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "figure_xuanxiu1_唐太宗",
+    "name": "唐太宗",
+    "lesson_id": "xuanxiu1_lesson_11",
+    "description": "唐朝政府与它们保持着密切联系，西北边疆各族\n称唐太宗为“天可汗”。",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "figure_xuanxiu1_乾隆",
+    "name": "乾隆",
+    "lesson_id": "xuanxiu1_lesson_11",
+    "description": "\n乾隆帝在热河接见英使马戛尔尼情形\n① 明州，今浙江宁波。",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "figure_xuanxiu1_斯大林",
+    "name": "斯大林",
+    "lesson_id": "xuanxiu1_lesson_14",
+    "description": "截至1956年，中国\n又与挪威、南斯拉夫、阿富汗、尼泊尔、埃\n▲ 毛泽东与斯大林\n及、叙利亚、也门等国建交，同英国、荷兰\n1949年12月至1950年2月，毛泽东访问苏联，中苏\n建立了代办级外交关系。",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "figure_xuanxiu1_罗斯福",
+    "name": "罗斯福",
+    "lesson_id": "xuanxiu1_lesson_16",
+    "description": " ▲ 罗斯福签署《社会保障法》\n历史纵横\n苏联的社会保障制度\n列宁认为“最好的工人保险形式是国家保险”。",
+    "book_id": "xuanxiu1"
+  },
+  {
+    "id": "figure_xuanxiu2_恩格斯",
+    "name": "恩格斯",
+    "lesson_id": "xuanxiu2_lesson_1",
+    "description": "\n耕地起初是暂时地，后来便永久地分配给各个家庭使用，它向\n完全的私有财产的过渡，是逐渐进行的……\n—［德］恩格斯《家庭、私有制和国家的起源》，《马克\n思恩格斯文集》第四卷\n恩格斯这段话描述的是什么？",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "figure_xuanxiu2_汉武帝",
+    "name": "汉武帝",
+    "lesson_id": "xuanxiu2_lesson_4",
+    "description": "\n历史纵横\n水排\n南阳自战国时就以冶铁业著称，汉武帝曾在此设铁\n官。",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "figure_xuanxiu2_毛泽东",
+    "name": "毛泽东",
+    "lesson_id": "xuanxiu2_lesson_4",
+    "description": "\n—《史记·商君列传》\n22 经济与社会生活﻿﻿第二单元﻿ 生产工具与劳作方式\n学思之窗 历史纵横\n男耕女织\n毛泽东在《中国革命和中国共产党》中指出，在中国封建\n中国古代谚语说：“一\n时代，“农民不但",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "figure_xuanxiu2_马克思",
+    "name": "马克思",
+    "lesson_id": "xuanxiu2_lesson_5",
+    "description": "工业革命对\n—［德］恩格斯《英\n煤等矿石的需求刺激了运河的开凿，1830年英国已拥有人\n国工人阶级状况》，《马克思\n工运河4000多千米；",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "figure_xuanxiu2_秦始皇",
+    "name": "秦始皇",
+    "lesson_id": "xuanxiu2_lesson_12",
+    "description": "\n秦始皇开凿连接湘水和离水①的灵渠，沟通了长江和珠江\n▲ 约公元前2500年的埃及海船\n两大水系。",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "figure_xuanxiu2_孙中山",
+    "name": "孙中山",
+    "lesson_id": "xuanxiu2_lesson_13",
+    "description": "孙中山在1919年明确提\n出了青藏铁路的构想，但在20世纪上半期，这条铁路始终\n只处在概念阶段。",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "figure_xuanxiu2_康熙",
+    "name": "康熙",
+    "lesson_id": "xuanxiu2_lesson_13",
+    "description": "中国清朝的康熙皇帝也得过天花。",
+    "book_id": "xuanxiu2"
+  },
+  {
+    "id": "figure_xuanxiu3_汉武帝",
+    "name": "汉武帝",
+    "lesson_id": "xuanxiu3_lesson_9",
+    "description": "\n公元前138年，汉武帝派遣张骞沿河西走廊出使西域，计\n划联合大月氏等政权共击匈奴。",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "figure_xuanxiu3_列宁",
+    "name": "列宁",
+    "lesson_id": "xuanxiu3_lesson_12",
+    "description": "在反抗法国征\n服的斗争中，欧洲各地出现了不断高涨的民主意识和民族 列宁曾评价十二月党人：\n独立要求。",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "figure_xuanxiu3_拿破仑",
+    "name": "拿破仑",
+    "lesson_id": "xuanxiu3_lesson_12",
+    "description": "\n▲ 生活在巴西的印第安儿童\n拿破仑战争后欧洲文化的重构\n17—18世纪，欧洲的大多数国家仍处于封建统治之 学习聚焦\n下。",
+    "book_id": "xuanxiu3"
+  },
+  {
+    "id": "figure_xuanxiu3_秦始皇",
+    "name": "秦始皇",
+    "lesson_id": "xuanxiu3_lesson_15",
+    "description": "\n中国第一批列入《世界遗产名录》的有长城、莫高\n窟、明清皇宫、秦始皇陵及兵马俑坑、周口店北京人遗址\n五项世界文化遗产，以及作为世界文化与自然双重遗产的\n泰山。",
+    "book_id": "xuanxiu3"
+  }
+]
