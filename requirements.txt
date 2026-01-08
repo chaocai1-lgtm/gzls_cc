@@ -5,5 +5,15 @@ numpy>=1.24.0
 plotly>=5.17.0
 Pillow>=10.0.0
 
-# Neo4j 数据库驱动
-neo4j
+# 数据库和搜索
+neo4j>=5.0
+elasticsearch>=8.0
+
+# 知识图谱可视化
+pyvis>=0.3.2
+
+# AI服务
+openai>=1.0
+
+# 工具库
+python-dotenv>=1.0
